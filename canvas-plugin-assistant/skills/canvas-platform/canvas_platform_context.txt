@@ -6419,6 +6419,63 @@ A: You will use the same passphrase at each location because a provider's NPI is
 ----- END PAGE https://help.canvasmedical.com/articles/5551249431-troubleshooting-epcs-authentication-errors
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/5617793432-inference-gateway
+## What Inference Gateway does
+Inference Gateway gives your developers a Canvas-issued key for Claude models. The agents, automations and apps they build on Canvas can call a model without your team signing its own contract with a model provider.
+Canvas's BAA covers the model providers behind the gateway. They are configured for zero data retention (ZDR) and do not train on your data. You create keys, set budgets and track spend in Canvas Platform.
+## Pricing
+Inference Gateway is an additional charge on top of your Canvas subscription. Usage is billed per token and appears on your monthly Canvas invoice. Your organization needs a signed AI Addendum before Canvas turns on your inference account. Billing admins can see the per-model token prices on the Billing settings page in Canvas Platform.
+## Before you start
+  - **Your organization needs an active inference account.** Your Canvas team turns it on for you.
+  - **Creating keys takes the Organization admin role.** Billing admins see spend and manage the organization's budget and alerts.
+## Create a key
+  1. Sign in to [Canvas Platform](https://platform.canvasmedical.com) and open **Inference > Keys & limits**.
+  2. Click **Create key**. Name the key for the automation that uses it, choose its intended use (Workflow, Development or External app), and add a monthly limit if you want one.
+  3. Copy the key right away, because it's shown only once. If you lose it, create a new key and revoke the old one.
+  4. Click **Send a test request** to confirm the key works.
+## Connect your code
+The gateway accepts the Anthropic Messages API. Set these two environment variables to point the Anthropic SDK or Claude Code at it, using the values from the Connecting section of Keys & limits.
+    export ANTHROPIC_BASE_URL=https://inference.canvasmedical.com
+    export ANTHROPIC_API_KEY=<your Canvas key>
+The gateway serves message requests (`/v1/messages`) and token counting (`/v1/messages/count_tokens`).
+## Budgets, limits and alerts
+  - The organization's monthly budget covers every key and resets at the start of each month (UTC).
+  - Any key can carry its own monthly limit. A key without one draws on the organization budget.
+  - Organization and Billing admins get an email as spend crosses each alert threshold.
+  - By default, reaching the budget only sends an alert while requests keep running and are billed. A Billing admin can turn on Stop requests instead.
+  - Stop requests halts every workflow that uses the organization's keys, including patient-facing workflows. Check what depends on inference before turning it on.
+## Studio and Inference Gateway
+Studio makes its model calls through Inference Gateway on your organization's account. Its usage is metered per token and shows on the Usage & Billing page next to your own keys. Token fees for Studio apply under your AI Addendum.
+## FAQ
+**Do I need my own Anthropic account?**
+No. You use a Canvas key in place of an Anthropic key.
+**What does "this credential cannot use inference" mean?**
+The gateway returns this error when a key was revoked or mistyped, or when your organization's inference account is not active. Check the key first, then contact your Canvas team if the key is correct.
+**Can I revoke a key?**
+Yes. An Organization admin can revoke a key from Keys & limits, and anything using that key stops working immediately. A revoked key cannot be restored, so create a new one for the caller.
+**Can we send PHI through Inference Gateway?**
+Yes, once your AI Addendum is signed and your inference account is active. Requests go only to model providers covered by Canvas's BAA, configured for zero data retention, so your team does not need its own BAA with the model provider for these calls.
+**Does Canvas store our prompts or the model's responses?**
+No. The gateway passes each request and response through unchanged and reads only the token counts it needs for billing. Prompts and completions are not logged or saved. Usage records hold the key, the model and the token counts, which is what you see on the Usage & Billing page.
+**How is this different from using our own Anthropic or other model provider account?**
+The model is the same Claude you would reach directly, and the API is the same Anthropic Messages API. The differences are in everything around the model call.
+  - With your own provider account, your organization has to put its own BAA and zero data retention terms in place with that provider before any PHI is sent. Through the gateway, those are already covered by Canvas's BAA with Anthropic (and your BAA with Canvas) and your AI Addendum.
+  - Your own account bills you separately from the provider. Gateway usage appears on your monthly Canvas invoice next to the rest of your Canvas usage.
+  - The gateway gives every key its own optional monthly limit on top of an organization budget, with email alerts and an optional hard stop. You can see spend per key, so you know which automation is driving cost.
+  - Keys are created and revoked in Canvas Platform by your Organization admins. A leaked Canvas key can be revoked in one step, and its monthly limit caps what it can spend in the meantime.
+  - Studio already runs on your organization's gateway account, so your Studio usage and your own builds share one budget and one usage view.
+**Do Claude Code skills, plugins and MCP servers work with a Canvas key?**
+Yes. They run in Claude Code on your machine or in your app and reach the model through ordinary message requests, so they work the same way through the gateway as with a direct Anthropic key. This includes the Canvas Plugin Assistant, a Claude Code plugin Canvas publishes for building Canvas plugins, with the Canvas SDK reference, plugin patterns, security review, test authoring and deployment workflows built in. Install it with `/plugin marketplace add canvas-medical/coding-agents` and then `/plugin install cpa@canvas-medical`.
+The BAA covers the model providers behind the gateway. An MCP server or other tool that Claude Code calls is a separate service, so check that any tool receiving PHI is covered by its own agreement with your organization.
+**Can we use Anthropic's server-side tools, such as web search?**
+Tool definitions and tool calls inside a message request pass through the gateway unchanged. Web search is billed per search in addition to tokens, and those charges appear in the same usage view.
+**Which Anthropic APIs are not available through the gateway?**
+The gateway serves message requests and token counting only. Other Anthropic endpoints, such as Message Batches, Files, Skills uploads and Models, return an error saying the gateway does not proxy them. The priority service tier is also not available, so leave `service_tier` unset or use the standard tier.
+**What happens when a limit is reached with Stop requests turned on?**
+New requests on the affected key, or on every key if it is the organization budget, return a `402 billing_error` that says when the budget resets. Raising the key's limit in Keys & limits, or a Billing admin raising the organization budget, lets requests resume before then.
+----- END PAGE https://help.canvasmedical.com/articles/5617793432-inference-gateway
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/5628604712-manage-care-teams
 ## Introduction
 The Care Team feature allows you to easily assign both internal staff members and external providers to patients, enabling you to build comprehensive teams with multidisciplinary skills. Care teams ensure coordinated patient care by clearly defining who is responsible for different aspects of treatment and communication. Every patient can have designated team members with specific roles from within your organization and external providers who are outside your organization, with one internal member designated as the Care Team Lead to streamline workflows and communication.

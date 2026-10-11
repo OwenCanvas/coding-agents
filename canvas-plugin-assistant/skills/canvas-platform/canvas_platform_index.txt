@@ -42,6 +42,15 @@
         - When your organization moves
         - Signing in for the first time
     - FAQ
+- [Inference Gateway](https://help.canvasmedical.com/articles/5617793432-inference-gateway)
+    - What Inference Gateway does
+    - Pricing
+    - Before you start
+    - Create a key
+    - Connect your code
+    - Budgets, limits and alerts
+    - Studio and Inference Gateway
+    - FAQ
 
 ## Getting Started
 
