@@ -214,6 +214,52 @@ Fix the issue on your website, then let your Canvas team know so the campaign ca
 ----- END PAGE https://help.canvasmedical.com/articles/1321535923-best-practices-for-configuring-your-twilio-campaign
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/1337233090-vitalstream-plugin
+The VitalStream plugin connects the VitalStream device by Caretaker Medical to the patient's note. Readings stream into the chart while a treatment session runs, and when the session ends, the plugin saves averaged readings at set time marks to the chart, so staff don't retype vitals by hand.
+## Before you begin
+  - The plugin must be installed and enabled, with each VitalStream device's serial number added to the plugin's authorized devices. You can find a device's serial number under **Settings** > **About** in the VitalStream app.
+  - On the VitalStream tablet, open **Settings** > **Data Forwarding** , turn on **Enable Forwarding** , set **Portal** to **Caretaker Portal** , and set **Portal URL** to `https://<your-subdomain>.canvasmedical.com/plugin-io/api/vitalstream`.
+## Start a session
+  1. Open or create a note for the patient.
+  2. In the note header, select **Record with VitalStream**. The VitalStream panel opens on the right with a QR code.
+  3. Start a session on the VitalStream tablet, tap the camera icon, and scan the QR code. The panel status changes from **Waiting for data...** to **Receiving data...**
+![Record with VitalStream button in the note header](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2401e8f6-38ae-4f9f-b7c3-104f1727e136-vs-00-full-boxed.png?Expires=253370764800&Signature=qX0EONcbTVW30MTSoxulA5PF7B8DTyudkY6jgHmIhuvQBmmyiBQdJ2qyu42KSNDeLoGPugcaXzrqarhyh6TN8Pb6tK2OFquwoXi7slPqNIVGRvysipuXRK5okPDrFf~iUUBlrLbQ5A52RPRfxVIIT0fS0iGuoG2rugwPCGazLZvIU2dJR83NxkzobYH0BdPku7YLk~sDV1yS8gZPXrEJdgXIODBItEpEtSAnIqu4WcV0PqaZ7cUnVGP2h7L0BAv3ScBg~Uub-wfGMUwzjmROfrYwhlGhQrVyZrGuIPtmef~QwZLSs3kf5UQCRBFN8V7TI~8wytuCEj2w1yFl~Lm1gA__&Key-Pair-Id=K3NV4LZ47N8M46)![VitalStream panel open on the right side of the chart](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F8f04cb8a-a26b-4d07-9194-649f0e766109-vs-00b-full-panel.png?Expires=253370764800&Signature=TLdKIHQQzGXen2~eYQHUdpfj9Wf~4IL7NfZlPxoSNNLynbphD3zWD8egqA7ReBf8vvnHyLrzAnM15c4RzJdBLQeqKdzN5Tj4wA19adehoDz8y5VqqqeWOSrtXqC4wqMhnOECB7GNwGxL1II6FC7~cV84da8VSxU5xx1G552hZJNFHm2f4QfmcB4gB6jRuxq8qOoRtEXpHJ7d-mED1pc0pyOSNFnX9DPLG05XzewWBHQ5kKyt63RgrQvGT4VZmLg6QM6WcCemGyF1ciI90tQAL9bUwTD4wKxI3e3clunNtffIBCyPumcdwdkL9IBDWAVJmFUcmHf5sDa5EH6CJhB6BA__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Set up the summary
+  - **Treatment:** Choose the treatment being given.
+  - **Summary increment:** Choose how far apart the time marks are, for example 5 or 10 minutes.
+  - **Wrist:** Choose the wrist the device is on.
+  - **Treatment start** and **Treatment end:** Enter the times the treatment started and ended.
+![VitalStream panel with the pairing QR code](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fa5fc850a-2752-44f0-89a1-3df5c031c105-vs-01-pane-crop.png?Expires=253370764800&Signature=PoJ64hOqZOKI3ngwIAJNz9Ihu5PMY1oRmXtwk8feU9oIAu73ktZlqVKSLBc6Yq6R~6FChGvVTCm3IJzhFDYcMcJd6Y2QV3DsjbD-8zoQUMC6-V6-nz~mKTOoAzqQh0W8GbKs8s~78JFajnxxuWDDuncibURMS5y6ZzZ6JqJmpm4s~5GQuvZzNLDMlUfvWjQJ0SkxMLHGjmCGh5W7s8~SkI2cm1W1ExV-0B0-e9ufCkghhOQwNXMMhEDpnQ0Uky5NgFUpNPyl1QbXnDCYMPIhMDEBFWOLLATWUi42XLCFjVC1dz0fsEgVXM~MoPgfMXpbt2t5Ycz4eYIuuiX2sliudA__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Watch live readings
+**Live Readings** lists each reading as it arrives, newest first. Search by time to find a reading. **Averages by increment** shows, for each time mark, how many readings it includes and their average heart rate, blood pressure, respiratory rate, and oxygen saturation.
+![Live readings and averages by increment](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fab23e187-e6e4-46bb-9415-5145d7fdf180-vs-02-readings.png?Expires=253370764800&Signature=dgcxxEXHZA2uysqbJrfXRlyehFoqzKC7fi6CgMpyDd-HRYieJHn1yK--TRKOEPcYC~aSNWfe5VoE0iHgnRrtCexbFP0pMWhxaCEJ-kgmE-FdfNNUpcmkuOntM1Mdq4pfy5CU6gzAgw5NNXkYW2ID2OcBlCZqsI8pbJy7G0RFSQJ4RFM4udsnqdwYmKwbLaz4EYB7pnHRwkip9tXMiBMyeSEkK3Pa~H4EwddtuBd9-QB-0sQO~pxOl1wY0ntx3RSBZ5y~H8PhBOJesXfqWnRpixwa2PxzvEAOZY8iK54dNugxf7tK30nVjULWDCLV3j7nEZ19p8RCCb7-AA8dQKqAfA__&Key-Pair-Id=K3NV4LZ47N8M46)
+Readings are not saved to the chart until you select Save Summary to Chart.
+## End the session and save to the chart
+  1. Select **End Session** and confirm. The device stops sending readings to the note.
+  2. Select **Save Summary to Chart**.
+![Ended session with Save Summary to Chart](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2f586825-00b1-4f96-a677-e9e2d22a38f8-vs-03-ended.png?Expires=253370764800&Signature=noEAnGJUV4pQXIlC964sDGbVEepX~6Ey~ieioLfnEU~EpLAjaca36uwv4p~rzr-oMOmcA-0owO2zNkTgJqkY5bNJWFASqTodWHJy1tVE9c6v8qRibL5zpqZE2wPAngj76jpWZWTJfcEHeAhuNBCq1rf6TUrT~Q2CSRnvyQzDGP6icYj6w2nDKXqvJRR88B3Ai3T52JRGrX7tbMa5hK9ZIRGLCFcrZBX-~z9iYhJIMWwgEXcQKQ2axcMzEkvtOumHmaYafc26RV3HgsWsC8fwfhNRhCoeKVaOoB572L7YoI~38LtD-GsxBOICyKPqeP8WGILWmjM1GupUePcyqUiDfw__&Key-Pair-Id=K3NV4LZ47N8M46)
+For each time mark (0, then every increment from the session start), the plugin averages the readings in the minute around that mark, from 30 seconds before to 30 seconds after. The averages are saved to the chart as observations for mean heart rate, mean respiratory rate, mean oxygen saturation, and blood pressure, and a command summarizing them is added to the note.
+## Spravato treatment intervals
+When the note type or the note title includes the word **Spravato** , the panel opens with the treatment set to Spravato and a **Spravato Treatment Intervals** section for three timed checks: **Pre-administration** , **40-min post** , and **Pre-discharge**. The section is set when the panel opens, so choosing Spravato from the Treatment list on another note does not add it.
+  1. In **Live Readings** , select the reading to use for an interval.
+  2. Select **Assign** next to that interval. Its time and vitals fill in.
+  3. Repeat for all three intervals. **Save Intervals to Chart** appears once all three are assigned.
+  4. Select **Save Intervals to Chart** to save them to the note.
+To use this workflow for another note type, include "Spravato" in its name.
+## Troubleshooting
+  - **The panel stays on Waiting for data:** Check that the device's serial number is on the plugin's authorized list and that Data Forwarding on the tablet points to your Canvas portal URL.
+  - **Readings didn't appear in the chart:** Readings are only saved after **Save Summary to Chart**. End the session, then save.
+  - **The Treatment Intervals section doesn't appear:** The note type or title must include "Spravato".
+## Install the Plugin
+Find the plugin to install at <https://github.com/Medical-Software-Foundation/canvas/tree/main/extensions/vitalstream>
+### Plugin secrets
+Set these in the Canvas admin settings, under **Plugin_Io** > **Plugins** > **vitalstream**.
+  - **AUTHORIZED_SERIAL_NUMBERS** (required): the serial numbers of the VitalStream devices allowed to send readings to Canvas, one per line. Readings from any other device are rejected. Enter each serial number in **lowercase** , with no spaces before or after it, because the plugin compares it in lowercase. You can find a device's serial number under **Settings** > **About** in the VitalStream app. Add a line whenever your organization gets a new device.
+  - **ENABLE_MOCK_VITALS** (optional, off by default): when set to `true` (or `1`, `yes`, `on`, `enabled`), the panel shows a **Mock Vitals** button that generates random readings, for training and testing without a device. Leave it unset or `false` in production so staff can't save made-up vitals to a patient's chart.
+On each VitalStream tablet, also turn on Data Forwarding to your Canvas portal URL, as described in **Before you begin**.
+----- END PAGE https://help.canvasmedical.com/articles/1337233090-vitalstream-plugin
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/1377016230-social-determinants
 ## Introduction
 Social determinants of health are the economic and social conditions that influence an individual health, functioning, and quality-of-life outcomes and risks. Examples include the following:
@@ -4379,6 +4425,51 @@ _Business lines must be enabled in Constance Config. Your clinic administrator o
 ----- END PAGE https://help.canvasmedical.com/articles/4431910086-collect-patient-payments
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/4514065993-surescripts-medication-history-plugin
+The Surescripts Medication History plugin requests medication history from Surescripts before a patient's upcoming appointments, then shows the results in the chart next to the patient's active medications. From one panel, you can add a medication from the history to the note or dismiss it.
+For Canvas's built-in Medication History request and view under Settings, see [Surescripts Medication History](https://help.canvasmedical.com/articles/8047008267-surescripts-medication-history).
+## Overview
+  - Requests eligibility and medication history automatically once a day for patients with upcoming appointments, by default 1 day and 7 days before the visit.
+  - Adds an **Rx History** button to the **Medications** section of the patient chart.
+  - Compares the returned history with the patient's active medications and sorts each medication into **New / Unresolved** , **Matched** , or **Dismissed**.
+  - Adds a medication from the history to the note as a Medication Statement with one click.
+## Before you begin
+  - Plugin requests to Surescripts are turned on per organization by Canvas, after an authorized representative of your organization signs an agreement. [Contact Canvas Support](https://portal.usepylon.com/canvas-medical/forms/standard) to start that process.
+  - Providers who request medication history need a valid NPI and SPI (Surescripts provider ID) on their staff profile.
+  - Surescripts requires every request to be tied to a treatment event such as a visit. The plugin's automatic requests only cover patients with an appointment at the configured number of days before the visit.
+## Open the Rx History panel
+  1. Open the patient's chart.
+  2. In the **Medications** section, select **Rx History**. The **Medication history** panel opens on the right.
+![Rx History button in the Medications section of the chart](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1214057c-3447-455c-930a-c6aed3b34fe6-ss-00-full-boxed.png?Expires=253370764800&Signature=cew~yBhXRuF6eGuSMnmaVK~plcBAuG65jGryAG~Ne5gryuH7R6pIIYNzF3w0h38VP0tOoj-UI0TgFkFYHP5NqJQ2xHlE4GWjYKPDlUoMZA-bhLi204exxllom8MgADyn0T7dnOTv1CP7JS-cHkL5l5DRWfoHwfm3Bn-XnjRs-3K06bQQWpe9RaDvuekSkn4pQEHztnxfMSve2AHV3Zh7ljSHKABPMQRmb5tIOkjlKKgTu7moELqEvINzE8KzGB6JTbOKa2qa-xKV9oqcj5ZoseO4-CTajnTKZIo~otviY3~0Wj3HcM4KfF-fJfHc93bn0r06HcPf6WTeZ2mfs53A-Q__&Key-Pair-Id=K3NV4LZ47N8M46)![Medication history panel open on the right side of the chart](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F59b62000-2a25-4f8d-b360-08179bfb7363-ss-00b-full-panel.png?Expires=253370764800&Signature=iiS4pUz8zVxsxnePR5ZnnL90QwyCfFaa2bEz40nlh85I5ax18VYMS-CK9vUNjHJtmEw2P8Gut7xUNUEmidu54GuS9D6KNcBYntrTswVPu2oZmokzmI8Qtzvu9SvpF9QRkKXsedQ0ifGXr3gfq-9e7mpVr2S13KPwREh7mJUwMUHooHuzPC0qYK54uf6WW~Da67YuqBrj9OJQd19ZmiLPvK9Z~kcUPuiKbZgcfvcRUcxgVwzHTNM0cTytzKsFbA-8keszOAJ1JqSGrDC6OQJeytrJZ9f7n6vBnGe3pzHPz8I0jS7m-K2oa1ZgxC7yIXKsnL~3kxQTS-2RMPLDtZnjtA__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Read the panel
+  - The status under the title shows the latest request, for example **Matched in Surescripts** or **Matched — no history returned**.
+  - **New / Unresolved** lists medications in the history that don't match an active medication. Each shows the drug, the most recent fill date, and the number of fills.
+  - **Matched** lists history that matches an active medication in the chart.
+  - **Dismissed** lists medications someone dismissed, with the date.
+  - Select the arrow next to a medication to see its codes and each fill: fill date, written date, prescriber, pharmacy, and source.
+## Request new history
+The panel shows the latest results from the automatic daily requests. To request again for this patient:
+  1. Choose the provider to request as in the dropdown at the top of the panel. Staff without an SPI can choose a provider who is registered with Surescripts.
+  2. Select **Request new history**. Eligibility is requested along with medication history.
+  3. Select the refresh button to update the results.
+Surescripts allows one medication history request per patient per day, and eligibility results are reused for 72 hours. A repeat request inside those windows returns the saved result.
+## Add a medication to the note
+  1. Open a note for the patient. Medications are added to the patient's most recent open note.
+  2. Next to the medication, select **\+ Add**. A Medication Statement command is added to the note.
+By default the command is added unsigned so the provider can review it before committing. Your organization can choose to commit it automatically. Medications added this way are tagged as coming from Surescripts.
+## Dismiss a medication
+Select **Dismiss** next to a medication you don't want to add. It moves to the **Dismissed** group and stays there on later visits. A dismissed medication returns to **New / Unresolved** when a newer fill arrives, and clears when it later matches an active medication. You can still select **\+ Add** on a dismissed medication.
+![A dismissed medication in the Dismissed group](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F9e577eb4-ac80-46f6-b9a3-5ad2ec31ff10-ss-04-dismissed.png?Expires=253370764800&Signature=bg1xnzlSemWBCvU7afYJcPFnaoWBKWM6~yy1yfly-ZyuB3IW8s-41ckUzQyk1RJJ5VUAccNhuhjM6-XI5kCnFo2UGmlNTAezdRsgUWOzTRKUaMSRt23E6RCmJGb-GKUCEzCDXkzMVqmwnVcq9NWIv1VHIKQGMhOLFwKsrGmvVyU8XKPuINBQ0Kp~nBsoImnQfDBtV8XTWM0QjlAS1F-LVYG1rR7JqfZdzQ8ElRLYi-UjoXPI4md08ZdmsOxQW7Hx6gtjBv3Pg9w1vuedUBw-0W~J-nPuOztrZTJZZROX-SQiDTWNv4xBnEUxZX3HUjB67-dnUJWIStohIi9QkUvb4Q__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Troubleshooting
+  - **"No open note found":** Open a note for the patient, then select + Add again.
+  - **"Could not find a coded match":** The medication couldn't be matched to a coded drug. Search for it manually in the note.
+  - **A request fails for the selected provider:** The provider must have an SPI on their staff profile and be registered with Surescripts. If no provider is selected, the patient's default provider is used.
+  - **No history appears before a visit:** Automatic requests only run for patients with an appointment at the configured number of days ahead, and only when the patient's provider has an SPI.
+## Install the Plugin
+Find the plugin to install at <https://github.com/Medical-Software-Foundation/canvas/tree/main/extensions/surescripts_med_history>
+----- END PAGE https://help.canvasmedical.com/articles/4514065993-surescripts-medication-history-plugin
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/4551334461-patient-metadata
 # Introduction
 Additional profile fields allow your organization to collect and store custom patient information beyond the standard demographics data. These fields help capture important details specific to your practice needs, such as preferred communication methods, lifestyle factors, manually referenced pharmacy details for non-e-prescribing workflows, or other relevant patient information.
@@ -8000,6 +8091,33 @@ This process begins in the desired patient's chart.
 # Resources
 ### [Video: Review Medications](https://www.loom.com/share/c7672f9253604a41b2e883d3927f7eff?sid=2764277d-e43c-4280-90e9-7b2a413f2930)
 ----- END PAGE https://help.canvasmedical.com/articles/6953253025-patient-summary-medication-review
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/6966029821-scoring-visualizer-plugin
+The Scoring Visualizer plugin charts a patient's scored questionnaire results over time. Instead of opening each past result, you can see how scores such as the PHQ-2, PHQ-9, GAD-2, or GAD-7 have changed across visits in one view.
+## Open the visualizer
+  1. Open the patient's chart.
+  2. In the **Social Determinants** section of the patient summary, select **Open Visualizer**.
+![Patient chart with the Social Determinants section and its Open Visualizer button highlighted](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fa7b65fbc-f3af-489a-8c6f-167bf079f9a9-sv-00-full-boxed.png?Expires=253370764800&Signature=bUJpvVlyMIcS9HcJh~nV-zuqcfaDXEHTzHN8vDXoKfz5XtZ-sLYRdGwMwyQKBQ4PAdp5nOOVnWuCBEnSY8EUF8NVuatjwJMYSFOqc1MZnLCovUDeBozjfHWnohV-H2zVPCP1RK-vuxZmz-BvGFEdfcKMTJzAWoxUlos-HN9voMce0w6a97ajwvyhIye58DzpMKnmZTE-pjKLwaMrSvfAHOydCmxbN-hF0bcCRv4CGfqwSxQTJBuNvO~~Bz0KhoI6ENXuM6xcAa~fUpRsSSj2PGOTya0GtH~5h5OYl-sD8sYrE~DyR02adxiVChdMPnm4n2qqYJXrUp61fcOI2s~k8w__&Key-Pair-Id=K3NV4LZ47N8M46)
+The **Patient Questionnaire Scoring Trends** window opens with a chart for one questionnaire.
+![Patient Questionnaire Scoring Trends chart](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fb8c2e9ae-daea-4d22-89e6-e27b1e1869cb-sv-02-modal.png?Expires=253370764800&Signature=Qt6z8h6iS4TrXbkQMQQattdPlpJp0FTHPHwWTMSAv242lWGdOKpVFSNy5CMY70ys-p5LF88yaHy104AdUNzKfyy9~PTs6lRcjkAHlV0i70XDOXJpciZUGMghyjHwMiiAFnrJ3wfBp3bt2cvsbyGeHpuQ7n~4-cDE~dyk8NRMD2Wb0JStWiQV2M9ob9Wv3JVSTncrL8bnvs7uad8p~8QhJI4jQyH6GvCd8DAD1k5-MDP8KNqstgc3he5nGcO2VFWeEI2Wib~qzgB6kUQU2o9wFVSZMc2kB8DKFiEofcjyiCoVa8BCPZnjG5JxeiauPtrtIVojdazoF6Js15DnqIYCBg__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Read the chart
+  - Use the **Metric #1** dropdown to choose which questionnaire to chart. The list includes every scored questionnaire on record for the patient.
+  - Scores run up the left side and dates run along the bottom, oldest on the left.
+  - Points are evenly spaced in date order, so the distance between two points does not reflect the time between them. Read the dates on the bottom axis.
+  - When a questionnaire was not completed on a date shown on the axis, the line passes through that date without a point.
+  - Hover over a point to see its date and score.
+![Hovering over a point shows the date and score](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Ff91403c0-e6c1-4f21-98cf-66aa41bb360b-sv-04-hover.png?Expires=253370764800&Signature=Mas5kPbWAAfJfR2U0OHlEzJeLFG2Y1yeEK03xagqB8I9gALuee6R-PsDHgYYQvKHWl9A6e0a-kB7VkeXe5WAI9i25DfepYXiCH9QGGpkO0bZgt8N1CCf-PqOoQpKAF5VkeHPD1Yx8oreX0iaob2rW46ePqYk-iDwNkoH7aS7J-j2uEQcA6KwZSUEOwOtLR7m8TzGFC6Qc4fts8bonXsxvPPgtg~wOdgewzzhF7F13eowhgk1g7P8Wb~Ig3aS2Ub22V5wfhTQ8zAlHH6ek7AiUB0r-wcBFzEGuFznvwfCrgNYF8VUqdC8jnr0yExqHD0nq6LssPD6SkhEiJaZJFlHTw__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Compare two questionnaires
+  1. Select **Compare Metrics**.
+  2. Choose a second questionnaire in the **Metric #2** dropdown. The two charts appear side by side.
+  3. To go back to a single chart, select **×** (Remove Chart) next to Metric #2.
+![Two questionnaires compared side by side](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fe48c4321-7734-42a5-86e1-972efe7610db-sv-05-compare.png?Expires=253370764800&Signature=ZUd-x40TBb7pqKvRx0pZdZh1HNwkAlRXUFZ9yCsN0BCt84hKWGlstrXV4XDoxhhWYIyF0lonXOG23CqbtgrN0ftTmtGDc-cLPW0izZv-HvkFlLemDk1B3Z-RimSakHuL8LtX9PNCpGo6iVKZfZRcoe1fj2f0qXblvuGemGQPdApST6XEBEaH8zK~M34vF-fPQmg4NyXK9qyYwyrSo-nRw01d-SjTAS3l2yP~~tXgX0uOn95pI8CXUy8ozqBD~PUBtOEbrhH6By1M3vBRZXDZx6fug46Wj38rAaqr7y7VdO4cDV67MZPK1fBK8OdykZAT9UXlq2DNDZGHd6FdKjpIvg__&Key-Pair-Id=K3NV4LZ47N8M46)
+## How dates are chosen
+Each result is placed on the date the questionnaire was answered. When that date is not recorded, the plugin uses the date of service of the note the questionnaire was completed in, and otherwise the date the result was saved. Dates are calculated in US Eastern time, so a result recorded late in the evening in another time zone can appear on the following day.
+## Install the Plugin
+Find the plugin to install at <https://github.com/Medical-Software-Foundation/canvas/tree/main/extensions/visualizations/scoring_visualizer>
+----- END PAGE https://help.canvasmedical.com/articles/6966029821-scoring-visualizer-plugin
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/6984866654-sso-single-sign-on

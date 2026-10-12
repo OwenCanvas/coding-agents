@@ -1435,6 +1435,32 @@
     - Billing
     - Troubleshooting
     - Install the Plugin
+- [Scoring Visualizer Plugin](https://help.canvasmedical.com/articles/6966029821-scoring-visualizer-plugin)
+    - Open the visualizer
+    - Read the chart
+    - Compare two questionnaires
+    - How dates are chosen
+    - Install the Plugin
+- [Surescripts Medication History Plugin](https://help.canvasmedical.com/articles/4514065993-surescripts-medication-history-plugin)
+    - Overview
+    - Before you begin
+    - Open the Rx History panel
+    - Read the panel
+    - Request new history
+    - Add a medication to the note
+    - Dismiss a medication
+    - Troubleshooting
+    - Install the Plugin
+- [VitalStream Plugin](https://help.canvasmedical.com/articles/1337233090-vitalstream-plugin)
+    - Before you begin
+    - Start a session
+    - Set up the summary
+    - Watch live readings
+    - End the session and save to the chart
+    - Spravato treatment intervals
+    - Troubleshooting
+    - Install the Plugin
+        - Plugin secrets
 
 ## Canvas for Administrative Developers
 - [Enable Automated Patient Statements and Payment Reminders via Email](https://help.canvasmedical.com/articles/3981780818-enable-automated-patient-statements-and-payment-reminders-via-email)
