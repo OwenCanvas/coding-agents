@@ -1056,10 +1056,9 @@
     - Related Resources
 
 ### Condition Management
-- [Diagnosing a New Condition](https://help.canvasmedical.com/articles/9221634314-new-diagnoses)
+- [Adding a New Condition](https://help.canvasmedical.com/articles/9221634314-new-diagnoses)
     - User's Guide
-        - Adding a New Diagnosis
-        - Preventing Duplicate Diagnoses
+        - Choosing Between the Assess Condition and Add Condition Commands
         - Adding a Condition Without Assessing It
     - Configuration & Set Up
     - FAQ & Troubleshooting
@@ -1067,7 +1066,8 @@
 - [Assessing and Updating Conditions](https://help.canvasmedical.com/articles/7989321964-assessing-and-updating-conditions)
     - Introduction
     - User's Guide
-        - Adding an Assessment
+        - Assessing a Condition
+        - Selecting a Condition
         - How a Condition's Background Stays Current
         - Using Carry Forward
         - Viewing Condition History
