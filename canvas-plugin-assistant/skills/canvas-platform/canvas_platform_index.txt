@@ -1040,6 +1040,13 @@
     - What is the recommended workflow for preparing a Lab Order?
     - What happens to the Lab Order when the patient is checked in?
     - How do I avoid duplicate lab orders?
+- [Command | Order DME](https://help.canvasmedical.com/articles/1309727008-command-order-dme)
+    - Add an Order DME command
+    - Fields
+    - Signing the order
+    - Print or fax the order
+    - Manage your DME formulary
+    - Related articles
 
 ### Messaging & Communication
 - [Patient Message Inbox](https://help.canvasmedical.com/articles/6255444430-patient-message-inbox)
@@ -1099,6 +1106,13 @@
     - Related Resources
 
 ## Workflows & Operations
+
+### Scheduling & Appointments
+- [Connecting Your Google Calendar to Canvas](https://help.canvasmedical.com/articles/3718601633-connecting-google-calendar-to-canvas)
+    - Connect your calendar
+    - How syncing works
+    - Disconnect your calendar
+    - If syncing stops
 
 ### Orders & Prescriptions
 - [Processing Image Reports and Reviewing Imaging Results](https://help.canvasmedical.com/articles/7566748234-process-image-results)
@@ -1632,8 +1646,6 @@
     - Troubleshooting
     - Frequently Asked Questions
     - Related Articles
-- [How do I create a DME Prescription for a Patient?](https://help.canvasmedical.com/articles/3235979839-how-to-create-a-printed-cpap-prescription-for-patients)
-        - Creating a Template for Future Orders
 - [Can non-prescribing staff send prescriptions on the behalf of prescribers?](https://help.canvasmedical.com/articles/8095252588-setting-up-rn-prescribing-permissions-and-erx-enrollment)
 - [How do I resolve "Patient coverages must be sequential" lab order errors?](https://help.canvasmedical.com/articles/3069343680-how-do-i-resolve-patient-coverages-must-be-sequential-lab-order-errors)
     - Frequently Asked Questions

@@ -184,6 +184,48 @@ A: Yes. Contact Canvas Support immediately in the enrollment ticket and they can
 ----- END PAGE https://help.canvasmedical.com/articles/1295159245-lab-ordering-enrollment
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/1309727008-command-order-dme
+Use the **Order DME** command to order durable medical equipment, such as a wheelchair, walker, CPAP machine, or shower chair, from a note. You can pick an item from your practice's DME formulary or type one in, send the order to a supplier, sign it, then print or fax it.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792038447208-Screenshot2026-10-15at12.20.50AM.png?Expires=253370764800&Signature=eOP2WdVU4U384Vi3xMAzex3RRuo1wipdOw~CyJ~-Grpqlrv0kphlQ60TDiQK3dK5aZRWJla0m-n5HgAEezS3ThZG55lFqkn3CYOKeAUUbyCdWP6x3OT8nrDrQSnLmaNazuK-GqAIBi2IA17hQEntbEhgiUf1Z8L6ICEdIz1nWtEh7xnYyJyoAkxvt4zJYw~QOYADyhisLXg3n~HB8Xu0CqtlflY3~pU6rPjhmrSAlKSkJ~FY7So4WSH4ZvMk2r8e6HVm2GBP-FNb0yUK8c2F6uGxKRJP2bwpQ6TIhJd0~ZaDXcWWtDrG9i2Pq~-w~sWQdoSQkiT2cKRy9p7snrfVBw__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Add an Order DME command
+  1. Open a note in the patient's chart.
+  2. In the command search, type **Order DME** (or **DME**). The command is added to the Plan section of the note.
+  3. Fill in the fields below, then click **Sign**.
+## Fields
+Field| Required| What to enter  
+---|---|---  
+**Item**|  Yes| Search your DME formulary by item name or code and select the item. If the item isn't on your formulary, type it in as free text (up to 255 characters).  
+**Indications**|  Yes| One or more diagnoses that justify the order. Pick from the patient's coded conditions or search ICD-10.  
+**Quantity**|  Yes| How many to order, at least 1.  
+**Length of Need**|  No| How long the patient needs the equipment, in your own words, for example "6 months" or "Lifetime".  
+**Send to**|  No| The supplier to send the order to. Search the same contact directory the [Refer](https://help.canvasmedical.com/articles/8339414277-command-referrals) command uses. The supplier you pick is saved with the order, and its fax number fills in when you fax the order.  
+**Ordering provider**|  Yes| The provider ordering the equipment. Must be an active prescriber. If you can prescribe, it fills in with your name.  
+The patient's most recent height and weight appear under **Item** , or "Not recorded" if they have none. Record vitals first if the supplier needs them.
+## Signing the order
+When you sign, Canvas saves the order exactly as the supplier will see it:
+  - For a formulary item, the item's name and code are taken from your formulary.
+  - The patient's height and weight at the time of signing are saved with the order, so later vitals don't change it.
+  - The ordering provider is shown as the electronic signer on the printed order.
+If the ordering provider isn't an active prescriber, signing stops with "The ordering provider must be an active prescriber". Choose a prescriber and sign again.
+## Print or fax the order
+After the order is signed, open the command's menu:
+  - **Print order** opens the order as a PDF. It lists the item, quantity, length of need, indications, the patient's height and weight, and the ordering provider's electronic signature with the date.
+  - **Fax** sends the order. If the supplier you chose in **Send to** has a fax number on file, it is filled in for you; otherwise, enter the number.
+Both actions require permission to print.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792038460945-Screenshot2026-10-15at12.21.02AM.png?Expires=253370764800&Signature=O7zj-yy-mtbAOyU6-ZaDPqFBp4d0imfYDqJCjVXGog-mY8nUGuAvb8XqQ8~3eIKCuuifSt58f4uYZy-xy3~Xa2d83wcATN4mbEklMU0t5c9JT0mr0Y68fqxMafRI7s4bx9f-aQsfLhQrsoLkDMzPK2-5IpBNnkTNnUbH65YUTiLQalBEBWbvDnbh8v4uUeA9U9xU5KXGn258ZIDrB0Ka5sa3~4kPXeX9JlbSfP-yOQaZrV16xEto32KEdRttqVsGF6Rr4cMteZLL1rGhVIThJ6Ivuzb9RbBMAhi91S8X~QQhTt60c21DFyi1SabYSO-wxTcM5KR-7YX0VP9rDAdA4w__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Manage your DME formulary
+Your formulary is the list of items staff can search in the **Item** field. Staff with access to Settings can manage it:
+  1. Open **Settings** and go to **DME Products**.
+  2. Add a product with its **Name** and, optionally, a **Code** and **Code system** (HCPCS or Internal).
+  3. To remove an item from search without deleting it, select it and choose the **Deactivate** action. Choose **Activate** to bring it back.
+You can also import and export the formulary as a spreadsheet from the same page, which is the quickest way to load a large list.
+## Related articles
+  - [Command | Refer](https://help.canvasmedical.com/articles/8339414277-command-referrals)
+  - [Command | Plan](https://help.canvasmedical.com/articles/7699598664-command-plan)
+  - [Introduction to Commands](https://help.canvasmedical.com/articles/4129367510-Introduction-to-Commands)
+----- END PAGE https://help.canvasmedical.com/articles/1309727008-command-order-dme
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/1321535923-best-practices-for-configuring-your-twilio-campaign
 Before Canvas can send text messages for your practice (portal invites, appointment reminders, secure message alerts), US carriers have to approve your texting registration, called an A2P 10DLC campaign. A carrier reviewer checks your website, your privacy policy, your terms, and how patients agree to receive texts. Best practices are listed below improve your chances of a successful submission.
 ## 1\. Add a text messaging section to your privacy policy
@@ -2112,31 +2154,6 @@ A: Your practice administrator will notify you when enrollment is complete and y
 ----- END PAGE https://help.canvasmedical.com/articles/3191674897-personatrust-identity-proofing
 
 
------ BEGIN PAGE https://help.canvasmedical.com/articles/3235979839-how-to-create-a-printed-cpap-prescription-for-patients
-Follow these steps to create a comprehensive Durable Medical Equipment (DME) prescription:
-  1. Navigate to the patient's chart
-  2. Select **Letter** from the available New Note dropdown
-  3. Include required information in the message body of the letter. 
-For Example: Equipment name (e.g., "CPAP machine with humidifier") - Quantity needed - Pressure settings or clinical instructions - Diagnosis with ICD-10 codes (e.g., Obstructive Sleep Apnea) - Your business name and NPI number - Relevant patient and insurance details
-  4. Fax and/or Print the letter for the patient to take to their chosen DME supplier
-**Result:** The patient will have a complete prescription document they can present to any DME supplier to obtain their DME equipment.
-### Creating a Template for Future Orders
-For providers who frequently order DMEs:
-  1. Create a Letter template with standard DME prescription information
-  2. Include placeholders for patient-specific details (pressure settings, diagnosis codes)
-  3. Save the template for streamlined future requests
-# Frequently Asked Questions
-**When should I use a Letter versus the Prescribe command for DME orders?**  
-Use Letters for durable medical equipment (DME). Use the Prescribe command only for simple prescription-based supply items like syringes or lancets.
-**What information can be included in a DME prescription?**  
-Include equipment specifications, pressure settings, diagnosis with ICD-10 codes, your business name, NPI number, and relevant patient/insurance information.
-* * *
-Keywords & Categories
-**Keywords:** CPAP prescription, DME order, printed prescription, sleep apnea, durable medical equipment, Letter command, NPI number, ICD-10 codes
-**Categories:** Prescriptions and Orders, Patient Care, DME Equipment
------ END PAGE https://help.canvasmedical.com/articles/3235979839-how-to-create-a-printed-cpap-prescription-for-patients
-
-
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/3240845520-queues
 The Revenue module in Canvas Medical uses queues to organize and manage claims throughout the billing process. Each queue represents a stage in the revenue cycle, from appointment creation to final adjudication. This article explains the structure and function of each queue, how to manually manage claims, and how to configure and customize the queues to suit organizational workflows.
 # User's Guide
@@ -2963,6 +2980,50 @@ A: In the billing footer click on your CPT code and click remove.
 ----- END PAGE https://help.canvasmedical.com/articles/3710141189-revenue-adding-cpt-code-modifiers-and-cpt-units
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/3718601633-connecting-google-calendar-to-canvas
+Google Calendar sync is in limited beta.
+Contact Canvas Support to be added to the waitlist.
+Connect your Google account to Canvas so your calendars stay in sync both ways:
+  - **Canvas to Google:** your Canvas appointments copy to a new **Canvas (Busy)** calendar in your Google account. Each event shows only the visit type and time, is marked private, and carries no patient details or video visit link.
+  - **Google to Canvas:** busy events on the Google calendars you select show as **Busy** on your Canvas schedule, with no title or details from your Google event, so that time is not offered for booking.
+You can connect a Google Workspace account or a personal Gmail account.
+## Connect your calendar
+  1. Open the left sidebar menu and click **Google Calendar**. It opens in a new browser tab.
+![Google Calendar in the Canvas sidebar menu](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fe7d71c55-22d1-46ac-8b0a-6b8f11d5827b-g1-menu.png?Expires=253370764800&Signature=V7xA1VTE3dX6mMj2MHqYzZGLnjPMMlc5~5e0hY4khuZ-eCtNv4jz4eu8wI5tAshWkIJy35uPTgipSvo4gSv5GZlB7O1bBGd-0Bt1MpS~srok4QCS~pHLRdLddfWW-9LlSLkTu45v3MTNLkX4hN5qWHfQdyVTjH7vKlQvTiwf2HmMBitZwh~evCMi0fno9H1jMn54gA08lD9~HPO5IK0iCXgmrP8r9Z8tL7lD88dyM5p-N7TeSUCxUK9SZXbpoAGUNskSK4nCCFj9qFwv73ry7Y7cEwleImLXmtNDd6o5G-tbnquCewr-56ZIVf8T10nLYPDR-tKz4IOgLs5~5zGDpQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+  2. Click **Connect Google Calendar**.
+![Connect Google Calendar button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2c5f4b4e-946d-454e-8fa7-46a8af48db36-g2-not-connected.png?Expires=253370764800&Signature=tRiH24nWWalE7mUqkMsdCWbq1fC6mclP~494TD8BW1JOuQAcWBJxaXCHuUsDOgWk0KHztrFogTFHWg8dPnZw71m-u4qlzFiR~W--3Fki4hIDYKhDbGXAppz5SH-sWmc~bLM4HaSoBlPSplUmL6YxS7sZC3BF6HvMdw1pTYcIMEIWCb~DhQYKrVe~a22sYcebdhdiNjtBggYzJ~HuzKYDA57zQEsuzW4Y1IWXK2kce57-i-Eozhsk19KKyRQ5BuUWQw6lJvsVhgjYFLstuaqwBSbXV-01i6tYqfdlgXa1oZP48XEhRUqxN8kGyVZB~rQDSi9qGnnaox5CUzwkbwv00A__&Key-Pair-Id=K3NV4LZ47N8M46)
+  3. Choose your Google account.
+![Google account picker](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F0b47c2f3-5956-42d5-b0dd-43e7a7d4ab8a-g3-account.png?Expires=253370764800&Signature=Opw5pmayWQvnPXBLw4ARvXZqCc~ExcpDYeU~COrdib~g1yNq9BkdU5HzJzrgy6svoQ6JWcpfD8uzceJHZDwL1JArFkdMLcHxmRuYWz~n5lQlCzdO~gNSWzHJKd5DqdZE2PpQZCF1wo~lUN4HPo9Le80hurJ6hcp297FMns6TFkR~fFUviXNlUgCvKDKu6o2VJDIV-7cmeNJRtEsxbtEcikqSsECxz4JodqJajViFLLzBGmXZv5HjT3gMNr58JKiBEQA9DygMng8qju-ens3NX0uLsm45pF5T5w2mAk7Fc2OY9~NCbzHfHcRQxh6CnVNcuRRNocEx1z7Vy4zEW1B7Qw__&Key-Pair-Id=K3NV4LZ47N8M46)
+  4. Click **Continue**.
+![Sign in to Canvas Medical screen with Continue button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2758506a-63d9-4284-8768-bf10a237996c-g4-sign-in.png?Expires=253370764800&Signature=lU~eWnJ7TG2~5HM685bmgF6wuJaESl3JNh6oe1t73kwMOCMFx9qTXCF7P4M8TU-rBxsyeLWHcrZAotRYtYYhyoeJJpz5rGwZWwvnriwa3-qhfI1lXVxWDg0RyxQ~jVpAYSWPMWonCDgvWIMfFmErEPoEkB-SjJKT6CLKtvv1h9YCSGU08hyzCtLAqltLHqJCypBTjwBrQ4ubj9kDcYTRMytiTlHZRiOZippnW~qNDXjdNWmhxJTbBnjH3s8fhwubr4c~bFespErOP~N7-DkiYT8ZjxoEwTfadL6TtwA50MALwQMTCnyGx9ifXP-kQU3TYmIQBg5jpxZVckk7bu1WXQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+  5. Click **Allow** to give Canvas access to your calendars. If you see checkboxes, leave them all checked.
+![Google permissions screen with Allow button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fdcf708d8-a35a-4b45-8067-33b8be2c52b2-g5-permissions.png?Expires=253370764800&Signature=Fauhy7rW4S7H-pXLZkG2oVQYrpGU-Vy9~hRpgeCAADov75HmMgGDv64re9Fly5n3J9NsmV3L0-RT7zJRnIIyMK-ViAiXaOt8AnFa3DUKJ8Ip22T5FHJ5nhnNxRdycgb5FZEA1KpBRTvXRFAgR-kUwsvbL~JPT4u~PeLT8YgF0ndP23TjyUHBjVw-qI1vp2wTiikgajlFEhr6qtYlsHp4YP7hBZ56hduspe8kG9kgK4S~E98b8zND0TMB~vAh4TrQvtp24HFjOEZRrth2C07NWXdQ9MmCknCOktwdQARA7L19AZWaIxESpU5yFJoWgBv3qSncLf1xlzGxbMv1rv4d0Q__&Key-Pair-Id=K3NV4LZ47N8M46)
+  6. Back in Canvas, check the calendars you want to sync and click **Save selection**. Busy times on these calendars will block time on your Canvas schedule.
+![Calendar selection with Save selection button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fb7be58c9-5b3a-44d9-a764-5676f9a1d224-g6-selection.png?Expires=253370764800&Signature=QSXl9~XG9sPV5Ju7HXkrga2IXaSJv374EimWjJB~kBCprFxVu~vpAD-wDi8pOXR0G~4-7bJIZ5rs-VIB8BdolkKisc0GWwjzjZVKLlNj~YIsDtPHtmeZhWJkwRTxTvzTXi1w2dfM4p6RePr6-X7i0VHGXiZzoBkqD8vm6eWGe1sBNYpmbW4-liXifa48V0ucyvKtbz6VA7mLdya2dr6P4qcV~gKCZiuDTB3P~yJL42niyqFNr~KWGFdEdoR0cv9TZxZWdFKqMlh8d6~FaoCdA7-NK7HowuoNdjkeQxPn1ZUnhfM5N6n1rm7AvyL8PDZFeKAqaU6OqVcWuCkJbVNPgA__&Key-Pair-Id=K3NV4LZ47N8M46)
+If no calendars are listed yet, wait a few minutes and refresh the page. Your calendars usually appear shortly after you connect.
+## How syncing works
+Situation| What happens  
+---|---  
+An appointment is booked, moved, or canceled in Canvas| The **Canvas (Busy)** calendar in Google updates to match. Canceled appointments are removed.  
+You edit, move, or delete an event on the **Canvas (Busy)** calendar in Google| Canvas puts it back on the next sync. Make appointment changes in Canvas.  
+You add your own event to the **Canvas (Busy)** calendar| It stays in Google but does not block time in Canvas. Add personal events to one of your other calendars instead.  
+You add, move, or delete an event on a selected Google calendar| The matching hold on your Canvas schedule updates. Changes are picked up automatically, typically within about 15 minutes.  
+An event is canceled in Google| It no longer blocks time in Canvas.  
+A recurring event on a selected Google calendar| Each occurrence blocks its time in Canvas.  
+The same meeting appears on more than one selected calendar| It blocks the time once.  
+A Google event spans several days, or is all-day| Canvas blocks each full day the event covers. The day runs midnight to midnight in your Google calendar's time zone, so if Google is set to a different time zone than your practice, the block shifts by the difference.  
+An event in Google is marked **Free**|  It does not block time in Canvas.  
+You **decline** a Google invitation| It does not block time in Canvas. Events you accept, or mark as Maybe, do block time.  
+Date range| Syncing covers 31 days in the past through 183 days ahead.  
+## Disconnect your calendar
+  1. Open the left sidebar menu and click **Google Calendar**.
+  2. Click **Disconnect**.
+Canvas removes the **Canvas (Busy)** calendar from your Google account, clears the Busy time it added to your Canvas schedule, and removes its access to your Google account.
+## If syncing stops
+If Canvas loses access to your Google account, for example because you removed Canvas in your Google account settings, syncing pauses. The Google Calendar page shows "Your Google Calendar connection has expired or was revoked." Click **Reconnect Google Calendar** to resume.
+----- END PAGE https://help.canvasmedical.com/articles/3718601633-connecting-google-calendar-to-canvas
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/3718661267-security-audit-trail-and-siem-export
 ## Overview
 Canvas can keep a security audit trail of sign-ins, chart access, and clinical data changes, and can optionally stream those events to your security information and event management system (SIEM).
@@ -3315,6 +3376,7 @@ Internal| 🔴 **Red**
 [**Refer**](https://canvas-medical.help.usepylon.com/articles/8339414277-command-referrals)|  ❌| Creates and sends a referral.  
 [**Lab Order**](https://canvas-medical.help.usepylon.com/articles/3065191197-placing-a-lab-order)|  ❌ | Orders lab tests electronically or via printed requisition.  
 [**Image**](https://canvas-medical.help.usepylon.com/articles/2615916315-image-command)|  ❌ | Orders imaging studies.  
+[**Order DME**](https://help.canvasmedical.com/articles/1309727008-command-order-dme)|  ❌ | Orders durable medical equipment from your formulary or as free text, then prints or faxes the signed order to a supplier.  
 [**Instruct**](https://canvas-medical.help.usepylon.com/articles/4244748724-command-instruct)|  ✅| Documents instructions given to the patient.  
 [**Educational Material**](https://canvas-medical.help.usepylon.com/articles/4966226408-educational-material-command)|  ❌ | Provides patient education using Healthwise content.  
 [**Follow Up**](https://canvas-medical.help.usepylon.com/articles/4617508394-managing-appointments#scheduling-follow-up-appointment-86)|  ❌ | Prepares and schedules a follow-up appointment for a patient.  
@@ -3402,7 +3464,7 @@ Every command holds a triple dot menu to the right of the command. This opens a 
     - **Uncommitted Commands:** Version history is accessible for uncommitted commands through the audit history. Users can click **Expand** and **Collapse** to navigate through various versions.
       - To restore a previous version, click **Revert** to replace the current state with the selected version.
     - **Committed Commands:** Version history becomes unavailable once a command is committed. The audit history will instead display a log of updates made before commitment.
-![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1727802804948-1727734432900-1727731167980-Screenshot2024-09-30at5.03.13PM.png-99757fcd-1acc-430c-88f7-b5c2df455dd3-2bea6834-785d-4dd7-80e5-c0d8f439b348?Expires=253370764800&Signature=C6xz0aRaAu~Jm23wYaEkDaizl3YJvwkKIVuTeKOqU0ZDdYcYnGyufbTvsr2~017i13A~JRljTv7dlu1Nx5nm5gXxocaF-q05ylOsgHVaj2Q4J8TgeEORT4E~Gz8VSQS1x-hErmwCykbjAp4uV9LcULhPeuex7SW0P5LG~Ya-VvX5LTBcgfX1NQWrRRGJwo5Sb-iPEhtj1sYhLgISVpKnXAzAwoaq~t5EeRFrmc3qCrIOUNx8ULuf-kYAEdxDARFu9Jx90HQvD2Bcn58DG~4FaWbxvxj6Manor2cm1QPQGK53E0fFdUGI~mD~rdwmlwPfqISNYWk-UqO8KQaOsFQ5Cw__&Key-Pair-Id=K3NV4LZ47N8M46)
+![Screenshot 2024-09-30 at 5.03.13 PM.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1727802804948-1727734432900-1727731167980-Screenshot2024-09-30at5.03.13PM.png-99757fcd-1acc-430c-88f7-b5c2df455dd3-2bea6834-785d-4dd7-80e5-c0d8f439b348?Expires=253370764800&Signature=C6xz0aRaAu~Jm23wYaEkDaizl3YJvwkKIVuTeKOqU0ZDdYcYnGyufbTvsr2~017i13A~JRljTv7dlu1Nx5nm5gXxocaF-q05ylOsgHVaj2Q4J8TgeEORT4E~Gz8VSQS1x-hErmwCykbjAp4uV9LcULhPeuex7SW0P5LG~Ya-VvX5LTBcgfX1NQWrRRGJwo5Sb-iPEhtj1sYhLgISVpKnXAzAwoaq~t5EeRFrmc3qCrIOUNx8ULuf-kYAEdxDARFu9Jx90HQvD2Bcn58DG~4FaWbxvxj6Manor2cm1QPQGK53E0fFdUGI~mD~rdwmlwPfqISNYWk-UqO8KQaOsFQ5Cw__&Key-Pair-Id=K3NV4LZ47N8M46)
   - **Print** : Allows command targeted printing or saving as a PDF.
   - **Enter in Error** : Marks committed commands as errors to remove from the patient record. It will be retained in the note with a strikethrough.
   - **Create or Update Automation** : Allows users to organize commands into reusable templates for efficiency and consistency. Review the [Automations article](https://canvas-medical.help.usepylon.com/articles/7126006931-automations) for further details.
@@ -5008,7 +5070,7 @@ Section| What it controls| Learn more
 **Faxing Configuration**  
  _1 setting_|  The API key for your fax provider.| [Fax Migration & Event History](https://help.canvasmedical.com/articles/4882014801-fax-migration-event-history)  
 **Google Configuration**  
- _5 settings_|  Your Google service account credentials, Drive and reporting spreadsheet IDs, and the Google Calendar event cache.| [Google Scheduled Reports](https://help.canvasmedical.com/articles/7316720617-scheduled-reports)  
+ _7 settings_|  Your Google service account credentials, Drive and reporting spreadsheet IDs, the Google Calendar event cache, and the per-provider Google Calendar sync beta: whether providers can connect their own Google Calendar, and whether Canvas also receives push notifications from Google, so changes arrive sooner than the regular sync about every 15 minutes.| [Google Scheduled Reports](https://help.canvasmedical.com/articles/7316720617-scheduled-reports), [Connecting Your Google Calendar to Canvas](https://help.canvasmedical.com/articles/3718601633-connecting-google-calendar-to-canvas)  
 **Health Gorilla and Lab Order Configuration**  
  _7 settings_|  Whether the Health Gorilla integration is enabled and its OAuth credentials, whether all lab orders bill to the practice, and whether specimen collection time appears on the lab order command.| [Health Gorilla Integration for Lab Ordering](https://help.canvasmedical.com/articles/6041713155-how-to-order-labs-and-integrate-with-lab-vendors-in-canvas), [Labs | Ordering in Health Gorilla](https://help.canvasmedical.com/articles/9512475619-labs-ordering-in-health-gorilla)  
 **Healthwise**  
