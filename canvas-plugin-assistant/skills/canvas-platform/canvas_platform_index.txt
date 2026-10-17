@@ -1,3 +1,5 @@
+## Support
+
 ## Feature Spotlight
 - [Fax Migration & Event History](https://help.canvasmedical.com/articles/4882014801-fax-migration-event-history)
     - Features
@@ -1113,6 +1115,9 @@
     - How syncing works
     - Disconnect your calendar
     - If syncing stops
+    - Frequently asked questions
+        - Can I remove a Busy block from my Canvas schedule?
+        - Do patient names appear in Google?
 
 ### Orders & Prescriptions
 - [Processing Image Reports and Reviewing Imaging Results](https://help.canvasmedical.com/articles/7566748234-process-image-results)

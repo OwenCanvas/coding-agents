@@ -2981,27 +2981,28 @@ A: In the billing footer click on your CPT code and click remove.
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/3718601633-connecting-google-calendar-to-canvas
-Google Calendar sync is in limited beta.
-Contact Canvas Support to be added to the waitlist.
+Contact **Canvas Support** to enable this feature.
+Any Canvas staff member can connect their own Google account using either a Google Workspace account or a personal Gmail account.
 Connect your Google account to Canvas so your calendars stay in sync both ways:
   - **Canvas to Google:** your Canvas appointments copy to a new **Canvas (Busy)** calendar in your Google account. Each event shows only the visit type and time, is marked private, and carries no patient details or video visit link.
   - **Google to Canvas:** busy events on the Google calendars you select show as **Busy** on your Canvas schedule, with no title or details from your Google event, so that time is not offered for booking.
-You can connect a Google Workspace account or a personal Gmail account.
 ## Connect your calendar
   1. Open the left sidebar menu and click **Google Calendar**. It opens in a new browser tab.
-![Google Calendar in the Canvas sidebar menu](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fe7d71c55-22d1-46ac-8b0a-6b8f11d5827b-g1-menu.png?Expires=253370764800&Signature=V7xA1VTE3dX6mMj2MHqYzZGLnjPMMlc5~5e0hY4khuZ-eCtNv4jz4eu8wI5tAshWkIJy35uPTgipSvo4gSv5GZlB7O1bBGd-0Bt1MpS~srok4QCS~pHLRdLddfWW-9LlSLkTu45v3MTNLkX4hN5qWHfQdyVTjH7vKlQvTiwf2HmMBitZwh~evCMi0fno9H1jMn54gA08lD9~HPO5IK0iCXgmrP8r9Z8tL7lD88dyM5p-N7TeSUCxUK9SZXbpoAGUNskSK4nCCFj9qFwv73ry7Y7cEwleImLXmtNDd6o5G-tbnquCewr-56ZIVf8T10nLYPDR-tKz4IOgLs5~5zGDpQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+![Google Calendar in the left sidebar menu](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2833376f-9d89-4515-a670-819498b76b64-gcal-sidebar-annotated.png?Expires=253370764800&Signature=ugln5Q6lWHckeS4xumpoUtXvN3UMkOdE7qUsC1h1vZR2OwBSd30mtcHS7XIIBNODnxfd6dc7WWDMrPwa0YaXd9Xgv6WUFl4yQT7qEW9kx6VhZoZG55PGQAUlp32xZGi-r~qrBBa3gHSkfNrYQWk9NNcF1vZvLDORmW2Bcg-vZb0m~Pm~T~2b4vd~7QbRegmFQTECgSoitHz3yX5SSuUdu5oknE0jir9C~NlzoqtTvJnlsPtQQyflpOznVOkMpJ2ho62CnZXESAGXWAE4HHTxr0BTRoz9S0n0vul9KYYAwyUlcKq3AiC-hy-on~SAbHBSX3o6R1Db~KqF-vB89YKO1A__&Key-Pair-Id=K3NV4LZ47N8M46)
   2. Click **Connect Google Calendar**.
 ![Connect Google Calendar button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2c5f4b4e-946d-454e-8fa7-46a8af48db36-g2-not-connected.png?Expires=253370764800&Signature=tRiH24nWWalE7mUqkMsdCWbq1fC6mclP~494TD8BW1JOuQAcWBJxaXCHuUsDOgWk0KHztrFogTFHWg8dPnZw71m-u4qlzFiR~W--3Fki4hIDYKhDbGXAppz5SH-sWmc~bLM4HaSoBlPSplUmL6YxS7sZC3BF6HvMdw1pTYcIMEIWCb~DhQYKrVe~a22sYcebdhdiNjtBggYzJ~HuzKYDA57zQEsuzW4Y1IWXK2kce57-i-Eozhsk19KKyRQ5BuUWQw6lJvsVhgjYFLstuaqwBSbXV-01i6tYqfdlgXa1oZP48XEhRUqxN8kGyVZB~rQDSi9qGnnaox5CUzwkbwv00A__&Key-Pair-Id=K3NV4LZ47N8M46)
   3. Choose your Google account.
-![Google account picker](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F0b47c2f3-5956-42d5-b0dd-43e7a7d4ab8a-g3-account.png?Expires=253370764800&Signature=Opw5pmayWQvnPXBLw4ARvXZqCc~ExcpDYeU~COrdib~g1yNq9BkdU5HzJzrgy6svoQ6JWcpfD8uzceJHZDwL1JArFkdMLcHxmRuYWz~n5lQlCzdO~gNSWzHJKd5DqdZE2PpQZCF1wo~lUN4HPo9Le80hurJ6hcp297FMns6TFkR~fFUviXNlUgCvKDKu6o2VJDIV-7cmeNJRtEsxbtEcikqSsECxz4JodqJajViFLLzBGmXZv5HjT3gMNr58JKiBEQA9DygMng8qju-ens3NX0uLsm45pF5T5w2mAk7Fc2OY9~NCbzHfHcRQxh6CnVNcuRRNocEx1z7Vy4zEW1B7Qw__&Key-Pair-Id=K3NV4LZ47N8M46)
   4. Click **Continue**.
 ![Sign in to Canvas Medical screen with Continue button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2758506a-63d9-4284-8768-bf10a237996c-g4-sign-in.png?Expires=253370764800&Signature=lU~eWnJ7TG2~5HM685bmgF6wuJaESl3JNh6oe1t73kwMOCMFx9qTXCF7P4M8TU-rBxsyeLWHcrZAotRYtYYhyoeJJpz5rGwZWwvnriwa3-qhfI1lXVxWDg0RyxQ~jVpAYSWPMWonCDgvWIMfFmErEPoEkB-SjJKT6CLKtvv1h9YCSGU08hyzCtLAqltLHqJCypBTjwBrQ4ubj9kDcYTRMytiTlHZRiOZippnW~qNDXjdNWmhxJTbBnjH3s8fhwubr4c~bFespErOP~N7-DkiYT8ZjxoEwTfadL6TtwA50MALwQMTCnyGx9ifXP-kQU3TYmIQBg5jpxZVckk7bu1WXQ__&Key-Pair-Id=K3NV4LZ47N8M46)
-  5. Click **Allow** to give Canvas access to your calendars. If you see checkboxes, leave them all checked.
-![Google permissions screen with Allow button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fdcf708d8-a35a-4b45-8067-33b8be2c52b2-g5-permissions.png?Expires=253370764800&Signature=Fauhy7rW4S7H-pXLZkG2oVQYrpGU-Vy9~hRpgeCAADov75HmMgGDv64re9Fly5n3J9NsmV3L0-RT7zJRnIIyMK-ViAiXaOt8AnFa3DUKJ8Ip22T5FHJ5nhnNxRdycgb5FZEA1KpBRTvXRFAgR-kUwsvbL~JPT4u~PeLT8YgF0ndP23TjyUHBjVw-qI1vp2wTiikgajlFEhr6qtYlsHp4YP7hBZ56hduspe8kG9kgK4S~E98b8zND0TMB~vAh4TrQvtp24HFjOEZRrth2C07NWXdQ9MmCknCOktwdQARA7L19AZWaIxESpU5yFJoWgBv3qSncLf1xlzGxbMv1rv4d0Q__&Key-Pair-Id=K3NV4LZ47N8M46)
-  6. Back in Canvas, check the calendars you want to sync and click **Save selection**. Busy times on these calendars will block time on your Canvas schedule.
+  5. Click **Allow** to give Canvas access to your calendars. If you see checkboxes, leave them all checked then **Save Selection**. 
 ![Calendar selection with Save selection button](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fb7be58c9-5b3a-44d9-a764-5676f9a1d224-g6-selection.png?Expires=253370764800&Signature=QSXl9~XG9sPV5Ju7HXkrga2IXaSJv374EimWjJB~kBCprFxVu~vpAD-wDi8pOXR0G~4-7bJIZ5rs-VIB8BdolkKisc0GWwjzjZVKLlNj~YIsDtPHtmeZhWJkwRTxTvzTXi1w2dfM4p6RePr6-X7i0VHGXiZzoBkqD8vm6eWGe1sBNYpmbW4-liXifa48V0ucyvKtbz6VA7mLdya2dr6P4qcV~gKCZiuDTB3P~yJL42niyqFNr~KWGFdEdoR0cv9TZxZWdFKqMlh8d6~FaoCdA7-NK7HowuoNdjkeQxPn1ZUnhfM5N6n1rm7AvyL8PDZFeKAqaU6OqVcWuCkJbVNPgA__&Key-Pair-Id=K3NV4LZ47N8M46)
+Back in Canvas, check the calendars you want to sync and click **Save selection**. Busy times on these calendars will block time on your Canvas schedule.
 If no calendars are listed yet, wait a few minutes and refresh the page. Your calendars usually appear shortly after you connect.
+Your Canvas appointments start copying to Google as soon as you connect, and Busy times from the calendars you selected appear on your Canvas schedule shortly after you click **Save selection**. After that, Canvas checks for changes every 15 minutes, so allow up to 15 minutes for an update to show on either side.
 ## How syncing works
+Each event is managed where it was created: 
+  - make changes to Canvas appointments in Canvas 
+  - make changes to Google events in Google.
 Situation| What happens  
 ---|---  
 An appointment is booked, moved, or canceled in Canvas| The **Canvas (Busy)** calendar in Google updates to match. Canceled appointments are removed.  
@@ -3021,6 +3022,11 @@ Date range| Syncing covers 31 days in the past through 183 days ahead.
 Canvas removes the **Canvas (Busy)** calendar from your Google account, clears the Busy time it added to your Canvas schedule, and removes its access to your Google account.
 ## If syncing stops
 If Canvas loses access to your Google account, for example because you removed Canvas in your Google account settings, syncing pauses. The Google Calendar page shows "Your Google Calendar connection has expired or was revoked." Click **Reconnect Google Calendar** to resume.
+## Frequently asked questions
+### Can I remove a Busy block from my Canvas schedule?
+Make the change in Google. A Busy block comes from an event on one of your selected Google calendars, so delete that event, decline it, or mark it **Free** , and Canvas releases the time within about 15 minutes. To stop a whole Google calendar from blocking time, open **Google Calendar** from the left sidebar menu, uncheck that calendar, and click **Save selection**.
+### Do patient names appear in Google?
+No. Each event on the **Canvas (Busy)** calendar shows only the visit type and time, and is marked private. Patient names, other patient details, and video visit links stay in Canvas.
 ----- END PAGE https://help.canvasmedical.com/articles/3718601633-connecting-google-calendar-to-canvas
 
 
