@@ -15,6 +15,50 @@ If you want to change the date of service for a _future appointment_ , see the h
 ----- END PAGE https://help.canvasmedical.com/articles/1052131314-change-the-date-of-service
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/1076429531-how-to-find-a-patient-statement
+## Overview
+Every statement Canvas creates for a patient is saved as a PDF, whether it was sent automatically, created one at a time, or printed in a batch. Staff can open these PDFs from the patient's profile or from a claim to see exactly what the patient received.
+## Before you start
+You need access to Revenue in Canvas. Without it, the document menu described below is grayed out. Ask an administrator on your instance if you can't open it.
+## From the patient's profile
+  1. Open the patient's chart and select **Profile** at the top of the page.
+  2. In the billing area on the right, next to the patient's balance, select the document icon 📄.
+  3. Select **Statements**.
+  4. Find the statement you need and select **PDF** to open it.
+![Patient chart with the Profile tab highlighted as step 1](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F4150147d-15b2-496c-9dda-2af82fb2472d-a-chart-profile.png?Expires=253370764800&Signature=YFq8sF5cbM4eoCo4tmPLovyhIZ2jH2kDL~volPcK4EZSU4~HGcyCUIbsjdjRjXL3rBnlWai3LmgMHUsgmbJrHlc227xv80xGqkKEWKSlw5vQeNHZY0wSCV2fZOxXjOoqip0jrCzNLj5M2DK3Hepmh2u9-YO8U7pYLvogC-eYLOt4rsmKyWMz2okXeusT8-YVjAkyE9QDKX~OnFE3aleo~hfASmA-TQ88kjlICWbf8hoyf-EcFwy-9~Lu2rleezhfKAJuZmepU27E-3J2YWnBbSqu~Ppk-A7J853V-varLq2aqNVDrRzdxqllYxUJ6lOr87Er4jcg9gZ8gTYYqxvp0g__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Step 1: select Profile at the top of the patient's chart._
+![Patient profile with the document icon highlighted as step 2 and Statements in the menu highlighted as step 3](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fbed3e2af-09b0-478a-8e4f-6597ff493acc-s-menu-statements.png?Expires=253370764800&Signature=V1lRtpPV18lHkbzHSdqk6ucnDPrxWJLpNVt7PFABifjmMHjGjtDwCF6kpw~mImJfAIQMSb7BJF6pJejNxs4JNtFQXJoOIoSS2IH452ULHwfLaeDz-wvSWSVi79sImz7uEa2LD9IWkGljKqJ0ZQGbhw5B38ZXvsesuy7qZGrbBu7tqRSpqZvsqDM~CZ376IxpxBnkTjWzEmypYeV9hmWTAiAWX8KPmrFMEpp9U2iXWl3peMKICiKhx9wrnYEUNC3IAmY7GGyVfW7nOd4g-C~yU5xACONA1B8HaQiJFpAMdystpP8wTpxTpfQ9lxTnhRapjybJiuB39U3-E0NtVFOPew__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Steps 2 and 3: select the document icon next to the patient balance, then Statements._
+![Statements list open over the patient profile, with the PDF buttons in the Statements list highlighted as step 4](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fd2c9a926-c247-4033-85fc-3f1c36b49de6-s-statements-list.png?Expires=253370764800&Signature=s3s65GNYjOtxMFQHD-7E12TnGpDO8xf751s6gHyrEv50KOBVSKzXNu8cgWCk2q84j4AJz~z1rSGpauN-30~eWZ8sY-BEE344I2lUDGB5c5rIt7IpqbtRVfcK6m5OsXwaZhyUNtK9yfu79QrkMzfO6kJGjmkKV753NcFsNcIajlKDv4hdSvqDp0p7O43TACeXhl0uT7Bv0jOgSRPNob4w~zJlcw7FjJ4YW7zWnTicxBDvueGYeUxhkCGlwR5rssTwJGlYiEyf0SxwD3JaaJi51Ik6sKSolRHxCpqtK4deV7IX6733xh2K-bx4ll8qbGIGvVUGkzNfgzmW8vs92ZUa9w__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Step 4: select PDF on the statement you need._
+The Statements list shows each statement with these columns:
+Column| What it shows  
+---|---  
+Statement date| When the statement was created.  
+Originator| Who created it. Automated statements show Canvas Bot.  
+Balance| The amount due on the statement.  
+Workflow| How it was created: **automated** (sent on a schedule), **adhoc** (created with **Create statement**), or **batch** (printed in a statement batch).  
+PDF| Opens the statement.  
+## From a claim
+  1. Open the claim. From the patient's profile, select **Outstanding claims** and then the claim, or open it from a claims queue in Revenue.
+  2. Select the document icon 📄.
+  3. Select **Statements** to see the statements that include this claim, then select **PDF**.
+![Patient profile with the Outstanding claims tab open and a claim highlighted as step 1](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F20cb5e49-c818-4129-b627-f0f4da009be9-c-outstanding-claims.png?Expires=253370764800&Signature=P5pQ5v9yk1Py5IU45xBIoTAzuGr2SYC7MGi90bMcN68ooHpxTRPOugFIeGfj-Sxp7hetOdXqlMPLp2QOtc6XJAcGaasl8jTXpnwvQFkfuYynoyWTQc~S1dxfZD7hZoo7JIPjKYUObl0e1kj3NHwiOZ9SaKwfY2yQ7zsI5kHOhJpsYW7VXOBBXYwYyoIsp3khU50bS5qQO-~REFVyearDWEWW6qia31BGliDVIGs3DF2aGJhxgTv8Mkno6LagRHlsgkxYPJX-d2zAKddl9WlxtmGrkGt-Hs4c22IPhPbZ7cDq-wOwhGeiLKPAI~vuXokQIZTHS7d0qgiba9trhlBXCg__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Step 1: open the claim from Outstanding claims on the patient's profile._
+![Claim page with the document icon highlighted as step 2 and Statements in the menu highlighted as step 3](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fb265c33b-0f7d-415a-8b32-b000048b8855-s-claim-menu.png?Expires=253370764800&Signature=artpk-zz0EXKG5Oxn2UU7AkypEUR9H0PubhCXzWVN5Gw1ipIRSgQI8lg~8mQ94rPk6WuAODA4KpI7v2qKw9xe7lgyAhq~H-DJWvMPOK0x-N63N~JlOUF0hjHwFgUaQbuwaO0pmJ6aV0yuYjh5zorN755xHUfx2~dJmdu4DTLmF7LqrBOyWur922ExtO76a-J-zebf7paIiumTWky7a3~fY~1n7R9xrOM90NQksHKR2-bbvNShYXf6TZz2O8sIOiI1jH9DoEXzpb-~sMPb32gbO6xQg00~6rKKaPt8Sa6dkL7KKp1Zm5zSFcbYqQFgFQkRkUWNqDzJHV5eUl76sV9WQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Steps 2 and 3: on the claim, select the document icon, then Statements._
+## Creating a new statement
+To create a statement on the spot, select **Create statement** at the top of the Statements list. The button is available when the patient has a balance and you have permission to create statements. The new statement appears in the list with the workflow **adhoc**.
+## Things to know
+  - The list shows that a statement was created, not whether it was emailed or mailed.
+  - A statement that could not be sent, for example because the patient has no valid mailing address, does not appear in this list. Your Canvas team can set up a daily tracking report that shows each statement Canvas attempted, how it was sent, and any delivery error.
+## Related articles
+  - [Claim Management](https://help.canvasmedical.com/articles/9992348572-Claim-Management)
+  - [Revenue | Print Batch Statement](https://help.canvasmedical.com/articles/4083957452-Revenue-%7C-Print-Batch-Statement)
+  - [Enable Automated Patient Statements and Payment Reminders via Email](https://help.canvasmedical.com/articles/3981780818-Enable-Automated-Patient-Statements-and-Payment-Reminders-via-Email)
+----- END PAGE https://help.canvasmedical.com/articles/1076429531-how-to-find-a-patient-statement
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/1131763313-navigate-canvas-home-screen
 The Schedule View is the home screen or default window, that will appear once you have logged into Canvas.
 # Home Screen Orientation
@@ -2375,6 +2419,44 @@ or
 ----- END PAGE https://help.canvasmedical.com/articles/3316466244-population-module
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/3387737821-how-to-find-a-receipt-for-a-patient-payment
+## Overview
+Canvas creates a receipt for each patient payment, such as a copay or a balance payment. Staff can open a patient's receipts from the patient's profile or from a claim, and print or save them as PDFs.
+## Before you start
+You need access to Revenue in Canvas. Without it, the document menu described below is grayed out. Ask an administrator on your instance if you can't open it.
+## From the patient's profile
+  1. Open the patient's chart and select **Profile** at the top of the page.
+  2. In the billing area on the right, next to the patient's balance, select the document icon 📄.
+  3. Select **Receipts**.
+  4. Find the receipt you need and select **PDF** to open it in a new tab. Some receipts show **Print** instead, which opens a print preview where you can print the receipt or save it as a PDF.
+![Patient chart with the Profile tab highlighted as step 1](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F4150147d-15b2-496c-9dda-2af82fb2472d-a-chart-profile.png?Expires=253370764800&Signature=YFq8sF5cbM4eoCo4tmPLovyhIZ2jH2kDL~volPcK4EZSU4~HGcyCUIbsjdjRjXL3rBnlWai3LmgMHUsgmbJrHlc227xv80xGqkKEWKSlw5vQeNHZY0wSCV2fZOxXjOoqip0jrCzNLj5M2DK3Hepmh2u9-YO8U7pYLvogC-eYLOt4rsmKyWMz2okXeusT8-YVjAkyE9QDKX~OnFE3aleo~hfASmA-TQ88kjlICWbf8hoyf-EcFwy-9~Lu2rleezhfKAJuZmepU27E-3J2YWnBbSqu~Ppk-A7J853V-varLq2aqNVDrRzdxqllYxUJ6lOr87Er4jcg9gZ8gTYYqxvp0g__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Step 1: select Profile at the top of the patient's chart._
+![Patient profile with the document icon highlighted as step 2 and Receipts in the menu highlighted as step 3](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F502b8d5a-65ff-4ff3-a188-a9767a844178-r-menu-receipts.png?Expires=253370764800&Signature=UclhRXJY~61g~5vev9GmrHDJsIX7FA3itmnJsyhkZqNctFod9MdVRYJj6IgCitFV-uSQLGNmDRO8JTrhZ9j4cVTxt9hyLAA8mlacr6sam9z9zPucnRKZivXy6wN7f07-3hj2~A7TiRT6haqK1-VwUggpat-xHUI-lYArnAGzpfw6n9X~FtUcbBPYhweHfVccDyiNo37-A8y6scvlGUNYeiejOEXF3e5zunDJHgNeFFtxTl4I9fBLjImaXEdKugNvFt3eB1hakWaHcmx1IktkXT6t9AKgPn0qmrdKIEQpeFx-AGT9vn7wE8ymMwjOuJ72UTlnN7vBDsTFeieFJOQJtw__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Steps 2 and 3: select the document icon next to the patient balance, then Receipts._
+![Receipts list open over the patient profile, with the PDF buttons in the Receipts list highlighted as step 4](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F85b91445-fb72-49af-943c-374fb9a47a0b-r-receipts-list.png?Expires=253370764800&Signature=Y3mS5Evih6Pb20dRorM9~ProN6q0T3-wwsZi-Zrgg33Tv4tdAMLmQArcYrsV8UD~lKUQk7BEZ7m-QJXBe6wfVvMTDTvXCVGyfFpbMHmSFdBszPeO5F-rmfpTc-iP3QCDMBWWBP2OkeRlmvpjm10ARn9m6Gp5OYntQj~jP2qJqyHZEpFSOgwFRcY80QZsSE9uYSwFGZtUPPWP3CcMhqEdcLQYHjmDA5IjlJDVg0E-9DqvXq95WXR9dC4Wdhd4iOZ0U1drmk9crsckB61ZlHrvRxFNvJheyTmMY4oHC~zI7rMzfD~1m5IqEWVaBHY5O0kkOy1BDr0iih0yAddTue1TPg__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Step 4: select PDF on the receipt you need._
+The Receipts list shows the most recent receipts first, with these columns:
+Column| What it shows  
+---|---  
+Receipt date| When the payment was recorded.  
+Paid| The total amount collected.  
+Payer| The person who paid. This can be a guarantor rather than the patient.  
+Originator| The staff member who recorded the payment, or the patient if they paid through the patient portal.  
+PDF| Opens or prints the receipt.  
+## From a claim
+  1. Open the claim. From the patient's profile, select **Outstanding claims** and then the claim, or open it from a claims queue in Revenue.
+  2. Select the document icon 📄.
+  3. Select **Receipts** to see the payments applied to this claim, then select **PDF** or **Print**.
+![Patient profile with the Outstanding claims tab open and a claim highlighted as step 1](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F20cb5e49-c818-4129-b627-f0f4da009be9-c-outstanding-claims.png?Expires=253370764800&Signature=P5pQ5v9yk1Py5IU45xBIoTAzuGr2SYC7MGi90bMcN68ooHpxTRPOugFIeGfj-Sxp7hetOdXqlMPLp2QOtc6XJAcGaasl8jTXpnwvQFkfuYynoyWTQc~S1dxfZD7hZoo7JIPjKYUObl0e1kj3NHwiOZ9SaKwfY2yQ7zsI5kHOhJpsYW7VXOBBXYwYyoIsp3khU50bS5qQO-~REFVyearDWEWW6qia31BGliDVIGs3DF2aGJhxgTv8Mkno6LagRHlsgkxYPJX-d2zAKddl9WlxtmGrkGt-Hs4c22IPhPbZ7cDq-wOwhGeiLKPAI~vuXokQIZTHS7d0qgiba9trhlBXCg__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Step 1: open the claim from Outstanding claims on the patient's profile._
+![Claim page with the document icon highlighted as step 2 and Receipts in the menu highlighted as step 3](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fe222963d-2e54-498f-995f-a51e9d92bdf2-r-claim-menu.png?Expires=253370764800&Signature=vYt8efnCVaxs0MIdctiZg52sXxNMAJWBHUOvzQzNcNfKLSln8J3Tmn60jGP~~p8sdSJaXipepuim5nlfQ~O7oW-~IE~qeVyRTJsre-0baZneYA2MP4x~tjlh08yb-3gxo9TWpaexhQZk7egUwFC~2o-fw7wVv6r9F~74UnPQ7217aXiCc61krJyGzSCdFP~jJ2yWNpHq3uWnD2eMgD~Qanw5F8ZVnvEw5tTynFO8PsmbPCQnq8~i1lECfHws8yeBI52nPlDjcMZBYgvNJDHK-qD2OLRSyJoaxoq9BBL5IMTMXgMBLd2V32DO8Lj98hLMRn~DN2FK3Zvfen9GA9dZWQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+_Steps 2 and 3: on the claim, select the document icon, then Receipts._
+## Related articles
+  - [Collect Patient Payments](https://help.canvasmedical.com/articles/4431910086-Collect-Patient-Payments)
+  - [Claim Management](https://help.canvasmedical.com/articles/9992348572-Claim-Management)
+----- END PAGE https://help.canvasmedical.com/articles/3387737821-how-to-find-a-receipt-for-a-patient-payment
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/3407978845-print-vitals
 Viewing and printing a flowsheet of a patient's previous vital signs allows the user to view patient vitals over a period of time in order to assess for trends and aberrations.
 ## Step by Step
@@ -4094,6 +4176,49 @@ Keywords: Studio, build a plugin, Canvas plugin, quick start, deploy plugin, pub
 ----- END PAGE https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/4323593351-enable-mailed-patient-statements-lob
+## Overview
+Canvas can mail paper statements to patients who have an outstanding balance. Canvas prints and mails them through Lob, a HIPAA-compliant print and mail service. Once enabled, Canvas will creates a statement for patients with an outstanding balance and deliver it using Lob.
+## What patients receive
+Each patient with an outstanding balance receives a letter by USPS First Class Mail containing:
+  - The statement, printed in black and white on single-sided pages. This is the same PDF your staff can open from the patient's Statements list.
+  - A perforated first page, so the patient can tear off the payment portion.
+  - A return envelope.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2Fe2b44d12-28b1-4e92-b19c-58e7d5f38409-example-mailed-statement-page1.png?Expires=253370764800&Signature=t-1qnzmVXAlSx5yvpdQiwl0BTaxkXKnhuWHIPSZVW0BRc3rOzJefUQAMsUDALadRwojCzwaWZq~WR8ZZ35dc7apK0byS-egl4Eme3XB~1Vod7hoH~G4C7YPBk1EEDPSe9DKoCCMNZLKRHWbO9zRkh-cL9q6PXm5cIbrLcOusFl2OVVOq0NCNTpRJFz8qhSA2KY604oViCVv0CrED87ehpEnRHWLAOKM58keJNKI7ty5X8~QmvUcH8tfLAZmPqHAoFsn6Zxrje6T8XjFh5w31qIyIgn6lXf0YWGsPQu~SJdwAikCA~DjysOHdjmg25GJhndlCkphto4JuRLA0RxJQYQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+The letter is addressed to the patient, or to their guarantor when the patient has one who can be contacted. A guarantor's statement includes the balances of their dependents.
+## Who receives statements
+  - Statements will be sent to every patient with a patient balance greater than zero, regardless of which billing queue the claim is in.
+  - Claims in the trash and claims on an active installment plan are left off statements.
+  - After a statement is sent, the same patient does not receive another until `INVOICE_INTERVAL` days have passed.
+  - Canvas uses the patient's active postal address, choosing a home address first, then work, then temporary.
+**If email statements are also turned on** , Canvas emails patients who have an email address on file and mails a paper statement to everyone else. 
+See [Enable Automated Patient Statements and Payment Reminders via Email](/articles/3981780818)
+## Turning on mailed statements
+Reach out to Canvas Support to request to enable Mailed Patient Statements. They will establish the connection with lob in your instance. Before enabling, you will need to review the following:
+  - **Review outstanding patient balances.** Once enabled, a statement will be sent to every patient who currently has a patient balance, not only to new balances. Confirm those balances are accurate first.
+  - **Confirm your practice address.** The return address on the envelope is your practice name and primary address as set up in Canvas.
+  - **Check patient mailing addresses.** A statement can only be mailed to a patient with an active home, work, or temporary postal address on their profile.
+  - **Decide on your mailing schedule.** See "Customer Settings for Administrative Developers" below.
+## Customer Settings for Administrative Developers
+These settings live in **Settings > Constance: Config > Billing**, and an administrator on your instance can change them at any time.
+Setting| What it does  
+---|---  
+`AUTOMATED_INVOICING`| Turns on automated patient statements. Canvas creates statements once a day for patients with a balance.  
+`ALLOW_LOB_FOR_INVOICING`| Sends statements by mail through Lob. Mailing also needs a Lob connection that only Canvas can set up, so check this only after your Canvas team confirms mailing is ready. Without that connection, statements fail instead of mailing.  
+`INVOICE_INTERVAL`| Number of days between statements to the same patient (default is 15).  
+`ALLOW_EMAIL_FOR_INVOICING`| When True, Canvas emails patients who have a qualifying email address and mails only those who do not. When False, every statement is mailed. See [Enable Automated Patient Statements and Payment Reminders via Email](https://help.canvasmedical.com/articles/3981780818-Enable-Automated-Patient-Statements-and-Payment-Reminders-via-Email) for the email requirements.  
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F2996a4d2-7ccb-4b88-88d9-a419241c6200-constance-billing-lob-mailed-statements.png?Expires=253370764800&Signature=VJRFBlGVoFlRav0cGRUIodJcVw-5buaMozFSqbcjch8nRDu-bO9wpoyR79vfTfDgm~ZlDUf4qWCaQaWcw-h2G7vPFqC~rp-tmnFPm4LDsAUEeWqWmNODZCjT0lRmJ9GvSgTEMyI8ZZKqvH885BOJYEo1j2PD87uCpBp-kl2dtITi6zVh2DYTVQtR~~V2i8adhNHDTOk6vnusHdrgOb3RRjdNJRFMjdGCyc3ggxu9tI2dnUcr5g0x~OmdA4IOAHPMvgHUiMwL~dwv-JTkLyg-dJbeVafUpq8Pa1ta6Xjp~WNdGvAPyRq5LPDujrxWRRP2-rHX7SLFVDKvhdnpIe2nnQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+Solid boxes show the settings needed for mailed statements.
+The dashed box is optional: check it to email patients who qualify and mail everyone else, or leave it unchecked to mail every statement.
+You can also give your team a grace period before a patient's first statement. Under **Settings > Organizations**, select your organization and add an organization setting named `patientInvoiceSendDelay` with a value such as `{"days": 7}`. The delay counts from the **date of service** , not from the date the balance moved to patient responsibility.
+## Related articles
+  - [Enable Automated Patient Statements and Payment Reminders via Email](https://help.canvasmedical.com/articles/3981780818-Enable-Automated-Patient-Statements-and-Payment-Reminders-via-Email)
+  - [Revenue | Print Batch Statement](https://help.canvasmedical.com/articles/4083957452-print-batch-statement)
+  - [Claim Management](https://help.canvasmedical.com/articles/9992348572-Claim-Management)
+  - [Collect Patient Payments](https://help.canvasmedical.com/articles/4431910086-Collect-Patient-Payments)
+----- END PAGE https://help.canvasmedical.com/articles/4323593351-enable-mailed-patient-statements-lob
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/4388376289-key-performance-indicators
 The Key Performance Indicators (KPIs) are easy-access figures to give you a snapshot of the current financial health of your practice. They will help you track the efficiency of your revenue cycle benchmarked by past performance. Some questions the Key Performance Indicators could help you answer include:
   - What does my overall production for this month look like, compared to the last six months?
@@ -5049,7 +5174,7 @@ Section| What it controls| Learn more
 **Note Header and Appointment Configuration**  
  _11 settings_|  The telehealth button and assignee control in the note header, which Reason for Visit command becomes the header, structured Reason for Visit, double booking, default appointment duration and event type, the appointment status applied at check-in, how many appointments the schedule view fetches, full-week schedules, and how many days of upcoming appointments appear in the patient timeline.| [Event and Note Types](https://help.canvasmedical.com/articles/6785045644-appointment-event-note-types), [Managing Patient Appointments](https://help.canvasmedical.com/articles/4617508394-managing-appointments), [Structured Reason for Visit](https://help.canvasmedical.com/articles/3690739682-structured-reason-for-visit)  
 **Patient App**  
- _8 settings_|  Whether the patient portal is enabled at all, which pages appear in it (messaging, payments, labs, contact), email-only portal accounts, patient document uploads, and the banner on the portal login page.| [Managing the Canvas Patient Portal](https://help.canvasmedical.com/articles/7348270931-managing-the-patient-portal)  
+ _9 settings_|  Whether the patient portal is enabled at all, which pages appear in it (messaging, payments, labs, contact), email-only portal accounts, patient document uploads, the banner on the portal login page, and which lab and imaging orders patients can download requisitions for from a plugin's link (`PATIENT_PORTAL_REQUISITION_ORDER_STATES`: open orders only by default, or open and completed orders).| [Managing the Canvas Patient Portal](https://help.canvasmedical.com/articles/7348270931-managing-the-patient-portal)  
 **Registration**  
  _5 settings_|  Preferred patient timezone, patient consents, the metadata section on the registration page, a free-text last known location for unhoused patients, and whether the Canvas Remote QR modal opens by default when adding a coverage.| [Custom Profile Fields & Patient Metadata](https://help.canvasmedical.com/articles/4551334461-patient-metadata), [Managing Consents](https://help.canvasmedical.com/articles/8144965836-manging-patient-consents), [Patient Profile](https://help.canvasmedical.com/articles/8802451810-patient-demographics)  
 **Reporting**  

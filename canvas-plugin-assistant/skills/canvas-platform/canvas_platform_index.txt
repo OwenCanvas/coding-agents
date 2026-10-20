@@ -1513,6 +1513,29 @@
         - 3. Open your organization
         - 4. Find the Idle Logout In Minutes setting
         - 5. Save
+- [Enable Mailed Patient Statements (Lob)](https://help.canvasmedical.com/articles/4323593351-enable-mailed-patient-statements-lob)
+    - Overview
+    - What patients receive
+    - Who receives statements
+    - Turning on mailed statements
+    - Customer Settings for Administrative Developers
+    - Related articles
+
+## Navigating Canvas
+- [How to find a patient statement](https://help.canvasmedical.com/articles/1076429531-how-to-find-a-patient-statement)
+    - Overview
+    - Before you start
+    - From the patient's profile
+    - From a claim
+    - Creating a new statement
+    - Things to know
+    - Related articles
+- [How to find a receipt for a patient payment](https://help.canvasmedical.com/articles/3387737821-how-to-find-a-receipt-for-a-patient-payment)
+    - Overview
+    - Before you start
+    - From the patient's profile
+    - From a claim
+    - Related articles
 - [Canvas Patient Safety Scale](https://help.canvasmedical.com/articles/7194215286-canvas-patient-safety-scale)
     - Introduction
     - Scale
