@@ -412,6 +412,7 @@
         - Adding patients (manually)
         - Removing patients (manually)
     - Using logic to manage patient group membership
+    - Related articles
 - [Fee Schedule](https://help.canvasmedical.com/articles/6307219926-fee-schedule)
     - Understanding Fee Schedule Components
     - Adding New Procedure Codes
@@ -630,6 +631,15 @@
     - Sections Canvas configures for you
     - If a setting is not showing
     - Related articles
+- [Restricting Staff to Specific Patients](https://help.canvasmedical.com/articles/8412752412-restricting-staff-to-specific-patients)
+    - How it works
+    - Before you start
+    - Step 1: Create patient groups
+    - Step 2: Assign groups to staff
+    - Step 3: Test before rolling out
+    - Things to know
+    - Troubleshooting
+    - Related Resources
 
 ## Charting & Documentation
 

@@ -868,7 +868,7 @@ This guide explains every screen, button, and feature in Studio so you can look 
 ### **Getting around**
 **The Overview screen.** This is your home base. The left side shows a grid of **project tiles** — one tile per plugin — each with a **stage badge** telling you where that project is (Discovery, Build, Test, Review, or Published). A project someone shared with you shows a **Shared** badge and the owner's name. The right side is the **overview chat** , a general assistant that answers questions about how Studio works. You can drag the divider to resize the two sides.
 ![02-overview-screen.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781739723706-02-overview-screen.png?Expires=253370764800&Signature=sR5O92amFr~GF~KtS6WNkV5eaeXMmktbKqtpOyojPW3CJ9qxYbSRL7IU9A2k0TB1Dc7v~fQJbqkwvOmCrPIKqkED2Y2QgVOsInJWiCpONV~kaFfycdpWsIeZffojQ1eY27f8x5QMw5G0YK5F4Vejl7up9QJ8kSbkRiKShHMczmhHxrTM9KkV3~BYX64QShv8blplRlUvwKVrh653jNv7PZsCAK~ikekLv8PrBee1601XnzPwISGr6QYkdgtjBakd2XUOfxK3KGY-dqhiKeiTfgLaYvHNC-U~zQtRkQPG3W66rtNgWKFw9NUxqzMF2KEIaGEYm1rlQ-T1rWp1UO0FBA__&Key-Pair-Id=K3NV4LZ47N8M46)
-**The Project screen.** Click a tile to open a project. The left side is your **progress timeline** with the five stages and the buttons that move you forward, plus two more sections: **Agent Documents** (the plans the assistant writes) and **User Attachments** (files you upload). The right side is the **chat** , where you talk to the assistant, with **tabs along the top** for reading the documents the assistant writes (User Plan, Technical Plan, and so on) — text renders as formatted pages, images show inline, and PDFs open in a viewer.
+**The Project screen.** Click a tile to open a project. The left side is your **progress timeline** with the five stages and the buttons that move you forward, plus two more sections: **Agent Documents** (the plans the assistant writes) and **User Attachments** (files you upload). The right side is the **chat** , where you talk to the assistant, with **tabs along the top** for reading the documents the assistant writes (User Plan, Technical Plan, and so on) — text renders as formatted pages, images show inline, and PDFs open in a viewer. When a project conversation is long, Studio opens with only the newest part of the chat loaded so the page stays responsive; if older messages are available, use the button pinned at the top of the chat to load more history without losing your place.
 ![project-screen.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781739934485-project-screen.png?Expires=253370764800&Signature=mBRcmJdbBnMRjZ85LwRSnnbO5ERvp-vRSZsFIaJ5mdyXz070NiRpiCZPldlwGUOFrpHYcdwpB4NayVq52C1dOeNkVRxtIgZgkc3nbTdlLRGRGW1tlSupveyB-FkmT8MBzMJyHUkrAncy078t~TPP2eQ~AADgVteqRUdUIl4a0-NhWaUyOIAIlusUx~z7cqrZbstPSPUY3NUOoYKcpAANAcyOBWi1Aql-1fBdPbxnnO8jNig-9NgN4nDdiZKxYMbqEw2ys~~ySJR9hcUG9-HW-wfjFmZbbyMUiAIFTcoB7o4BkIYPMNbz7KoBahw~xhX2dbcl5kgnLelgS5xJxHksYg__&Key-Pair-Id=K3NV4LZ47N8M46)
 **Finding projects.** On the Overview screen you can:
   - **Search** by project name, owner, or tag.
@@ -881,9 +881,9 @@ Filters combine, and your selection sticks in the page address — so refreshing
 Every project moves through five stages. You advance each one by clicking its button — the assistant never skips ahead on its own.
 **1\. Discovery.** You describe what you want; the assistant asks clarifying questions, confirms **where in Canvas** the plugin will appear, and writes two plans: the **User Plan** (plain language) and the **Technical Plan** (build detail). When both exist, the **Approve Plan & Start Building** button appears.
 **2\. Build.** The assistant builds the plugin and, if it needs settings, shows a **Configuration Required** panel. Once the plugin is built, a testing plan exists, and any required settings are filled in, the **Deploy Now for Testing** button appears.
-**3\. Test & Iterate.** Your plugin is installed on your Canvas instance so you can try it. You test, report back in the chat, and the assistant fixes and redeploys. When everything works, click **Confirm Successful Testing**.
+**3\. Test & Iterate.** Your plugin is installed on your Canvas instance, and a Testing Checklist appears under this stage. Studio runs its own tests. You run the rest and mark each Passed, Failed or Skipped, and the assistant fixes and redeploys whatever fails. After a change is deployed, click **Regenerate Tests**. When every test has passed or been skipped, click **Confirm Successful Testing**.
 **4\. Final Review.** The assistant runs its quality checks and writes a plain-language **final review** document. When it's ready, the **Publish** button appears (it may read **Promote** depending on your setup — see Publishing below).
-**5\. Published / Promoted.** The project is done. Under some setups this is "Published"; under a review-based setup it's "Promoted," and you can keep refining the plugin and send further updates downstream.
+**5\. Published / Promoted.** Your plugin is released. Published means it's live on your release target. Promoted, under a gated setup, means it's been sent to your team's code repository, and their own process takes it live. To change it later, click **Back to Test & Iterate** (see Updating a published plugin).
 ### **Working with the assistant**
 **Talking to it well.** Describe what you want in plain language — goals and examples beat technical precision. When something's wrong, say what you saw and what you expected; the assistant takes it from there. And the chat isn't only for instructions — when in doubt, just ask. "What does this do?", "Why did that happen?", and "What should I do next?" are all fair questions, and the assistant can usually answer them right away.
 **The question card.** When the assistant needs answers, it shows a question card instead of asking inline. Use **Back** and **Next** to move between questions, **Review** to check everything before submitting, and select one or more options when a question allows multiple answers.
@@ -891,7 +891,7 @@ Every project moves through five stages. You advance each one by clicking its bu
   - **User Plan** — plain-language description of what you'll get.
   - **Technical Plan** — the build details (you don't need to read this).
   - **Tradeoffs** — choices and limitations worth knowing about (see below).
-  - **Testing plan** — the steps to try your plugin during Test & Iterate.
+  - **Testing Checklist** — the steps to try your plugin during Test & Iterate.
   - **Final Review** — the summary you read before publishing.
 Open documents refresh on their own when the assistant updates them; you'll see a reload prompt in the tab.
 **Tradeoffs.** Some choices have trade-offs — for example, data that's only kept for a limited time, or a setup that works for small volumes but not large ones. The assistant flags these in plain language **at the moment it makes the choice** and collects them in the Tradeoffs document, which feeds the "Before you go live" section of your final review. If a trade-off matters to you, just say so and the assistant can take a different approach.
@@ -911,6 +911,7 @@ Open documents refresh on their own when the assistant updates them; you'll see 
 You don't verify deploys yourself — Studio does it and posts the verdict.
 **When a deploy fails.** This is a normal part of building, not a mistake on your part. The assistant reads the failure detail, fixes the cause, and redeploys — you can simply let it continue or ask it to try again.
 **The status pill during testing.** While you're testing, Studio watches your Canvas instance's activity (its logs) in the background so the assistant can see what your plugin is doing. Look for a **slim status line just below the chat input box** — it's easy to miss. When it's working it shows a green **"Monitoring Canvas logs…"** with a count of activity captured. If it turns yellow or red (**"Log monitoring stopped"**), click the **Restart** button on that same line to resume it. If the assistant ever says it can't see your plugin's recent activity, check this line first and restart it.
+**Skipping a test.** Click the test in the Testing Checklist to open it, set its Status to **Skipped** , type the reason Studio asks for, and click **Skip test**. The test moves to the bottom of the checklist, struck through, with its reason attached. A skipped test doesn't block **Confirm Successful Testing**. Skip a test when you've checked the behavior another way, or when it needs setup your test instance can't provide. A skipped test means that version reaches production without that check. You can also skip tests Studio runs itself. To undo a skip, set the status back to Not started.
 ### **Collaboration**
 **Sharing a project.** The project **owner** can share it with another Canvas user at the same organization, as either **view-only** or **full editing**. Open the share option, search for the person, choose their access, and they receive an email invite with a link. Sharing never crosses organizations.
   - **View-only** collaborators can watch the project and read everything, but can't send messages or click stage buttons.
@@ -923,9 +924,16 @@ You don't verify deploys yourself — Studio does it and posts the verdict.
 What **Publish** does depends on how a Studio Admin set up your organization. The button is always labeled to tell you where it's sending things.
 **The two ways to publish:**
   - **Direct** — Studio installs the finished plugin straight onto a configured Canvas instance. The button reads **Publish to _(target name)_**.
-  - **Gated** — Studio opens a **review request** in your team's code repository instead of installing. Your technical team reviews and approves it, then their own process takes it live. The button reads **Promote to _(your repo)_** , and the finished stage is labeled **Promoted** — from there you can keep refining and click **Promote updates** to send more changes downstream.
+  - **Gated** — Studio opens a **review request** in your team's code repository instead of installing. Your technical team reviews and approves it, then their own process takes it live. The button reads **Promote to _(your repo)_** , and the finished stage is labeled **Promoted**. 
 **Publishing to a specific target.** If your organization has more than one configured destination and you're authorized for several, you'll see **one button per destination** (for example, "Publish to production" and "Publish to uat"). Click the one you want.
 **"There's no Publish button."** If the final-review pane shows a notice instead of a Publish button, your organization hasn't finished choosing how plugins are released. Contact a Studio Admin — the notice lists who to reach — and they'll set up Direct or Gated release once.
+**Updating a published plugin.** A published plugin is live, so a change goes through testing and Final Review again before it ships.
+  1. In the Published stage, click **Back to Test & Iterate**. Studio asks what to do with the version that's out now. Under a direct setup, you can disable it in each release target or leave it running until the update is published. Under a gated setup it stays promoted, and Studio closes any open promotion PR unless you uncheck that box. Click **Move back**.
+  2. Describe the change in the chat. The assistant makes it and deploys it to your test instance.
+  3. Once the change is deployed, click **Regenerate Tests** to get a Testing Checklist for the new code. If you have several changes, make them all before you regenerate.
+  4. Studio runs the tests assigned to it on its own. Run the rest yourself and mark each one Passed or Failed.
+  5. When every test has passed or been skipped, click **Confirm Successful Testing**. Studio runs Final Review. When it finishes, the button reads **Publish (version) updates to (target name)** , or **Promote (version) updates to (your repo)** under a gated setup.
+Only the owner and collaborators with full editing can move a project back.
 ## **Configuration & Set Up**
 Regular users don't configure anything — you just need access.
   - **Prerequisites:** Studio enabled for your Canvas instance, and your account on the Studio user list.
@@ -10849,7 +10857,8 @@ Feel free to message us in your organization's shared Canvas Slack channel or su
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/8319995182-patient-groups
-Canvas supports the ability to define patient groups. These groups can be used for a variety of purposes,**most importantly permissions**. In the context of permissions, users can be given access to a patient group, which gives them access to all patients in that patient group. This article describes how to manage patient groups.
+Canvas supports the ability to define patient groups. These groups can be used for a variety of purposes, **most importantly permissions**. In the context of permissions, users can be given access to a patient group, which gives them access to all patients in that patient group. This article describes how to manage patient groups.
+To limit a staff member to only the patients in their group (for example, so Provider A cannot see Provider B's patients), follow [Restricting Staff to Specific Patients](https://help.canvasmedical.com/articles/8412752412-restricting-staff-to-specific-patients).
 ## Adding patient groups
 If you do not have access to patient groups in your settings, you may need your administrator or Canvas to provide access. Of note, access to this part of admin is granted with the "Staff permissions" auth group
 To add a new patient group, click . Enter a name for the group If you want to use the patient group for permissions, check the checkbox which reads "Use for permissions" What this checkbox does is to automatically create an auth group that represents access to the patient group. If that auth group is provided to a user, they will have access to all patients in the patient group. Select save
@@ -10865,6 +10874,9 @@ You can build a protocol that defines rules that determine whether someone is a 
 Although the logic may account for the majority of cases, you may still need to override membership. You can do so in the following ways.
   - **Adding members to protocol managed groups:** If a patient is not included in the group based on your logic, but you want to add them to it manually, you can add the patient group member, making sure to select locked. This will prevent the protocol from removing that patient from the group.
   - **Excluding members from protocol managed groups:** Navigate to Patient group member exclusions in your admin settings and click . Search for the patient you want to exclude and provide a reason. Doing so will lock the patient out of the patient group. If they have an active patient group membership, it will automatically be expired. The workflow kit will not be able to reactivate the membership. You can delete this exclusion at any time by using the action dropdown on the admin page.
+## Related articles
+  - [Restricting Staff to Specific Patients](https://help.canvasmedical.com/articles/8412752412-restricting-staff-to-specific-patients) \- Set up and test patient groups so staff see only their own patients
+  - [User Permissions](https://help.canvasmedical.com/articles/4709841955-user-permissions) \- How object and model permissions work together
 ----- END PAGE https://help.canvasmedical.com/articles/8319995182-patient-groups
 
 
@@ -10930,6 +10942,74 @@ OR
 # Resources
 ### [Video: Refer Command](https://www.loom.com/share/aac3fb153ee749ca94555b4c931c1be2?sid=908136fe-137d-45a5-8694-f6699e0db617)
 ----- END PAGE https://help.canvasmedical.com/articles/8339414277-command-referrals
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/8412752412-restricting-staff-to-specific-patients
+Patient groups let you limit which patients a staff member can see. For example, Provider A can see only the patients in Group A, and cannot find or open the charts of patients in Group B who belong to Provider B. This article walks through setting that up and testing it before you roll it out.
+## How it works
+Two kinds of permissions work together, and a restricted user needs both:
+  - **Patient groups** control _which_ patients a user can see.
+  - **Model permission groups** (such as Clinical read and Profile write) control _what_ a user can do, such as opening charts, searching, and scheduling.
+If you assign only a patient group, the user will not be able to open any charts, including the charts of their own patients. Always assign the model permission groups the user needs for their job as well.
+Every instance also has an **All Patients** group. Anyone who has it can see every patient, so it must be removed from anyone you want to restrict.
+See [User Permissions](https://help.canvasmedical.com/articles/4709841955-user-permissions) for a full description of each model permission group and how restricted access appears to users.
+## Before you start
+  - Patient permissions must be turned on for your instance. Contact your Canvas team to confirm this before you begin.
+  - You need access to **Settings** with the **Staff Permissions Access** group to manage patient groups and staff permissions.
+## Step 1: Create patient groups
+  1. Go to **Settings > Practice: Patient groups**.
+  2. Create one patient group for each provider or team whose patients should be kept separate.
+  3. Check **Use for permissions** on each group. Without this, the group exists but does not restrict anything.
+  4. Add the right patients to each group. A patient can belong to more than one group if more than one provider or team needs access.
+See [Patient Groups](https://help.canvasmedical.com/articles/8319995182-patient-groups) for adding members manually or keeping membership up to date automatically.
+## Step 2: Assign groups to staff
+Go to **Settings > Practice: Staff Permissions**, select the staff member, and update their groups.
+**For a restricted user** , add:
+  - Their patient group (for example, "Provider A Patients")
+  - The model permission groups they need to do their work. A typical clinical user needs:
+    - Clinical read
+    - Clinical write
+    - Profile read
+    - Profile write
+    - Document Read
+    - Document Write
+    - Schedule write
+    - Printing Access
+Make sure the restricted user does **not** have the **All Patients** group.
+**For staff who need every patient** (for example, front desk, billing, or administrators), keep the **All Patients** group in place.
+A role's default groups are the same for everyone with that role, and they only apply when someone is first given the role. Assign each person's patient group individually under Staff Permissions.
+## Step 3: Test before rolling out
+Test with two staff accounts: one restricted user and one control user who has All Patients. Pick one patient who is in the restricted user's group and one who is not.
+**Restricted user**
+Test| Expected result  
+---|---  
+Log in| Reaches the Canvas home page  
+Search for a patient in their group| The patient appears in results  
+Search for a patient not in their group| The patient does not appear in results  
+Open the chart URL of a patient not in their group| The chart does not load, and the user sees "You do not have permission to view this data"  
+Open the chart URL of a patient in their group| The chart loads normally  
+**Control user**
+Test| Expected result  
+---|---  
+Search for the patient who was hidden from the restricted user| The patient appears in results  
+Open that patient's chart URL| The chart loads normally  
+The control user confirms that the patient and chart exist, so a hidden result for the restricted user reflects the permission rather than a missing record.
+## Things to know
+  - **"See all patients" in search.** By default, a restricted user who clicks "See all patients" at the bottom of search results can see the names of patients outside their group, but cannot open their charts. This lets staff check whether a patient already exists before creating a duplicate. If your organization prefers that restricted users never see those names, contact your Canvas team. With that option on, staff cannot tell that a patient already has a chart elsewhere in your instance, so plan for how new patients are created and how duplicates are caught.
+  - **Assigned items.** Items assigned to a user for a patient they cannot access, such as new lab results, will not be visible to them. Make sure each user's group includes every patient whose items are routed to them.
+  - **Keeping groups current.** Patient group membership does not follow care team changes on its own. Update membership manually, or keep it in sync automatically as described in [Patient Groups](https://help.canvasmedical.com/articles/8319995182-patient-groups).
+## Troubleshooting
+Symptom| Likely cause| Fix  
+---|---|---  
+Restricted user cannot open any charts, even their own patients| No model permission groups assigned| Add Clinical read/write, Profile read/write, Document Read/Write, and the other groups the user needs  
+Restricted user can see every patient| The user still has the All Patients group| Remove All Patients from the user under Staff Permissions  
+A patient group does not restrict anything| **Use for permissions** is not checked on the group| Edit the patient group and check **Use for permissions**  
+Restrictions do not apply to anyone| Patient permissions are not turned on for your instance| Contact your Canvas team  
+## Related Resources
+  - [Patient Groups](https://help.canvasmedical.com/articles/8319995182-patient-groups) \- Create patient groups and manage their membership
+  - [User Permissions](https://help.canvasmedical.com/articles/4709841955-user-permissions) \- Model permission groups and how object permissions affect users
+  - [Managing Patient Care Teams](https://help.canvasmedical.com/articles/5628604712-manage-care-teams) \- Assign care team members to a patient
+----- END PAGE https://help.canvasmedical.com/articles/8412752412-restricting-staff-to-specific-patients
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/8460447495-task-management
