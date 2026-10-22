@@ -1546,6 +1546,15 @@
     - From the patient's profile
     - From a claim
     - Related articles
+
+## Data Migration
+- [Data Migration Guide](https://help.canvasmedical.com/articles/8162561919-data-migration)
+    - Overview of Data Migration Options
+        - File-Based Migration
+        - API-Based Migration
+    - Customer Expectations for Data Migration
+    - Prerequisites for Migration
+    - Resources
 - [Canvas Patient Safety Scale](https://help.canvasmedical.com/articles/7194215286-canvas-patient-safety-scale)
     - Introduction
     - Scale
@@ -1591,13 +1600,6 @@
 - [Panel | Outstanding Referrals](https://help.canvasmedical.com/articles/2840851415-outstanding-referrals)
     - Step by Step
         - Outstanding Referrals
-- [Data Migration Guide](https://help.canvasmedical.com/articles/8162561919-data-migration)
-    - Overview of Data Migration Options
-        - File-Based Migration
-        - API-Based Migration
-    - Customer Expectations for Data Migration
-    - Prerequisites for Migration
-    - Resources
 - [Managing Service Area Zip Codes for Practice Locations](https://help.canvasmedical.com/articles/8191726034-managing-service-area-zip-codes-for-practice-locations)
     - Introduction
     - User's Guide
