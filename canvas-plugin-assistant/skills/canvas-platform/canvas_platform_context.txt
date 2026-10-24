@@ -861,101 +861,31 @@ This process begins with an open note of the patient chart.
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/2111959321-studio-reference-guide
-## **Introduction**
-This guide explains every screen, button, and feature in Studio so you can look up exactly how something works when you need it. Unlike the Quick Start, it's meant to be skimmed by topic rather than read end to end. Publishing is covered in full here, including the two ways your practice might be set up.
-**When in doubt, ask Studio.** This guide is here when you want it, but you don't have to look things up — the chat can answer most questions about how Studio works on the spot. Asking is often the fastest way to an answer.
-## **User's Guide**
-### **Getting around**
-**The Overview screen.** This is your home base. The left side shows a grid of **project tiles** — one tile per plugin — each with a **stage badge** telling you where that project is (Discovery, Build, Test, Review, or Published). A project someone shared with you shows a **Shared** badge and the owner's name. The right side is the **overview chat** , a general assistant that answers questions about how Studio works. You can drag the divider to resize the two sides.
-![02-overview-screen.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781739723706-02-overview-screen.png?Expires=253370764800&Signature=sR5O92amFr~GF~KtS6WNkV5eaeXMmktbKqtpOyojPW3CJ9qxYbSRL7IU9A2k0TB1Dc7v~fQJbqkwvOmCrPIKqkED2Y2QgVOsInJWiCpONV~kaFfycdpWsIeZffojQ1eY27f8x5QMw5G0YK5F4Vejl7up9QJ8kSbkRiKShHMczmhHxrTM9KkV3~BYX64QShv8blplRlUvwKVrh653jNv7PZsCAK~ikekLv8PrBee1601XnzPwISGr6QYkdgtjBakd2XUOfxK3KGY-dqhiKeiTfgLaYvHNC-U~zQtRkQPG3W66rtNgWKFw9NUxqzMF2KEIaGEYm1rlQ-T1rWp1UO0FBA__&Key-Pair-Id=K3NV4LZ47N8M46)
-**The Project screen.** Click a tile to open a project. The left side is your **progress timeline** with the five stages and the buttons that move you forward, plus two more sections: **Agent Documents** (the plans the assistant writes) and **User Attachments** (files you upload). The right side is the **chat** , where you talk to the assistant, with **tabs along the top** for reading the documents the assistant writes (User Plan, Technical Plan, and so on) — text renders as formatted pages, images show inline, and PDFs open in a viewer. When a project conversation is long, Studio opens with only the newest part of the chat loaded so the page stays responsive; if older messages are available, use the button pinned at the top of the chat to load more history without losing your place.
-![project-screen.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781739934485-project-screen.png?Expires=253370764800&Signature=mBRcmJdbBnMRjZ85LwRSnnbO5ERvp-vRSZsFIaJ5mdyXz070NiRpiCZPldlwGUOFrpHYcdwpB4NayVq52C1dOeNkVRxtIgZgkc3nbTdlLRGRGW1tlSupveyB-FkmT8MBzMJyHUkrAncy078t~TPP2eQ~AADgVteqRUdUIl4a0-NhWaUyOIAIlusUx~z7cqrZbstPSPUY3NUOoYKcpAANAcyOBWi1Aql-1fBdPbxnnO8jNig-9NgN4nDdiZKxYMbqEw2ys~~ySJR9hcUG9-HW-wfjFmZbbyMUiAIFTcoB7o4BkIYPMNbz7KoBahw~xhX2dbcl5kgnLelgS5xJxHksYg__&Key-Pair-Id=K3NV4LZ47N8M46)
-**Finding projects.** On the Overview screen you can:
-  - **Search** by project name, owner, or tag.
-  - **Filter by stage** to see only projects at a given step (archived projects appear here as their own option).
-  - **Filter by "shared with"** to see projects shared with specific people, a **me** option for projects shared with you, and a **Public** option for open-source plugins.
-  - **Filter by tag.**
-Filters combine, and your selection sticks in the page address — so refreshing or sharing the link keeps the same view.
-**The overview chat (your guide).** The chat on the Overview screen answers questions like "How do I start?" or "What does publishing do?" Make it your first stop whenever you're unsure — it can answer far more than you'd expect, from how a feature works to what your projects are doing. It does **not** build plugins — to build, open or create a project. It can also draw on any practice-wide context your Studio Admins have set up, so it can speak to your organization's goals and conventions.
-### **The five stages in detail**
-Every project moves through five stages. You advance each one by clicking its button — the assistant never skips ahead on its own.
-**1\. Discovery.** You describe what you want; the assistant asks clarifying questions, confirms **where in Canvas** the plugin will appear, and writes two plans: the **User Plan** (plain language) and the **Technical Plan** (build detail). When both exist, the **Approve Plan & Start Building** button appears.
-**2\. Build.** The assistant builds the plugin and, if it needs settings, shows a **Configuration Required** panel. Once the plugin is built, a testing plan exists, and any required settings are filled in, the **Deploy Now for Testing** button appears.
-**3\. Test & Iterate.** Your plugin is installed on your Canvas instance, and a Testing Checklist appears under this stage. Studio runs its own tests. You run the rest and mark each Passed, Failed or Skipped, and the assistant fixes and redeploys whatever fails. After a change is deployed, click **Regenerate Tests**. When every test has passed or been skipped, click **Confirm Successful Testing**.
-**4\. Final Review.** The assistant runs its quality checks and writes a plain-language **final review** document. When it's ready, the **Publish** button appears (it may read **Promote** depending on your setup — see Publishing below).
-**5\. Published / Promoted.** Your plugin is released. Published means it's live on your release target. Promoted, under a gated setup, means it's been sent to your team's code repository, and their own process takes it live. To change it later, click **Back to Test & Iterate** (see Updating a published plugin).
-### **Working with the assistant**
-**Talking to it well.** Describe what you want in plain language — goals and examples beat technical precision. When something's wrong, say what you saw and what you expected; the assistant takes it from there. And the chat isn't only for instructions — when in doubt, just ask. "What does this do?", "Why did that happen?", and "What should I do next?" are all fair questions, and the assistant can usually answer them right away.
-**The question card.** When the assistant needs answers, it shows a question card instead of asking inline. Use **Back** and **Next** to move between questions, **Review** to check everything before submitting, and select one or more options when a question allows multiple answers.
-**Plans & documents.** The assistant writes several documents, which open in tabs along the top of the chat (and can be downloaded):
-  - **User Plan** — plain-language description of what you'll get.
-  - **Technical Plan** — the build details (you don't need to read this).
-  - **Tradeoffs** — choices and limitations worth knowing about (see below).
-  - **Testing Checklist** — the steps to try your plugin during Test & Iterate.
-  - **Final Review** — the summary you read before publishing.
-Open documents refresh on their own when the assistant updates them; you'll see a reload prompt in the tab.
-**Tradeoffs.** Some choices have trade-offs — for example, data that's only kept for a limited time, or a setup that works for small volumes but not large ones. The assistant flags these in plain language **at the moment it makes the choice** and collects them in the Tradeoffs document, which feeds the "Before you go live" section of your final review. If a trade-off matters to you, just say so and the assistant can take a different approach.
-**Configuration values.** If your plugin needs values to run, they appear in the **Configuration Required** panel:
-  - **Sensitive values** (keys, passwords) are masked. Once saved, you'll see "Value set — leave blank to keep, type to replace"; your saved value never re-appears on screen.
-  - **Plain values** (web addresses, IDs, display names) show as normal text so you can read what you typed.
-  - Each value has a short **description** explaining what it is, where to get it, and what it should look like. If a value is missing one, you can ask the assistant to add it.
-  - After saving you'll see a **"Configuration saved"** confirmation. Saving new values for an already-deployed plugin re-installs it automatically.
-**Attachments.** Use the attachment option in the chat to add images (screenshots show as thumbnails), PDFs, or other files for the assistant to work from. Your uploads are listed under **User Attachments** on the project.
-### **Deploying & understanding results**
-**The deploy chip.** Every time Studio installs your plugin, a status chip appears in the chat and moves through these states:
-  - **Deploying to _(your instance)_ …** — the install is running.
-  - **Verifying on _(your instance)_ …** — Studio is checking that it loaded.
-  - **Deployed to _(your instance)_** — it loaded cleanly.
-  - **Deploy to _(your instance)_ failed** — click to expand the details; the assistant reads these automatically and proposes a fix.
-  - **Deploy unverified** (orange) — Studio couldn't confirm the result; usually resolved by trying again.
-You don't verify deploys yourself — Studio does it and posts the verdict.
-**When a deploy fails.** This is a normal part of building, not a mistake on your part. The assistant reads the failure detail, fixes the cause, and redeploys — you can simply let it continue or ask it to try again.
-**The status pill during testing.** While you're testing, Studio watches your Canvas instance's activity (its logs) in the background so the assistant can see what your plugin is doing. Look for a **slim status line just below the chat input box** — it's easy to miss. When it's working it shows a green **"Monitoring Canvas logs…"** with a count of activity captured. If it turns yellow or red (**"Log monitoring stopped"**), click the **Restart** button on that same line to resume it. If the assistant ever says it can't see your plugin's recent activity, check this line first and restart it.
-**Skipping a test.** Click the test in the Testing Checklist to open it, set its Status to **Skipped** , type the reason Studio asks for, and click **Skip test**. The test moves to the bottom of the checklist, struck through, with its reason attached. A skipped test doesn't block **Confirm Successful Testing**. Skip a test when you've checked the behavior another way, or when it needs setup your test instance can't provide. A skipped test means that version reaches production without that check. You can also skip tests Studio runs itself. To undo a skip, set the status back to Not started.
-### **Collaboration**
-**Sharing a project.** The project **owner** can share it with another Canvas user at the same organization, as either **view-only** or **full editing**. Open the share option, search for the person, choose their access, and they receive an email invite with a link. Sharing never crosses organizations.
-  - **View-only** collaborators can watch the project and read everything, but can't send messages or click stage buttons.
-  - **Full-editing** collaborators can send messages, add attachments, stop the assistant, and click stage buttons — everything except managing sharing.
-**Working at the same time.** If two people share a project, only one request can be in progress at a time. If you send while a collaborator's request is running, you'll see "Another collaborator's request is in flight" — just wait a moment and resend.
-**Tags.** Create colored tags and apply them to projects to organize your Overview. Use **Manage tags…** to create, rename, recolor, or remove tags, and the Tags filter to view by tag.
-**Archiving & renaming.** Use the **⋯ menu** on a project tile or in the project header to rename, share, or archive. Archived projects aren't deleted — they move out of the way and reappear under the archived option in the stage filter.
-**Making a plugin public (open source).** The share dialog has a **"Make this public (open source)…"** option. Submitting it notifies Canvas, who publish the plugin's source to the open-source library. You can be **attributed** by name or stay **anonymous**. Once requested, the project shows a green **Public** badge, and public plugins appear under the **Public** option in the "shared with" filter.
-## **Publishing explained (it depends on your setup)**
-What **Publish** does depends on how a Studio Admin set up your organization. The button is always labeled to tell you where it's sending things.
-**The two ways to publish:**
-  - **Direct** — Studio installs the finished plugin straight onto a configured Canvas instance. The button reads **Publish to _(target name)_**.
-  - **Gated** — Studio opens a **review request** in your team's code repository instead of installing. Your technical team reviews and approves it, then their own process takes it live. The button reads **Promote to _(your repo)_** , and the finished stage is labeled **Promoted**. 
-**Publishing to a specific target.** If your organization has more than one configured destination and you're authorized for several, you'll see **one button per destination** (for example, "Publish to production" and "Publish to uat"). Click the one you want.
-**"There's no Publish button."** If the final-review pane shows a notice instead of a Publish button, your organization hasn't finished choosing how plugins are released. Contact a Studio Admin — the notice lists who to reach — and they'll set up Direct or Gated release once.
-**Updating a published plugin.** A published plugin is live, so a change goes through testing and Final Review again before it ships.
-  1. In the Published stage, click **Back to Test & Iterate**. Studio asks what to do with the version that's out now. Under a direct setup, you can disable it in each release target or leave it running until the update is published. Under a gated setup it stays promoted, and Studio closes any open promotion PR unless you uncheck that box. Click **Move back**.
-  2. Describe the change in the chat. The assistant makes it and deploys it to your test instance.
-  3. Once the change is deployed, click **Regenerate Tests** to get a Testing Checklist for the new code. If you have several changes, make them all before you regenerate.
-  4. Studio runs the tests assigned to it on its own. Run the rest yourself and mark each one Passed or Failed.
-  5. When every test has passed or been skipped, click **Confirm Successful Testing**. Studio runs Final Review. When it finishes, the button reads **Publish (version) updates to (target name)** , or **Promote (version) updates to (your repo)** under a gated setup.
-Only the owner and collaborators with full editing can move a project back.
-## **Configuration & Set Up**
-Regular users don't configure anything — you just need access.
-  - **Prerequisites:** Studio enabled for your Canvas instance, and your account on the Studio user list.
-  - **Who sets it up:** A Studio Admin grants access and chooses how publishing works.
-  - **To get access:** Ask a Studio Admin to add you; you'll get a welcome email.
-  - **Verification:** You can open Studio and see the Overview screen.
-All organization-level setup — user access, release strategy, and practice-wide preferences — is covered in the **Studio Admin Guide**.
-## **FAQ & Troubleshooting**
-Q: Something's confusing or not working — what should I try first? A: Ask Studio. The chat can explain what you're seeing and suggest the next step for most situations, so it's the fastest first move before digging into this guide.
-Q: What's the difference between the User Plan and the Technical Plan? A: The User Plan is the plain-language description of what your plugin will do — read this one. The Technical Plan is the build detail for reference; you don't need to read it.
-Q: I opened a document tab and it changed while I was reading. A: The assistant updated that document. Open tabs refresh in place and show a reload prompt so you're always seeing the latest version.
-Q: The Deploy / Publish button I expected isn't showing. A: Stage buttons appear only when their requirements are met — for example, Deploy Now for Testing needs the build finished, a testing plan written, and any required settings filled in. If Publish is missing entirely, see "There's no Publish button" under Publishing.
-Q: A value I saved in the Configuration panel looks blank now. A: Sensitive values are hidden after saving for security. The placeholder "Value set — leave blank to keep" means it's still saved; only type if you want to replace it.
-Q: I shared a project but my colleague can't send messages. A: They likely have view-only access. Re-share with full editing, or ask the owner to change their access.
-Q: Why did I get "Another collaborator's request is in flight"? A: Someone else on the project has a request running. Only one runs at a time — wait a moment and resend.
-Q: What does the orange "unverified" deploy chip mean? A: Studio couldn't confirm whether the plugin loaded. It usually clears on the next deploy; ask the assistant to try again.
-Q: Can I get my plugin's source code? A: You can download the project's documents from the project pane. For the full source or making it open source, use "Make this public" or ask a Studio Admin.
-## **Related Resources**
-  - **Studio Quick Start Guide** — the step-by-step path to building your first plugin.
-  - **Studio Admin Guide** — for Studio Admins: granting access, choosing how plugins are released, and setting practice-wide preferences.
-## **Keywords & Metadata**
-Keywords: Studio reference, project stages, deploy chip, configuration, sharing, tags, publishing, direct release, gated release, promote, open source Categories: Studio, Reference
+This guide explains every screen, button, and feature in Studio so you can look up exactly how something works when you need it. For step-by-step instructions on building your first plugin, see the **Studio Quick Start Guide**.
+**Tip: When in doubt, ask Studio!**
+Not sure how something works? Ask the AI assistant directly in Studio's chat. It can answer most questions and guide you through the process without leaving your project.
+## **Getting access**
+Studio opens from Canvas Platform ([platform.canvasmedical.com](https://platform.canvasmedical.com)) under Studio in the sidebar. You will need the Studio user or Studio admin roles in Platform to view this section. Your Organization admin can share this access.
+## Get started
+  - [Getting Started with Studio: Build Your First Plugin](https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio)
+  - [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide)
+  - Navigating Studio: projects and chats
+  - [Studio and Onboarding are moving to Canvas Platform](https://help.canvasmedical.com/articles/8280506803-studio-and-onboarding-are-moving-to-canvas-platform)
+## Build and test
+  - Studio project stages
+  - Testing and deployment in Studio
+  - Collaborating on Studio projects
+  - Installing a Plugin Catalog plugin with Studio
+## Publish and update
+  - Publishing and updating Studio plugins
+  - [Gated release: from Promote to production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
+  - When code changes outside Studio
+  - Fixes from Canvas Platform
+## Administer Studio
+  - [Studio Admin Guide](https://help.canvasmedical.com/articles/2234141107-studio-admin-guide)
+  - Adding Studio users
+## Help
+  - Studio FAQ and troubleshooting
 ----- END PAGE https://help.canvasmedical.com/articles/2111959321-studio-reference-guide
 
 
@@ -4106,81 +4036,83 @@ Additionally, if you create a new role that needs prescribing capabilities, ensu
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio
 ## **Introduction**
-Studio helps clinical and operations staff build custom Canvas plugins by describing what they want in plain language, while an AI assistant does the building, testing, and deploying. You don't write any code — you have a conversation and click a few buttons along the way. This article walks you through your first project from start to finish.
-**When in doubt, ask Studio.** Anything you're unsure about — what a button does, what to build, why something happened — you can simply ask in the chat. Studio can answer most questions about how it works, so you rarely need to leave the page to find an answer.
-## **User's Guide**
-### **Getting Started**
-**Open Studio inside Canvas.** Studio runs as an app within your Canvas instance. Open it the same way you open other Canvas apps from the menu.
-![01-canvas-menu-entry.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781739471672-01-canvas-menu-entry.png?Expires=253370764800&Signature=dpzRd3MNZxDEt5E~8qDBX1uPksXZdMbq-YoxCCud8lAXlVAEY9NgAJ7B~tKvz-~iEQiUp6wWytb3i3ohlSHMn5VrKqJbAXljwZBxwbGR7g7xtIpI4MR3eej3JQQ4bH56mP6BUu4dg~chxudmuTmprSYtOE8BYL8pOFj1c5zMJLzOtlo6L8jo8QML~r1tvjbvC3xtaUJvgMecsFnR9vlRW-pDWEbUowmzjy~JBrNXO-Dcwf8Z-gbXhA5ljFFTVyrNaDAacgrqQ~y~j~J1kFsvw2rlUa-gYj0ZBQSBNclCepIeMMCWbt0bTaNEmMLBfojFPvjlVzPVgBOp9XPBxccodA__&Key-Pair-Id=K3NV4LZ47N8M46)
-If you don't see Studio, your practice may not have given you access yet — ask a Studio Admin at your organization to add you. Once you have access, you'll get a welcome email with a direct link.
+Studio lets clinical and operations teams build custom Canvas plugins using plain language. Simply describe what you want to create, and Studio's AI assistant helps you build, test, and deploy it.
+This guide walks you through creating your first Studio project, step by step.
+**Tip: When in doubt, ask Studio!**
+Not sure what a button does, how to build something, or why something happened? Just ask in the Studio chat. The AI assistant can answer questions and guide you through the process, so you can keep working without leaving Studio to search for help.
+# **Getting Started**
+**Open Studio.** Sign in at [platform.canvasmedical.com](https://platform.canvasmedical.com) and select **Studio › All projects** in the sidebar.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792820555282-01-sidebar-studio-all-projects.png?Expires=253370764800&Signature=AZGC3MSuviGjq1jaGuWRuV5XsWo0YM~Sk8I1iparPK5748eXC7qllBjc5OQoieBnEsUnnagt8zpzNcLvJScR5FPt4MEclxmr8h1l2TBKJEhWR4RDG7ceUBDeM5MFworXBxo3VvbThNrwWxadFBnvdE3Dris6tymXvOJjfKTESGEOQ6~gW3Ufm4aMyZpu95nayhJorp2jNfrMXDl4Q4NfPvcTm6sTJxgk2XixclM9dqXqYh9FPM1F~cHMIdMsL9Gy2gMry7hAviN9nyLctH64sZhREVAbSY3JagrXr~I9GVwsEGk2uhdTdvX~VGImerWnxi6iR-LZb6a5vql9b5AcVQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+Don't see Studio? Ask your Organization admin for the Studio user role.
 **The two screens you'll use.** Studio has just two views:
-  - **Overview** — a grid of project tiles (one tile per plugin you're building), plus a chat on the right that answers questions about how Studio works. When in doubt, ask it anything — "How do I start?", "What does this button do?", even "What could I build?"
-  - **Project** — opens when you click into a project. The left side shows your progress through the build; the right side is where you chat with the assistant. Documents the assistant creates (the User Plan, Technical Plan, and others) open in **tabs along the top of the chat**.
-![02-overview-screen.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781739489114-02-overview-screen.png?Expires=253370764800&Signature=e54MqNkGxJ~qM8PlLO-MfnA3uKJb~OH-r7CVROXkein3zr8qVcLB4sXsGAPO2Jk~VOlNc9xJQidHgymdniEqs2QfjxEaceCItFF~dpnrO3AZQRYNoZmwo9ISIZAHGN2gnTzBsjMdO1vzifaHYkB-ND8xYVHbOmt7R9QLm4Np5~rg8yj3-JAgCkkPiPmJ2u8~yE3gywEnANzQN1vreVs5s~abe-KQpxnyZXuwN~nIfpkHOvpxcW8OM7z3wRzSGmBPjyjtulP4zoOgwZc1blR1-nPOW-wcvmBXKKszMgtKHnRrEFK36WPtN8lOeXrs9Tyd5r5bOkAu9CwQV09Q68FGUQ__&Key-Pair-Id=K3NV4LZ47N8M46)
-**How a project moves.** Every plugin moves through five stages:
+  - **Overview:** Displays all your projects as tiles, with one tile per plugin. Use the chat on the right to ask questions about Studio, such as "How do I get started?", "What does this button do?", or "What can I build?"
+  - **Project:** Opens when you select a project. The left side shows your progress through the build process, while the right side is where you work with the AI assistant. Documents created during the project, such as the User Plan and Technical Plan, appear in tabs at the top of the chat.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792821012256-gif1studio.gif?Expires=253370764800&Signature=XPbqcosTtOckZUHmjLfXMPwgYLyaaw3WP8UAJkRhZpubQ2e7zAF0q3drTyPqpXRNkkt01ekviFS41xqarpDwiXjUcP9SSiEFYCwtzgvcKv2afO4n2OoUUT4AKvj1rOlYsiaPxs6CqKbuFYIihF9XMhYyl7kJ9Yr7PHFCYCNeU3trDLHK56MlpmQZzXqegvRnerY7rO1frPdeRENLsCGDXw--zXBZwMiIOYgyT-nmkke9MoLEA3iQk~Q4lyJ73EF1OApZO-am6QxgkGsxWWJftGstvUFbqL0sbdHO3ppsZC~tvXjy67I2s7bJA1qBht2HAC2DpgZHSzMDgSiT4CkUCw__&Key-Pair-Id=K3NV4LZ47N8M46)
+## **How a project moves**
+Every plugin moves through five stages:
 **Discovery → Build → Test → Review → Publish**
-The golden rule: **you** click a button to move to the next stage. The assistant never advances on its own — it does the work, then waits for you. You can also share a project with a colleague (view-only or full editing) and work on it together.
-**For more information:** this guide covers your first build. For full detail on every screen and feature, see the **Studio Reference Guide**. If you manage Studio for your organization, see the **Studio Admin Guide**.
-### **Step 1 — Start a new project**
-Each project builds **one** plugin. When you want to build something different later, start a fresh project rather than reusing this one.
-  1. On the Overview screen, start a new project and give it a clear name (for example, "Overdue follow-up reminder").
-  2. The project opens and the assistant greets you and asks what you'd like to build.
-### **Step 2 — Describe what you want (Discovery)**
-This is the conversation where the assistant figures out exactly what to build.
-  - **Describe your idea** in your own words — what should the plugin do, and for whom? You don't need to be precise or technical.
-  - **Answer the assistant's questions.** It will gather what it needs in a question card. Use **Back** and **Next** to move through the questions and **Review** to check your answers before submitting.
-  - **Choose where your plugin shows up in Canvas.** The assistant will ask which part of Canvas the plugin lives in (for example, the patient chart or a background task). This matters — picking the right spot now avoids rebuilding later, so take a moment to choose carefully.
-  - **Review your plans.** The assistant writes two documents, which open in tabs along the top of the chat: the **User Plan** (plain-language description of what you'll get) and the **Technical Plan** (the build details). Read the User Plan and make sure it matches what you have in mind.
-When the plans look right, click **Approve Plan & Start Building**.
-### **Step 3 — Let it build and fill in settings (Build)**
-The assistant now builds your plugin. You'll see it working in the chat — you don't need to do anything while it builds.
-  - **Fill in any settings it needs.** If your plugin needs values to work (like a web address or an account key), a **Configuration Required** panel appears on the left. Each field has a short note explaining what the value is, where to find it, and what it should look like.
-  - **Deploy for testing.** Once the plugin is built and any required settings are filled in, a **Deploy Now for Testing** button appears in the timeline. Click it to put your plugin on your Canvas instance so you can try it.
-### **Step 4 — Try it out (Test & Iterate)**
-  - **Watch the deploy chip.** After you click deploy, a small status chip appears in the chat and moves through  _Deploying… → Verifying… → Deployed_ (or  _Deploy failed_ , which you can click to see details). The assistant handles verification — you don't need to check anything yourself.
-  - **Test your plugin.** Use the test steps the assistant prepared and try the plugin in Canvas. Tell the assistant in the chat what worked and what didn't.
-  - **Fixes happen in the chat.** Describe any problem in plain language; the assistant adjusts the plugin and redeploys. Repeat until you're happy.
-  - **Watch the monitoring line.** A slim status line just below where you type shows Studio watching your plugin's activity. If it turns yellow or red and says monitoring stopped, click **Restart** on that line — it's small and easy to miss, but the assistant needs it to see what your plugin is doing.
-When everything works, click **Confirm Successful Testing**.
-### **Step 5 — Final review and publish**
-  - **Read the final review.** The assistant prepares a plain-language summary. Pay special attention to the **"Before you go live"** section — it lists anything you should know before the plugin is in real use.
-  - **Publish.** Click **Publish** to ship the plugin. What "publish" actually does depends on how your practice set up Studio — it may install the plugin directly, or send it to your team for review first. See the Reference Guide, "Publishing explained," for the details, and don't worry: the button is labeled to tell you where it's sending things.
-### **Common Workflows**
-  - **Attach a screenshot or file.** Use the attachment option in the chat to give the assistant a picture of what you mean or a document to work from.
-  - **Stop or queue a message.** If the assistant is working and you want it to stop, use the stop button. If you type while it's busy, your message is queued and sent when it finishes.
-  - **Find a project again later.** Everything is saved automatically. Return to the Overview screen and use search or the stage and "shared with" filters to find a project. You can pick up exactly where you left off.
-### **Troubleshooting Issues**
-  - **When in doubt, ask Studio.** Before anything else, try just asking in the chat — "Why did this happen?", "What should I do next?", "Is this normal?" Studio can explain most of what you're seeing and tell you the next step.
-  - **It looks frozen.** A "thinking" indicator means the assistant is still working — large steps take a little time. Only if it stays quiet for a while with no indicator is something likely stuck; try sending a short follow-up.
-  - **A deploy failed.** This is normal and not the end. The assistant reads the failure automatically and proposes a fix — just let it continue, or ask it to try again.
-  - **A button you expected isn't there.** Stage buttons only appear once their requirements are met (for example, **Deploy Now for Testing** appears only after the build is ready and required settings are filled in).
+You control when the project advances. Studio's AI assistant completes the work at each stage, then waits for you to approve moving forward.
+You can also share projects with colleagues, giving them view-only or editing access.
+For full detail on every screen and feature, see the **Studio Reference Guide**. If you manage Studio for your organization, see the **Studio Admin Guide**.
+## Step 1: Create a Project
+Each Studio project creates one plugin. Start a new project for each plugin you want to build.
+  1. From the **Overview** screen, create a new project.
+  2. Give your project a descriptive name, such as "Overdue Follow-Up Reminder."
+  3. Studio opens your project and asks what you'd like to build..
+## Step 2: Describe Your Plugin (Discovery)
+During Discovery, you'll work with Studio to define what your plugin should do.
+  1. **Describe your idea.** Explain what you want the plugin to accomplish and who will use it. No technical knowledge is required.
+  2. **Answer Studio's questions.** Studio guides you through a series of questions to clarify your requirements. Use **Back** and **Next** to navigate, then **Review** your answers before submitting.
+  3. **Choose where your plugin shows up in Canvas.** he assistant will ask which part of Canvas the plugin lives in (for example, the patient chart or a background task). This determines how the plugin integrates with your workflow.
+  4. **Review your plans.** Studio generates two documents, available in tabs above the chat:
+     - **User Plan:** A plain-language summary of what your plugin will do.
+     - **Technical Plan:** Details about how Studio will build it.
+Review the User Plan to confirm it matches your expectations. If something needs to change, tell Studio in the chat. When you're satisfied, click **Approve Plan & Start Building**
+## Step 3: Build and Configure Your Plugin (Build)
+Studio builds your plugin automatically. You can follow its progress in the chat. Depending on your plugin, you may need to complete two actions:
+  1. **Fill in any settings it needs.** If your plugin needs additional information, such as a web address or API key, a **Configuration Required** panel appears on the left. Each field includes instructions explaining what to enter and where to find it.
+  2. **Deploy for testing.** Once the plugin is built and any required settings are filled in, a **Deploy Now for Testing** button appears in the timeline. Click it to put your plugin on your Canvas instance so you can try it.
+## Step 4: Test and Refine Your Plugin (Test & Iterate)
+Testing helps confirm your plugin works as expected before publishing.
+  1. **Watch the deploy chip.** After you click deploy, a small status chip appears in the chat and moves through _Deploying… → Verifying… → Deployed_ (or _Deploy failed_ , which you can click to see details). 
+  2. **Complete the Testing Checklist.** Studio runs automated checks and provides a checklist for you to test the remaining functionality in Canvas. Mark each test as **Passed** , **Failed** , or **Skipped**.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792821484512-02-testing-checklist.png?Expires=253370764800&Signature=RrnlgPOw5TSKf~Avk03TvlGRp0t6KrQDVvvaW7QZqwxWIIouY-qDReWJbwZKFMujWtXySBzDCqNPM7u8NXZRwtruLgO7p5EJugW6s6jOCdhmdtpiQvBug1aa6-5FgWdOYmU4Y0IMnzxeDWASNKNmmGcqlFcB5PgmM1ile7RhDN~wB1j~u6aJOpTZkkgbFlBsuLLI5OA-o-O50zPe9ArFIi8uTwWSo7Bn4syMcP4iNgWQsndPWDGXiIWTsi0-PBde7OFtlleScV2X7U7uDP92XoZbzePtHD50QBK-WpUqz6O1qhUFu7Jbb769QwZOE~lgCyokvWnEbmVQey0NcEgaLA__&Key-Pair-Id=K3NV4LZ47N8M46)
+  3. **Request changes as needed.** If something doesn't work as expected, describe the issue in the chat. Studio can update the plugin and redeploy it for another round of testing.
+  4. **Check monitoring status.** The status indicator below the chat input shows whether Studio is monitoring your plugin's activity. If monitoring stops, click **Restart** so Studio can continue tracking activity and troubleshooting issues.
+You can repeat testing and make adjustments until the plugin meets your needs. Once all tests are marked Passed or Skipped, click **Confirm Successful Testing**.
+## Step 5: Review and Publish Your Plugin
+Before publishing, Studio prepares a final summary of your plugin.
+  1. **Review the summary.** Confirm the plugin meets your requirements. Pay special attention to the **Before You Go Live** section, which highlights important considerations before release.
+  2. **Publish or promote your plugin.** The available action depends on the release process configured by your Studio Admin:
+     - **Direct release:** Select **Publish to {target}** to release the plugin to the specified Canvas environment.
+     - **Gated release:** Select **Promote to {repo}** to send the plugin through your organization's review process.
+     - **Release not configured:** If no release strategy is available, ask your Studio Admin to complete the setup before proceeding.**Common Workflows**
+For more information, see **Publishing Explained** in the Studio Reference Guide.
+## Additional Tips
+  - **Share screenshots or files:** Attach images or documents in the chat to help Studio understand your requirements or troubleshoot an issue.
+  - **Pause or queue messages:** Use the stop button to interrupt Studio while it's working. Messages entered while Studio is busy are queued until it finishes.
+  - **Resume a project:** Studio saves your work automatically. Return to the Overview screen and use search or filters to find and reopen your project.
+  - **Collaborate with colleagues:** Share your project with other Canvas users and grant view-only or editing access.
 ## **Configuration & Set Up**
-Most users don't need to set anything up — you just need access.
-  - **Prerequisites:** Studio must be enabled for your Canvas instance, and your account must be on the Studio user list.
-  - **Who grants access:** A Studio Admin at your organization adds users and configures how publishing works.
-  - **To get access:** Ask a Studio Admin to add you. You'll receive a welcome email with a link once you're added.
-  - **Verification:** You're set up correctly when you can open Studio and see the Overview screen with the option to start a new project.
-For the admin side of setup (user access, publishing, and practice-wide preferences), see the **Studio Admin Guide**.
+  - Your Canvas team must enable Studio for your organization.
+  - Your Organization Admin must assign you the **Studio** user role in Canvas Platform.
 ## **FAQ & Troubleshooting**
-Q: Do I need to know how to code? 
-A: No. You describe what you want in plain language and the assistant builds it.
-Q: Can I build more than one plugin? 
-A: Yes — create a separate project for each plugin. Each project builds one plugin.
-Q: Can a coworker help me on the same project? 
-A: Yes. The project owner can share it with another Canvas user as view-only or full editing. See "How a project moves" above.
-Q: What happens when I click Publish? 
-A: It depends on how your practice configured Studio — it may install the plugin directly to a Canvas instance, or open a review request for your team. The button is labeled to show where it's sending things. See the Reference Guide, "Publishing explained."
-Q: I don't see a Publish button at all. 
-A: Your practice hasn't finished setting up how plugins are released. Ask a Studio Admin to choose a release strategy.
-Q: My deploy failed — did I do something wrong? 
-A: No. Failed deploys are part of normal building. The assistant reads the error and fixes it for you.
-Q: I closed the tab — did I lose my work? 
+**Q: Do I need to know how to code?**
+A: No. Describe what you want to build in plain language, and Studio handles the technical work.
+**Q: Can I build more than one plugin?**
+A: Yes. Create a separate Studio project for each plugin.
+**Q: Can a coworker help me on the same project?**
+A: Yes. Project owners can share projects with other Canvas users and grant view-only or editing access.
+**Q: What happens when I click Publish?**
+A: It depends on your organization's release settings. Studio may publish the plugin directly to a Canvas environment or send it through your team's review process. See the Reference Guide, "Publishing explained."
+**Q: I don't see a Publish button at all.**
+A: Your organization may not have configured a release strategy. Contact your Studio Admin for assistance.
+**Q: What if my deployment failsg?**
+A: Deployment failures can happen during development. Studio can review the error and help troubleshoot the issue. If needed, describe the problem in the chat and ask Studio to fix it.
+**Q: Will I lose my work if I close Studio?**
 A: No. Your project, chat history, and plans are saved automatically. Reopen the project from the Overview screen to continue.
 ## **Related Resources**
-  - **Studio Reference Guide** — look up any feature or screen in detail, including how publishing works.
-  - **Studio Admin Guide** — for Studio Admins: granting access, choosing how plugins are released, and setting practice-wide preferences.
-## **Keywords**
-Keywords: Studio, build a plugin, Canvas plugin, quick start, deploy plugin, publish plugin, AI assistant, no-code Categories: Studio, Getting Started
+Next: [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide) · Testing and deployment in Studio · Publishing and updating Studio plugins
 ----- END PAGE https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio
 
 
@@ -10842,9 +10774,9 @@ No. Once your organization moves, opening Studio in Canvas shows a notice with a
 **Who on my team gets access?**
 Everyone who uses Studio and/or Onboarding at your organization today. Your access carries over:
   - **Studio user:** builds plugins in Studio on their own projects and the ones shared with them.
-  - **Studio admin:** oversees Studio, every project without being added to it, and sets how Studio releases plugins and who can access Studio.
+  - **Studio admin:** oversees Studio, every project without being added to it, and sets how Studio releases plugins.
   - **Onboarding admin:** manages your organization's onboarding projects and access to the Onboarding agent.
-Organization admins on Canvas Platform can add and invite more of your team to use Studio and Onboarding. Studio and Onboarding admins can add and invite more of your team to use Studio and Onboarding, respectively.
+Organization admins on Canvas Platform can add and invite more of your team to use Studio and Onboarding.
 **How do I add a teammate?**
 An organization admin invites them from the Users page on Canvas Platform and gives them a specific role. The teammate gets an email with a link to set their password. If your organization signs in with single sign-on, they sign in there instead. Someone who already has a Canvas Platform account is simply added to your organization, with no new password.
 **Do I need a new password?**

@@ -1406,34 +1406,12 @@
 ## Integration Partners
 
 ## Studio
-- [Getting Started with Studio: Build Your First Plugin](https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio)
-    - Introduction
-    - User's Guide
-        - Getting Started
-        - Step 1 — Start a new project
-        - Step 2 — Describe what you want (Discovery)
-        - Step 3 — Let it build and fill in settings (Build)
-        - Step 4 — Try it out (Test & Iterate)
-        - Step 5 — Final review and publish
-        - Common Workflows
-        - Troubleshooting Issues
-    - Configuration & Set Up
-    - FAQ & Troubleshooting
-    - Related Resources
-    - Keywords
-- [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide)
-    - Introduction
-    - User's Guide
-        - Getting around
-        - The five stages in detail
-        - Working with the assistant
-        - Deploying & understanding results
-        - Collaboration
-    - Publishing explained (it depends on your setup)
-    - Configuration & Set Up
-    - FAQ & Troubleshooting
-    - Related Resources
-    - Keywords & Metadata
+
+### Publish and update
+- [Studio Admin Guide:  Gated release - from Promote to live in production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
+        - Gated release: from Promote to live in production
+
+### Administer Studio
 - [Studio Admin Guide](https://help.canvasmedical.com/articles/2234141107-studio-admin-guide)
     - Introduction
     - User's Guide
@@ -1449,8 +1427,27 @@
     - FAQ & Troubleshooting
     - Related Resources
     - Keywords
-- [Studio Admin Guide:  Gated release - from Promote to live in production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
-        - Gated release: from Promote to live in production
+
+### Get started
+- [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide)
+    - Getting access
+    - Get started
+    - Build and test
+    - Publish and update
+    - Administer Studio
+    - Help
+- [Getting Started with Studio: Build Your First Plugin](https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio)
+    - Introduction
+    - How a project moves
+    - Step 1: Create a Project
+    - Step 2: Describe Your Plugin (Discovery)
+    - Step 3: Build and Configure Your Plugin (Build)
+    - Step 4: Test and Refine Your Plugin (Test & Iterate)
+    - Step 5: Review and Publish Your Plugin
+    - Additional Tips
+    - Configuration & Set Up
+    - FAQ & Troubleshooting
+    - Related Resources
 
 ## Reference Plugins
 - [Group Therapy Session Plugin](https://help.canvasmedical.com/articles/3873660040-group-therapy-session-plugin)
