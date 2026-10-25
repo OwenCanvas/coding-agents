@@ -1407,26 +1407,63 @@
 
 ## Studio
 
+### Build and test
+- [Testing and Deploying in Studio](https://help.canvasmedical.com/articles/8834128147-testing-and-deployment-in-studio)
+        - Status
+        - What it means
+        - What to do
+    - Skipping a Test
+    - Testing After Changes
+    - When Deployment Is Paused or Waiting
+    - Configuring Your Plugin
+        - Understanding Configuration Values
+        - Next: Studio project stages · Publishing and updating Studio plugins
+- [Studio project stages](https://help.canvasmedical.com/articles/7114959195-studio-project-stages)
+    - 1. Discovery
+    - 2. Build
+    - 3. Test & Iterate
+    - 4. Final Review
+    - 5. Published / Promoted.
+        - Document
+        - Purpose
+    - Understanding Tradeoffs
+        - Next: Testing and deployment in Studio · Publishing and updating Studio plugins
+- [Collaborating on Studio projects](https://help.canvasmedical.com/articles/6344349713-collaborating-on-studio-projects)
+        - Next: Navigating Studio: projects and chats
+- [Installing a Plugin Catalog plugin with Studio](https://help.canvasmedical.com/articles/6317421757-installing-a-plugin-catalog-plugin-with-studio)
+        - Next: Studio project stages
+
 ### Publish and update
-- [Studio Admin Guide:  Gated release - from Promote to live in production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
-        - Gated release: from Promote to live in production
+- [Gated release: from Promote to Production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
+        - Next: Publishing and Updating Studio Plugins · When Code Changes Outside Studio
+- [Publishing and updating Studio Plugins](https://help.canvasmedical.com/articles/6563880190-publishing-and-updating-studio-plugins)
+        - Release Strategy
+        - How it works
+        - What if I Don't See a Publish Button?
+    - How to Update a Plugin
+        - Next: Testing and deployment in Studio · Gated release: from Promote to production
+- [When code changes outside Studio](https://help.canvasmedical.com/articles/4485157203-when-code-changes-outside-studio)
+    - If you use Gated release
+    - If your plugin’s code is on Canvas Platform
+    - What Happens to Your Next Deployment?
+        - Next: Publishing and updating Studio plugins
+- [Fixes from Canvas Platform](https://help.canvasmedical.com/articles/2771862260-fixes-from-canvas-platform)
+        - Next: Publishing and updating Studio plugins
 
 ### Administer Studio
 - [Studio Admin Guide](https://help.canvasmedical.com/articles/2234141107-studio-admin-guide)
-    - Introduction
-    - User's Guide
-        - Getting Started
-        - Managing who can use Studio
-        - Choosing a release strategy
-        - Setting up Direct release
-        - Setting up Gated release
-        - Granting per-user deploy permissions
-        - Setting practice baseline context
-        - Providing instance instructions
-    - Configuration & Set Up
-    - FAQ & Troubleshooting
-    - Related Resources
-    - Keywords
+        - Release Strategy
+        - How it works
+        - Adding a Release Target
+        - Option 1: Connect GitHub
+        - Option 2: Connect GitLab
+        - Next: Adding Studio users
+- [Adding Studio users](https://help.canvasmedical.com/articles/5083682641-adding-studio-users)
+        - Role
+        - Permissions
+        - Issue
+        - Explanation
+        - Next: Studio Admin Guide
 
 ### Get started
 - [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide)
@@ -1448,6 +1485,19 @@
     - Configuration & Set Up
     - FAQ & Troubleshooting
     - Related Resources
+        - Next:Studio Reference Guide· Testing and deployment in Studio · Publishing and updating Studio plugins
+- [Navigating Studio: Projects and Chats](https://help.canvasmedical.com/articles/9213618867-navigating-studio-projects-and-chats)
+    - Getting Around Studio
+    - Finding and Organizing Projects
+    - Overview Chat: Your Studio Guide
+    - Working with the AI Assistant
+        - Communicating with Studio
+    - Answering Questions
+    - Uploading Attachments
+        - Next:Studio project stages · Collaborating on Studio projects
+
+### Help
+- [Studio FAQ and Troubleshooting](https://help.canvasmedical.com/articles/8185437170-studio-faq-and-troubleshooting)
 
 ## Reference Plugins
 - [Group Therapy Session Plugin](https://help.canvasmedical.com/articles/3873660040-group-therapy-session-plugin)

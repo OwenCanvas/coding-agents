@@ -861,31 +861,30 @@ This process begins with an open note of the patient chart.
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/2111959321-studio-reference-guide
-This guide explains every screen, button, and feature in Studio so you can look up exactly how something works when you need it. For step-by-step instructions on building your first plugin, see the **Studio Quick Start Guide**.
+This page links to every Studio article, grouped by what you're doing. For step-by-step instructions on building your first plugin, see [**Getting Started with Studio: Build Your First Plugin**](https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio).
 **Tip: When in doubt, ask Studio!**
 Not sure how something works? Ask the AI assistant directly in Studio's chat. It can answer most questions and guide you through the process without leaving your project.
 ## **Getting access**
 Studio opens from Canvas Platform ([platform.canvasmedical.com](https://platform.canvasmedical.com)) under Studio in the sidebar. You will need the Studio user or Studio admin roles in Platform to view this section. Your Organization admin can share this access.
 ## Get started
   - [Getting Started with Studio: Build Your First Plugin](https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio)
-  - [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide)
-  - Navigating Studio: projects and chats
+  - [Navigating Studio: Projects and Chats](https://help.canvasmedical.com/articles/9213618867-navigating-studio-projects-and-chats)
   - [Studio and Onboarding are moving to Canvas Platform](https://help.canvasmedical.com/articles/8280506803-studio-and-onboarding-are-moving-to-canvas-platform)
 ## Build and test
-  - Studio project stages
-  - Testing and deployment in Studio
-  - Collaborating on Studio projects
-  - Installing a Plugin Catalog plugin with Studio
+  - [Studio project stages](https://help.canvasmedical.com/articles/7114959195-studio-project-stages)
+  - [Testing and Deploying in Studio](https://help.canvasmedical.com/articles/8834128147-testing-and-deployment-in-studio)
+  - [Collaborating on Studio projects](https://help.canvasmedical.com/articles/6344349713-collaborating-on-studio-projects)
+  - [Installing a Plugin Catalog plugin with Studio](https://help.canvasmedical.com/articles/6317421757-installing-a-plugin-catalog-plugin-with-studio)
 ## Publish and update
-  - Publishing and updating Studio plugins
-  - [Gated release: from Promote to production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
-  - When code changes outside Studio
-  - Fixes from Canvas Platform
+  - [Publishing and updating Studio Plugins](https://help.canvasmedical.com/articles/6563880190-publishing-and-updating-studio-plugins)
+  - [Gated release: from Promote to Production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release)
+  - [When code changes outside Studio](https://help.canvasmedical.com/articles/4485157203-when-code-changes-outside-studio)
+  - [Fixes from Canvas Platform](https://help.canvasmedical.com/articles/2771862260-fixes-from-canvas-platform)
 ## Administer Studio
   - [Studio Admin Guide](https://help.canvasmedical.com/articles/2234141107-studio-admin-guide)
-  - Adding Studio users
+  - [Adding Studio users](https://help.canvasmedical.com/articles/5083682641-adding-studio-users)
 ## Help
-  - Studio FAQ and troubleshooting
+  - [Studio FAQ and Troubleshooting](https://help.canvasmedical.com/articles/8185437170-studio-faq-and-troubleshooting)
 ----- END PAGE https://help.canvasmedical.com/articles/2111959321-studio-reference-guide
 
 
@@ -946,92 +945,96 @@ This process begins in an open note of the patient chart.
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/2234141107-studio-admin-guide
-For Studio Admins (clinical or operations leads who manage Studio for their organization — no coding experience needed)
-## **Introduction**
-This guide is for **Studio Admins** — the people who decide who can use Studio at your organization and how finished plugins get released. It covers the one-time setup you do once, plus the settings you'll revisit occasionally. Everyday plugin building is covered in the Quick Start and Reference guides; this guide is only the admin side.
-## **User's Guide**
-### **Getting Started**
-**What a Studio Admin can do.** A Studio Admin controls the organization-wide settings that regular users can't:
-  - Who is allowed to use Studio.
-  - How finished plugins are published (the "release strategy").
-  - Which users can publish to which destinations.
-  - Practice-wide context and instructions the build assistant follows.
-**How the role is granted.** The Studio Admin role is assigned in **Canvas's own system admin** (assign the "Studio Admin" role to a staff member) — not from inside Studio. Studio itself can't promote someone to admin, so if you need another admin, have a Canvas administrator assign the role.
-**Opening the Admin panel.** Once you have the role, you'll see an **Admin** button to the right of your name in the top toolbar (next to the version label), from any screen.
-![admin-button.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781740624011-admin-button.png?Expires=253370764800&Signature=U-zJc5iNstQNhe-z1rNx5izcCquRE5eAgviZBI1pkctSnkm6-wnaL9P4K5jShoUksgpDwMHAVv9q8O2NAkk77PyviyUk5qG4tm2awY3m5EQVebbGOoOJU12kbT85zgE5gM5M7KQQHvluHmKFK9-PsMg1cMyLxlWeyJFh4z-fSYJlnQNSWBsLNIoIge4B4z7nEoA~tyQ4pp7kJkSTWBAVw9DfH4tykaaxEfMCB6soo0303ASjCzUhq6pgMZcaqU7fW668VOjCsXs21PEIP-nHZhzem85zpgoC4606PEJ5RhPohBRqFF74hdx3uvCQhIfpNvL8rx5Thfa6wJf6XR4E-g__&Key-Pair-Id=K3NV4LZ47N8M46)
-Clicking it opens a panel from the right side. Closing it (the close button, clicking outside, or Escape) returns you to where you were; if you have unsaved changes, Studio asks you to confirm before closing.
-![admin-panel.png](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1781740636049-admin-panel.png?Expires=253370764800&Signature=MWvHFfVVFGQkRbER5tdYRcnRy6JLYorWQTacr52PdJsgOh3-c8~M036X3PX9PvC8MUvD8FTpUOL696z355f~rzD51yni6xt6JGDDmGUyTJzUGegX4mdJA1yktY7~iLyLNS9VvDEvJLJDvb5SjFYp8N9X27CC9J1nOZwanVXQNmIYhC9PiqF7fj9JnsnyiN2SxD0i-u-sP04fg5jVy09~BGzvZ9jgpCgmit8zY1uV1-njhxORchYRAEzf7etbT0ExHvmBg7o4zSaR22s5L49NnsEDAVX~BVl~iRLvCwiYTFYg1br6Zwu3CHWJnFbZLd3qF9BzWrSpLHv~~BJ-b~CqmQ__&Key-Pair-Id=K3NV4LZ47N8M46)
-### **Managing who can use Studio**
-Studio access is an explicit list you curate under **Admin → User access**.
-  - **Add a user:** search for the staff member by name and add them. They receive a **welcome email** with a link to Studio.
-  - **Remove a user:** removing access takes effect on their next visit. Their projects are not deleted — they stay on file and remain visible to admins and to anyone the project was shared with.
-  - **Existing users:** the first time this was switched on, everyone who already had a Studio project (as an owner or collaborator) was added automatically, so no one lost access.
-### **Choosing a release strategy**
-Before anyone can publish a finished plugin, you choose **how** publishing works, under **Admin → Plugin release strategy**. There are two options:
-  - **Direct** — Studio installs each finished plugin straight onto a Canvas instance you configure.
-  - **Gated** — Studio opens a **review request** in your team's code repository instead of installing, so a technical reviewer approves it before it goes anywhere.
-**Until you choose one,** a project that reaches final review shows a notice asking the user to contact a Studio Admin instead of a Publish button. Pick the strategy that matches how your organization wants to ship software, then follow the matching setup section below.
-### **Setting up Direct release**
-When your strategy is **Direct** , add the Canvas instance(s) Studio may install to:
-  1. In **Admin → Plugin release strategy** , with Direct selected, open **\+ Add target instance**.
-  2. Give the target a **name** (for example, "production" or "uat"), its **subdomain** , and the Canvas **client ID** and **client secret** for that instance.
-  3. Save. Repeat for each instance you want to publish to.
-By default, only Studio Admins can publish to configured targets; to let specific non-admin users publish, see "Granting per-user deploy permissions" below.
-### **Setting up Gated release**
-When your strategy is **Gated** , you connect Studio to your team's repository. Studio supports both GitHub and GitLab.
-**GitHub:**
-  1. Install the **Canvas Studio GitHub App** on your organization, granting it access to the one repository you want plugins sent to.
-  2. In **Admin → Plugin release strategy → Gated** , paste the installation id (the numeric id or the full GitHub URL works).
-  3. Click **Verify**. Studio confirms it can find the install, that exactly one repository is connected, that it has the right permissions, and that it can push a test change. The destination repository is filled in for you.
-**GitLab:**
-  1. In **Admin → Plugin release strategy → Gated** , choose **GitLab**.
-  2. Paste your **project URL** and a **Project Access Token** (with the `api` and `write_repository` scopes, and the Developer role or higher).
-  3. Click **Verify**.
-If a check fails, Studio shows the reason inline with a **Re-verify** button, and keeps your project URL and token so you can fix permissions and try again without re-entering everything. Once connected, the final-review action reads **Promote to _(your repo)_** and Studio opens a pull request (GitHub) or merge request (GitLab) for each promotion.
-That request is a handoff, not an install. For what happens next — review, merge, and the install step your team owns — see [Gated release: from Promote to live in production](https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release).
-**Keeping a GitLab connection healthy.** GitLab requires access tokens to expire. Studio shows a reminder pill in the toolbar (visible to admins) starting 30 days before expiry, and emails Studio Admins at 30, 14, 7, and 1 day before — so you have time to rotate the token before promotions stop working.
-### **Granting per-user deploy permissions**
-Under **Direct** release with more than one target, you decide who can publish where, under **Admin → User access** :
-  - Each user's row has **Deploy targets** chips with an **\+ add target** picker — grant or revoke targets one at a time.
-  - An empty list means that user can publish only to the active workspace instance (the default for newly added users).
-  - Studio Admins automatically have access to every configured target.
-Users then see one Publish button per target they're authorized for (for example, "Publish to production" and "Publish to uat"). A user with no authorized targets sees a panel telling them to contact a Studio Admin, with your contacts listed — no silent failures.
-### **Setting practice baseline context**
-You can give the build assistant durable, practice-wide background once so it doesn't have to be re-explained on every project — your strategy, care model, goals, naming conventions, and preferred tone/brand. This lives on the **Admin** panel.
-  - **Upload files** with that context, or simply tell the overview chat something like "save this as our care model" and Studio files it for you.
-  - Every project's build assistant automatically reads this context, so new plugins start aligned with how your organization works.
-### **Providing instance instructions**
-You can also give the assistant standing instructions that apply to **every** project at your organization — house style, naming conventions, things to prefer or avoid — under **Admin → Instance instructions**.
-Because these instructions guide the assistant directly, **each submission is reviewed by Canvas before it goes live.** While a submission is in the queue you'll see a **Pending Canvas review** status, and any instructions already live keep working until the new version is approved. If a submission isn't approved, the reviewer's note appears in the panel so you can adjust and resubmit.
-**Chat page size.** Studio Admins can also control how many events load at once in project conversations, under **Admin → Settings → Chat**. The default page size is 200 events, and Studio applies it only to project chats. On a fresh open, users see the most recent page first and can load older conversation history on demand.
-## **Configuration & Set Up**
-A quick recap of prerequisites and the order to do things in.
-  - **Prerequisites:** Studio enabled for your Canvas instance; the **Studio Admin** role assigned to you in Canvas system admin.
-  - **Who can make these changes:** Studio Admins (and the organization's root user). Regular users see none of these settings.
-  - **Recommended order:**
-    1. Add the users who need Studio (**User access**).
-    2. Choose and set up a **release strategy** (Direct or Gated).
-    3. For Direct with multiple targets, grant **per-user deploy permissions**.
-    4. Optionally add **baseline context** and **instance instructions**.
-  - **Verification:** you've set things up correctly when a user can reach final review and see a working Publish (Direct) or Promote (Gated) button — not a "contact a Studio Admin" notice.
-## **FAQ & Troubleshooting**
-Q: How do I make someone else a Studio Admin?
-A: Have a Canvas administrator assign the "Studio Admin" role in Canvas system admin. Studio can't grant the admin role itself.
-Q: A user says they can't see a Publish button.
-A: Either no release strategy is configured yet (choose Direct or Gated), or — under Direct with multiple targets — that user hasn't been granted any deploy target. Add a target to their row under User access.
-Q: I removed a user. What happens to their projects?
-A: Their access ends on their next visit, but their projects are kept and stay visible to admins and to anyone they shared with.
-Q: My Gated connection won't verify.
-A: Studio lists exactly what failed (permissions, repository count, base branch, or the test push) with a Re-verify button, and keeps your URL and token. Fix the flagged item and re-verify in place.
-Q: Why was my instance instruction submission not live immediately?
-A: Instance instructions are reviewed by Canvas before they take effect. You'll see "Pending Canvas review" until it's approved; existing instructions keep working in the meantime.
-Q: What's the difference between baseline context and instance instructions?
-A: Baseline context is background the assistant  _reads_ (your goals, care model, tone). Instance instructions are standing  _rules_ it follows on every project — and because they steer the assistant, they go through Canvas review first.
-## **Related Resources**
-  - **Studio Quick Start Guide** — the build experience your users follow.
-  - **Studio Reference Guide** — full detail on every screen and feature, including how Direct and Gated publishing look to users.
-## **Keywords**
-Keywords: Studio admin, user access, release strategy, direct release, gated release, deploy targets, baseline context, instance instructions, GitHub, GitLab Categories: Studio, Administration
+Studio Admins manage organization-wide Studio settings, including how plugins are released and what background information Studio uses when creating projects. Studio Admins can also view all Studio projects within their organization.
+**Access requirements:** Your Organization Admin must assign you the **Studio Admin** role in Canvas Platform. For instructions on managing user access, see **Adding Studio Users**.
+# Accessing Studio Settings
+  1. Sign in to [Canvas Platform](https://platform.canvasmedical.com/).
+  2. Select **Studio → Studio Settings**.
+  3. Choose one of the two settings tabs:
+     - **Baseline:** Manage organization-wide context for Studio.
+     - **Release Strategy:** Configure how completed plugins are released.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792861169026-10-studio-settings.png?Expires=253370764800&Signature=E1D-2hFTBJknCiXwTYZQrpe6tMom2Vqc4akJeaWcMaBINo9Vds17BAqZdJwLDT5FRPk~c5pfOh5ggF97UyLGG7NWkjaCvWAEN8XsUPXb23INjgn98g~zRrNFB8qqHuWmm2UXH9wlQqS0EliKpggOcHrt110Hk9~sl5F9OnUI1LlW1Xe3xgL1ZWPiqHeDtRrUmgMlXmmQcM0l8x8AOc5htOd7mC4NZwloRwVo7gAIlAOEAT7-9LXKBuNBBhJvfPBh1rJmvPN3MAfFLE6cTABb0rJdbUwBo3OkZdPNO2DpnL2x~kUhATmlX-m4HItVp7QjncQtPbMv2AR16O5xpqz9ig__&Key-Pair-Id=K3NV4LZ47N8M46)
+# Configuring Your Baseline
+The **Baseline** tab lets you upload reference files that provide organizational context to Studio's AI assistant.
+Examples include:
+  - Organizational strategy and goals.
+  - Clinical care models and workflows.
+  - Naming conventions and standards.
+  - Communication style and tone guidelines.
+Studio makes these files available to the assistant at the start of every new project, helping it build plugins that align with your organization's needs.
+# Configuring Your Release Strategy
+The **Release Strategy** tab determines how completed plugins move from Studio to your Canvas instances.
+Choose a release method and click **Save Changes.**
+### Release Strategy
+| 
+### How it works  
+---|---  
+**Direct Release**|  Studio installs your plugin directly on a configured Canvas instance. The button reads **Publish to _(target name)_**.  
+**Gated Release**|  Studio submits your plugin to your team's code repository for review and approval. Your team's release process then moves it into production. The button reads **Promote to _(your repo)_** , and the finished stage is labeled **Promoted**.  
+Until a release strategy is configured, projects that reach Final Review display a setup notice instead of a Publish button.
+For more information, see **Gated Release: From Promote to Production**.
+# Configuring Direct Release Targets
+Studio can deploy plugins to the Canvas instance used during development. You can also configure additional instances as release targets.
+### Adding a Release Target
+  1. Open **Studio Settings → Release Strategy**.
+  2. Under **Direct Release Targets** , click **Add Target Instance**.
+  3. Enter the target Canvas instance.
+  4. Provide the instance's client ID and client secret.
+  5. Save your changes.
+# Understanding Publishing Permissions
+Publishing permissions depend on the target instance. Your Organization Admin assigns the Deploy Manager role in Canvas Platform.
+Release Target| Required Permission  
+---|---  
+Studio's development instance| Users who can build plugins in Studio  
+Production instance| **Deploy Manager** role  
+# Connecting a Repository for Gated Release
+Gated Release requires a connection to your organization's GitHub or GitLab repository.
+### Option 1: Connect GitHub
+  1. Install the **Canvas Studio GitHub App** in your GitHub organization.
+  2. Grant the app access to the repository where plugins will be stored.
+  3. In **Studio Settings → Release Strategy** , select **Gated Release**.
+  4. Enter the GitHub App installation ID. You can paste either the numeric ID or the full installation URL.
+  5. Click **Verify**.
+### Option 2: Connect GitLab
+  1. In **Studio Settings → Release Strategy** , select **Gated Release** , then **GitLab**.
+  2. Enter your GitLab project URL.
+  3. Provide a **Project Access Token** with:
+     - `api` scope.
+     - `write_repository` scope.
+     - **Developer** role or higher.
+  4. Click **Verify**.
+# Troubleshooting Repository Connections
+If verification fails, Studio identifies the issue and retains your settings so you can make corrections.
+Common issues include:
+  - Insufficient repository permissions.
+  - Incorrect repository access or configuration.
+  - Base branch issues.
+  - Failed test pushes.
+After resolving the issue, click **Re-verify**.
+**GitLab token expiration:** Studio emails Studio Admins reminders 30, 14, 7, and 1 day before a connected GitLab token expires.
+# Importing an Existing Plugin
+To change a Plugin Catalog plugin rather than install it as is, import it into a Studio project.
+  1. On the Studio All Projects screen, click the arrow beside **New Project**.
+  2. Select **Import Plugin**.
+  3. Paste a GitHub URL pointing to:
+     - A Canvas or Medical Software Foundation plugin repository.
+     - A plugin folder within a repository.
+  4. Click **Look Up Plugin**.
+  5. Select the plugin you want to import.
+  6. Enter a project name.
+  7. Click **Import Plugin**.
+To install a Catalog plugin as is, use Start installation in Studio (see Installing a Plugin Catalog plugin with Studio). Your developers deploy your organization's own plugins with the Canvas CLI.
+# FAQ
+Q: **How do I make someone else a Studio admin?**
+A: Your Organization Admin manages roles in Canvas Platform. Ask them to assign the **Studio Admin** role from the **Users** page.
+Q: **Why can't I see the Publish button?**
+A: There are two common reasons:
+  - **No release strategy configured:** A Studio Admin must select and save a release strategy.
+  - **Insufficient permissions:** Publishing to another instance or production requires the **Deploy Manager** role.
+Q: **Why won't my Gated Release connection verify?**
+A: Studio displays the reason verification failed, such as missing permissions, incorrect repository access, base branch issues, or a failed test push.
+Review the error, correct the configuration, and click **Re-verify**.
+### Next: Adding Studio users
 ----- END PAGE https://help.canvasmedical.com/articles/2234141107-studio-admin-guide
 
 
@@ -1665,6 +1668,23 @@ A: Yes, you can remove yourself as the individual assignee and leave it assigned
 **Categories:** Workflow Management
 **Roles:** All roles
 ----- END PAGE https://help.canvasmedical.com/articles/2771006803-why-can-t-i-mark-a-task-as-done-or-closed-even-though-it-appears-in-my-task-list
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/2771862260-fixes-from-canvas-platform
+When Canvas Platform detects an error in one of your Studio plugins, Studio can automatically prepare a fix. Studio first creates a test to reproduce the issue, then develops a fix on a separate code branch. Your existing project work remains unchanged until you apply the fix.
+# Reviewing and Applying a Fix
+When a fix is ready:
+  1. **Find the Issue.** Studio notifies you in the project chat with a link to the Issue. You can also find it in **Canvas Platform → Platform Analytics → Issues** , marked **Ready to Apply**.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792861050859-09a-issues-list.png?Expires=253370764800&Signature=j48vTpCOaB7igSNwdoOTsU1PKpFJjEtenkczenz7pgm4~edFo9toLlJbIsK9HCtYFjYsgevgrhqublpA13QZP4zTlzz-yhrHnPdonErydesDMM-pamyJygjR791699xX4DOhG~5oZTc8~I1SL2qFH8MHbPNuDhcncbSHFYX~xFQdXjmIS6kEg~C-cNSLQZ4IZVvNvwElRP4Z7RgnLJ2IgowfIRN4~IqOJmuDiSMToMpXsYI32KbNh5V84gjSYoEnh4ae668DQE4~9pWnkQt0~D6VkwlatcMEcEDg4hIsLH07gAdI0ErxaWxJPTcyxjrTRqZGvAP13MO3Lv4mlgZ7oA__&Key-Pair-Id=K3NV4LZ47N8M46)
+  2. **Review the fix.** Open the Issue to see what went wrong, what the fix changes, and which tests verify it.
+  3. **Apply the fix.** Click **Apply to [test instance]**. Studio adds the fix to your project and deploys it to your test instance.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792861089204-09b-issue-ready-fix.png?Expires=253370764800&Signature=ZZBf-pKYC8K88g9RO5nTXVZa5oyAKE2dbtydXE6jySjTkHwT0PMRDvZLNCGiITW2mmbQbXn~iAPfwBhqNKcTlnU1TrU6tfef54QGqcTOWCN2EHuPoCdpp~6LatTBRW745bKKn0GS3IDewhqzR7GnFJ1PW~91hHX5h6-FrwKBph-Vqr-YEM9JXnxMH7SV0q2FInqvKw31d0z6KgbFjYa~UbTSbCl294si7YoWGRlOQQpWROHAHiF8~b8fZErpdBo2HGFKKlFctS9DZy-wNFbNfFyhyhjKSnJTNZe9RrJLsX9hY1EZ8yyp8nyBMB0kAaJ-atFrFJAm-iBYysyu8ZpAiQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+  4. **Test and publish.** Verify the fix works as expected, then complete the standard testing and publishing process. Publishing also updates the Issue in Canvas Platform.
+# Applying Fixes with Gated Release
+If your organization uses **Gated Release** , select **Clone Fix Branch** from the Issue instead.
+Studio sends the fix to a branch in your team's code repository, where your technical team can review and release it through your organization's process.
+### Next: Publishing and updating Studio plugins
+----- END PAGE https://help.canvasmedical.com/articles/2771862260-fixes-from-canvas-platform
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/2840851415-outstanding-referrals
@@ -4036,17 +4056,17 @@ Additionally, if you create a new role that needs prescribing capabilities, ensu
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio
 ## **Introduction**
-Studio lets clinical and operations teams build custom Canvas plugins using plain language. Simply describe what you want to create, and Studio's AI assistant helps you build, test, and deploy it.
+Studio lets clinical and operations teams build custom Canvas plugins using plain language. Simply describe what you want to create, and Studio helps you build, test, and deploy it.
 This guide walks you through creating your first Studio project, step by step.
 **Tip: When in doubt, ask Studio!**
-Not sure what a button does, how to build something, or why something happened? Just ask in the Studio chat. The AI assistant can answer questions and guide you through the process, so you can keep working without leaving Studio to search for help.
+Not sure what a button does, how to build something, or why something happened? Just ask in the Studio chat. Studio can answer questions and guide you through the process, so you can keep working without leaving Studio to search for help.
 # **Getting Started**
 **Open Studio.** Sign in at [platform.canvasmedical.com](https://platform.canvasmedical.com) and select **Studio › All projects** in the sidebar.
 ![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792820555282-01-sidebar-studio-all-projects.png?Expires=253370764800&Signature=AZGC3MSuviGjq1jaGuWRuV5XsWo0YM~Sk8I1iparPK5748eXC7qllBjc5OQoieBnEsUnnagt8zpzNcLvJScR5FPt4MEclxmr8h1l2TBKJEhWR4RDG7ceUBDeM5MFworXBxo3VvbThNrwWxadFBnvdE3Dris6tymXvOJjfKTESGEOQ6~gW3Ufm4aMyZpu95nayhJorp2jNfrMXDl4Q4NfPvcTm6sTJxgk2XixclM9dqXqYh9FPM1F~cHMIdMsL9Gy2gMry7hAviN9nyLctH64sZhREVAbSY3JagrXr~I9GVwsEGk2uhdTdvX~VGImerWnxi6iR-LZb6a5vql9b5AcVQ__&Key-Pair-Id=K3NV4LZ47N8M46)
 Don't see Studio? Ask your Organization admin for the Studio user role.
 **The two screens you'll use.** Studio has just two views:
   - **Overview:** Displays all your projects as tiles, with one tile per plugin. Use the chat on the right to ask questions about Studio, such as "How do I get started?", "What does this button do?", or "What can I build?"
-  - **Project:** Opens when you select a project. The left side shows your progress through the build process, while the right side is where you work with the AI assistant. Documents created during the project, such as the User Plan and Technical Plan, appear in tabs at the top of the chat.
+  - **Project:** Opens when you select a project. The left side shows your progress through the build process, while the right side is where you work with Studio. Documents created during the project, such as the User Plan and Technical Plan, appear in tabs at the top of the chat.
 ![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792821012256-gif1studio.gif?Expires=253370764800&Signature=XPbqcosTtOckZUHmjLfXMPwgYLyaaw3WP8UAJkRhZpubQ2e7zAF0q3drTyPqpXRNkkt01ekviFS41xqarpDwiXjUcP9SSiEFYCwtzgvcKv2afO4n2OoUUT4AKvj1rOlYsiaPxs6CqKbuFYIihF9XMhYyl7kJ9Yr7PHFCYCNeU3trDLHK56MlpmQZzXqegvRnerY7rO1frPdeRENLsCGDXw--zXBZwMiIOYgyT-nmkke9MoLEA3iQk~Q4lyJ73EF1OApZO-am6QxgkGsxWWJftGstvUFbqL0sbdHO3ppsZC~tvXjy67I2s7bJA1qBht2HAC2DpgZHSzMDgSiT4CkUCw__&Key-Pair-Id=K3NV4LZ47N8M46)
 ## **How a project moves**
 Every plugin moves through five stages:
@@ -4058,23 +4078,23 @@ For full detail on every screen and feature, see the **Studio Reference Guide**.
 Each Studio project creates one plugin. Start a new project for each plugin you want to build.
   1. From the **Overview** screen, create a new project.
   2. Give your project a descriptive name, such as "Overdue Follow-Up Reminder."
-  3. Studio opens your project and asks what you'd like to build..
+  3. Studio opens your project and asks what you'd like to build.
 ## Step 2: Describe Your Plugin (Discovery)
 During Discovery, you'll work with Studio to define what your plugin should do.
   1. **Describe your idea.** Explain what you want the plugin to accomplish and who will use it. No technical knowledge is required.
   2. **Answer Studio's questions.** Studio guides you through a series of questions to clarify your requirements. Use **Back** and **Next** to navigate, then **Review** your answers before submitting.
-  3. **Choose where your plugin shows up in Canvas.** he assistant will ask which part of Canvas the plugin lives in (for example, the patient chart or a background task). This determines how the plugin integrates with your workflow.
+  3. **Choose where your plugin shows up in Canvas.** Studio will ask which part of Canvas the plugin lives in (for example, the patient chart or a background task). This determines how the plugin integrates with your workflow.
   4. **Review your plans.** Studio generates two documents, available in tabs above the chat:
      - **User Plan:** A plain-language summary of what your plugin will do.
      - **Technical Plan:** Details about how Studio will build it.
-Review the User Plan to confirm it matches your expectations. If something needs to change, tell Studio in the chat. When you're satisfied, click **Approve Plan & Start Building**
+Review the User Plan to confirm it matches your expectations. If something needs to change, tell Studio in the chat. When you're satisfied, click **Approve Plan & Start Building.**
 ## Step 3: Build and Configure Your Plugin (Build)
 Studio builds your plugin automatically. You can follow its progress in the chat. Depending on your plugin, you may need to complete two actions:
   1. **Fill in any settings it needs.** If your plugin needs additional information, such as a web address or API key, a **Configuration Required** panel appears on the left. Each field includes instructions explaining what to enter and where to find it.
   2. **Deploy for testing.** Once the plugin is built and any required settings are filled in, a **Deploy Now for Testing** button appears in the timeline. Click it to put your plugin on your Canvas instance so you can try it.
 ## Step 4: Test and Refine Your Plugin (Test & Iterate)
 Testing helps confirm your plugin works as expected before publishing.
-  1. **Watch the deploy chip.** After you click deploy, a small status chip appears in the chat and moves through _Deploying… → Verifying… → Deployed_ (or _Deploy failed_ , which you can click to see details). 
+  1. **Watch the deploy chip.** After you click deploy, a small status chip appears in the chat and moves through _Deploying… → Verifying… → Deployed_ (or _Deploy failed_ , which you can click to see details).
   2. **Complete the Testing Checklist.** Studio runs automated checks and provides a checklist for you to test the remaining functionality in Canvas. Mark each test as **Passed** , **Failed** , or **Skipped**.
 ![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792821484512-02-testing-checklist.png?Expires=253370764800&Signature=RrnlgPOw5TSKf~Avk03TvlGRp0t6KrQDVvvaW7QZqwxWIIouY-qDReWJbwZKFMujWtXySBzDCqNPM7u8NXZRwtruLgO7p5EJugW6s6jOCdhmdtpiQvBug1aa6-5FgWdOYmU4Y0IMnzxeDWASNKNmmGcqlFcB5PgmM1ile7RhDN~wB1j~u6aJOpTZkkgbFlBsuLLI5OA-o-O50zPe9ArFIi8uTwWSo7Bn4syMcP4iNgWQsndPWDGXiIWTsi0-PBde7OFtlleScV2X7U7uDP92XoZbzePtHD50QBK-WpUqz6O1qhUFu7Jbb769QwZOE~lgCyokvWnEbmVQey0NcEgaLA__&Key-Pair-Id=K3NV4LZ47N8M46)
   3. **Request changes as needed.** If something doesn't work as expected, describe the issue in the chat. Studio can update the plugin and redeploy it for another round of testing.
@@ -4086,8 +4106,8 @@ Before publishing, Studio prepares a final summary of your plugin.
   2. **Publish or promote your plugin.** The available action depends on the release process configured by your Studio Admin:
      - **Direct release:** Select **Publish to {target}** to release the plugin to the specified Canvas environment.
      - **Gated release:** Select **Promote to {repo}** to send the plugin through your organization's review process.
-     - **Release not configured:** If no release strategy is available, ask your Studio Admin to complete the setup before proceeding.**Common Workflows**
-For more information, see **Publishing Explained** in the Studio Reference Guide.
+     - **Release not configured:** If no release strategy is available, ask your Studio Admin to complete the setup before proceeding.
+For more information, see **Publishing and updating Studio Plugins.**
 ## Additional Tips
   - **Share screenshots or files:** Attach images or documents in the chat to help Studio understand your requirements or troubleshoot an issue.
   - **Pause or queue messages:** Use the stop button to interrupt Studio while it's working. Messages entered while Studio is busy are queued until it finishes.
@@ -4104,15 +4124,15 @@ A: Yes. Create a separate Studio project for each plugin.
 **Q: Can a coworker help me on the same project?**
 A: Yes. Project owners can share projects with other Canvas users and grant view-only or editing access.
 **Q: What happens when I click Publish?**
-A: It depends on your organization's release settings. Studio may publish the plugin directly to a Canvas environment or send it through your team's review process. See the Reference Guide, "Publishing explained."
+A: It depends on your organization's release settings. Studio may publish the plugin directly to a Canvas environment or send it through your team's review process. See "Publishing and updating Studio Plugins."
 **Q: I don't see a Publish button at all.**
 A: Your organization may not have configured a release strategy. Contact your Studio Admin for assistance.
-**Q: What if my deployment failsg?**
+**Q: What if my deployment fails?**
 A: Deployment failures can happen during development. Studio can review the error and help troubleshoot the issue. If needed, describe the problem in the chat and ask Studio to fix it.
 **Q: Will I lose my work if I close Studio?**
 A: No. Your project, chat history, and plans are saved automatically. Reopen the project from the Overview screen to continue.
 ## **Related Resources**
-Next: [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide) · Testing and deployment in Studio · Publishing and updating Studio plugins
+### Next: [Studio Reference Guide](https://help.canvasmedical.com/articles/2111959321-studio-reference-guide) · Testing and deployment in Studio · Publishing and updating Studio plugins
 ----- END PAGE https://help.canvasmedical.com/articles/4320944147-getting-started-with-studio
 
 
@@ -4556,6 +4576,31 @@ _Business lines must be enabled in Constance Config. Your clinic administrator o
 **Keywords:** payments, patient payments, guarantor payments, copays, Stripe, Stripe configuration, Stripe connected accounts, business lines, payment routing, API keys, stored payment methods, card on file, patient app, patient portal, statements, Constance config, payment method errors.
 **Categories:** Billing & Revenue, Patient Experience, Payment Collection, Payment Processing.
 ----- END PAGE https://help.canvasmedical.com/articles/4431910086-collect-patient-payments
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/4485157203-when-code-changes-outside-studio
+If someone updates your plugin's code outside Studio, either in your team's code repository or directly through Canvas Platform, Studio detects and imports those changes. This helps prevent future updates from accidentally overwriting work completed outside Studio.
+## If you use Gated release
+If your organization uses Gated Release, Studio checks your connected repository:
+  - When someone opens the project.
+  - Before you select **Promote Updates**.
+If Studio detects changes, it imports them into your project and notifies you in the chat. When changes made in the repository conflict with Studio's existing work:
+  1. Studio pauses **Promote Updates**.
+  2. The chat identifies the files with conflicts.
+  3. Ask the assistant to merge the changes.
+  4. Once the conflicts are resolved, you can continue with promotion.
+## If your plugin's code is on Canvas Platform
+When someone sends a change to the plugin on Canvas Platform, Studio brings it in the next time the project opens, and the chat says it picked up changes made outside Studio.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792860593960-07-picked-up-outside-changes.png?Expires=253370764800&Signature=nrRoXX1ciQcnJ1nE3zQz-t0~axA3wmnlwzFR7at1YMhBPdYgqw06RT-x72q5qwBv5uepFg3PzQTviTB0zwAq49mZdxN4pD6BCW1YtdP4yZhP0ZKX~ZIyAlncmWLab3CjFnbTYMQSSOpRG1UXIvix3B8zW70qX3EkagCPeP~4qKTsi55~m~soY8-eglRwwlQkZStM9b9GsgB-42tjkmmYmwFsHN4peGh48uhQSS6AYow4cdln4pwjo4wNfTfSwNfR3oK8zZB1eWQO2xsZk0VNSr9Wyr9YvqbjuMvcLB0~8-c67P~xgKE1l4utJjy2S6Po7Xv15CnTdK5TeOiaiR~3xQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+## What Happens to Your Next Deployment?
+To prevent changes from being deployed without your review, Studio pauses your next deployment.
+You'll see:
+  - **Deployment status:** Failed
+  - **Chat message:** Deploy paused
+**To continue:** Review the changes, then ask Studio to deploy again when you're ready.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792857172828-Screenshot2026-10-24at09.52.42.jpg?Expires=253370764800&Signature=A2TANfPaeW8nYIDN7PNpqYgXZUl-VgO9G-36SKCVYGugpwq4ASKVFm3XJ1M8Gk4XGV9r9CrnKvptnTBZi37YynYQuFXWx8gOreZ2NxR3qFkeHzixeVUxI-pBJ7NC8OKd7FIHvNgqI8WTmMF-6zx4OeMAu1CPa~PrxXo3ZhoLFfBqbTm3J2IhelgGlmz2Y75aka3~Rg0v0ssp16u7EOAlyuzYtMLLmMWhGQxYC60pnqNn5nwPRex8Nva3CjYR-Wckkb-P7sL2vZ-2CMDJdpy3plgOO9X~DkUPC6u-bIsXsP7pXpfxH6lpJqhSFYLRYnWK2O10-Wp~CPznkz0SQeygeQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+### Next: Publishing and updating Studio plugins
+----- END PAGE https://help.canvasmedical.com/articles/4485157203-when-code-changes-outside-studio
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/4514065993-surescripts-medication-history-plugin
@@ -5961,6 +6006,45 @@ A: Only use Float, Select, Text, Checkbox, Radio, and Date field types. Other op
 **Keywords:** lab reports, templates, data integration, laboratory, custom fields
 **Categories:** Configuration, Data Integration, Laboratory
 ----- END PAGE https://help.canvasmedical.com/articles/5081934202-custom-lab-report-templates
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/5083682641-adding-studio-users
+Organization Admins manage Studio access by assigning user roles in Canvas Platform.
+# Understanding Studio Roles
+Studio roles are granted when inviting users. An Organization Admin can invite users and manage their roles within Platform. Learn more in Canvas Platform Roles.
+### Role
+| 
+### Permissions  
+---|---  
+Studio User| Create, build, test, and publish plugins in Studio, subject to release permissions.  
+Studio Admin| Access all Studio projects and manage organization-wide Studio settings.  
+Onboarding Admin| Manage implementation activities without building plugins in Studio.  
+# Inviting a User
+Only Organization Admins can invite users and manage their roles. Studio Admins cannot grant access to other users.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792862948117-inciteuserstudio.gif?Expires=253370764800&Signature=M8YVILM3RBUIzpjPtviSwQEX2acRdWvT-wFSNQxki1jCkyzFLPosWZUl5CjSxnZykU-VtWTD1ITcuaIC9bZKMgO0rnNNCQq6VIXtL6wwyOlZkFMHXfYKanFqnyTRJCJycwxcwv46b~GMg-TDs4~d7LrUPorQMjK6m2z87jXCU6272EDbOdsBIIX9fkjWYZOnbwdKNJ9wMu-hko3w893x5GIQkARhVJ6N0xnlOttiX5UFpBBfNdVcdKT0TYXfqOMYV5dCsyCxAMUxEtJAZImTv2RTT8y8UC4fh--A3HhdNfdif~MKjgM4ZoMBy45S9NsQyL67s2gw-g~8OBB0gkrpDw__&Key-Pair-Id=K3NV4LZ47N8M46)
+  1. Sign in to [Canvas Platform](https://platform.canvasmedical.com/).
+  2. Open the **profile menu** in the bottom-left corner and select **Users**.
+  3. Click **Invite User**.
+  4. Enter the user's name and email address, then select the appropriate role.
+  5. **Link their Canvas user record.** Select the corresponding user from the list at the bottom of the form. Records marked **Same Email** are potential matches; confirm you've selected the correct person.
+  6. Click **Send Invitation**.
+The user receives an email invitation to set a password or sign in using your organization's single sign-on (SSO).
+# Updating User Roles
+To change an existing user's access:
+  1. Go to **Users** in Canvas Platform.
+  2. Find the user and click **Edit Roles**.
+  3. Update their permissions.
+  4. Click **Save Roles**.
+# Troubleshooting Access
+### Issue
+| 
+### Explanation  
+---|---  
+Studio roles are grayed out.| Studio may not be enabled for your organization. Contact your Canvas team for assistance.  
+Your organization manages users through SCIM.| If your organization provisions users through an identity provider using SCIM, manage user access through that system.  
+You can't invite users or change roles.| Only users with the **Organization Admin** role can manage access. Contact your Organization Admin for assistance.  
+### Next: Studio Admin Guide
+----- END PAGE https://help.canvasmedical.com/articles/5083682641-adding-studio-users
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/5123845479-teams
@@ -7677,6 +7761,70 @@ A: [Contact Canvas Support](https://portal.usepylon.com/canvas-medical/forms/sta
 ----- END PAGE https://help.canvasmedical.com/articles/6308348097-command-private-note
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/6317421757-installing-a-plugin-catalog-plugin-with-studio
+Studio guides you through installing plugins maintained by Canvas or its partners, including any required configuration.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792859091989-plugincatalog.gif?Expires=253370764800&Signature=hN20HN4dBwzLbG1s8O1ApkrZetL8fG6TykBD7iI5iZesxYaHQRZHAno3Q1OcEu4VmjLVLtIwznM2izjubKp5oxKQRlmEeUDH2UTxVnE5rUIoispUP4TyGrjnRQTLjO4LUFCoUStn3hxSj31PWEIdtfFXo4tikJQGKMNSuhH-wrEpwRYb0WGTwEB6S6u-~HXWS-DpB3IQch4eHnC74M5mWaRMzDYGFs6WNoZbZUV3xv4DpAGQ-uBuRXrLtvJgCrpwTF0cVLYbcRBPfhH6mF6OEfx5t9gihx~NEtpQg6CPWQ5kROHIbwrlTgnF9mVxu6zHubIdnjQQifIQWWXNoewTSQ__&Key-Pair-Id=K3NV4LZ47N8M46)
+# Before You Begin
+To install a plugin using Studio:
+  - Your organization must have Studio enabled.
+  - You must have the **Studio User** or **Studio Admin** role.
+If either requirement is missing, the installation button will indicate what's needed.
+# How to Install a Plugin
+  1. **Select a plugin.** Sign in to [Canvas Platform](https://platform.canvasmedical.com/), open the **Plugin Catalog** , and choose the plugin you want to install.
+  2. **Start the installation.** Click **Start Installation in Studio**. Studio opens an installation project and loads the plugin's setup instructions.
+  3. **Configure and install.** Select your Canvas instance, enter any required settings, and complete the installation. The installation result appears below the button.
+  4. **Install on additional instances.** Repeat the process for each Canvas instance where you want the plugin installed.
+  5. **Need to start over?** Archive the existing installation project, then return to the Plugin Catalog to begin a new installation.
+# Managing Installation Projects
+Unlike projects where you build a custom plugin, installation projects are used only to configure and install existing plugins. They do not include Build or Test stages
+### Next: Studio project stages
+----- END PAGE https://help.canvasmedical.com/articles/6317421757-installing-a-plugin-catalog-plugin-with-studio
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/6344349713-collaborating-on-studio-projects
+Studio lets you share projects with colleagues, manage access, and organize your work using tags and project settings.
+# Sharing a Project
+Project owners can share projects with other Canvas users in the same organization, as either **view-only** or **full editing**. 
+To share a project:
+  1. Open the project and select **Share**.
+  2. Search for the colleague you'd like to invite.
+  3. Choose **View-only** or **Full editing** access.
+     1. **View-only** collaborators can watch the project and read everything, but can't send messages or click action buttons.
+     2. **Full-editing** collaborators can send messages, add attachments, stop the assistant, and click action buttons. Everything except managing sharing.
+  4. Send the invitation.
+Your colleague receives an email invitation with a link to the project. Projects can only be shared with users in your organization.
+# Working on a Project Together
+Multiple collaborators can access the same project, but Studio processes only one request at a time. If another collaborator is already working with the assistant, you'll see: **"Another collaborator's request is in flight."** Wait for their request to finish, then resend your message.
+# Organizing Projects with Tags
+Tags help you categorize and find projects on the Overview screen.
+To manage tags:
+  1. Select **Manage tags…**.
+  2. Create a new tag or edit an existing one.
+  3. Choose a color to help identify the tag.
+  4. Apply tags to your projects.
+You can rename, change the color of, or remove existing tags at any time.
+# Renaming and Archiving Projects
+Use the **⋯** menu on a project tile or in the project header to:
+  - **Rename:** Update the project's name.
+  - **Share:** Manage collaborator access.
+  - **Archive:** Remove a project from your active project list.
+**Archived projects are not deleted.** You can find them by selecting **Archived** in the stage filter on the Overview screen.
+# Making a Plugin Public (Open Source)
+You can request to share your plugin with the broader Canvas community by making it open source.
+To submit a request:
+  1. Open the project's **Share** dialog.
+  2. Select **Make this public (open source)…**.
+  3. Choose whether you'd like to be **attributed by name** or remain **anonymous**.
+  4. Submit your request.
+Canvas is notified of your request and handles publishing the plugin's source code to the open-source library.
+Once requested:
+  - Your project displays a green **Public** badge.
+  - Public plugins appear under the **Public** option in the **Shared With** filter.
+The Public badge indicates that a request has been submitted. It does not necessarily mean the plugin has already been published to the open-source library.
+### Next: Navigating Studio: projects and chats
+----- END PAGE https://help.canvasmedical.com/articles/6344349713-collaborating-on-studio-projects
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/6405678539-activating-epcs-grants-with-drfirst
 > **This article is for your practice's EPCS administrator.** If you're a provider enrolling in EPCS, start with [Enrolling in EPCS with DrFirst: Step-by-Step Guide for Providers](https://help.canvasmedical.com/articles/8630998726-enrolling-in-epcs-with-drfirst-step-by-step-guide-for-providers).
 Before a provider can prescribe controlled substances in Canvas:
@@ -7860,6 +8008,47 @@ A: The patient summary is unable to be rearranged. We recommend using native sea
 # Resources
 ### [Video: Patient Summary](https://www.loom.com/share/b0a9434595b74f35b823f8aba009aca6?sid=fd1e6db0-8753-4730-93e6-255fa7d2e5bb)
 ----- END PAGE https://help.canvasmedical.com/articles/6563365441-patient-summary
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/6563880190-publishing-and-updating-studio-plugins
+# Publishing Your Plugin
+Once your plugin passes testing and Final Review, it's ready for release. How Studio releases your plugin depends on the **release strategy** configured by your Studio Admin.
+# Understanding Release Options
+Studio supports two release methods:
+### Release Strategy
+| 
+### How it works  
+---|---  
+**Direct Release**|  Studio installs your plugin directly on a configured Canvas instance. The button reads **Publish to _(target name)_**.  
+**Gated Release**|  Studio submits your plugin to your team's code repository for review and approval. Your team's release process then moves it into production. The button reads **Promote to _(your repo)_** , and the finished stage is labeled **Promoted**.  
+# Publishing to a Specific Target
+If your organization has multiple release targets, Studio displays separate Publish button for each available target. Select the target where you want to release your plugin.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792859328481-05-final-review-publish.png?Expires=253370764800&Signature=kWJlBgph0ojeuE8OUrWzBBL2JC1CoO31J0eeeKemx74BmybVO0GZ3wygmfsaBZ-aT2qKYHNHEYH8cv3r6kEbj2VYtXSBvjmQrMf2E0pxbHTzPBcBBUxfFUOxNOcp33pD4hqwYbfF-yCx2Yy0Lv5LVdqJKOei3xGLYjk74ZKPDsxQKRwQm0BoRA3KM~7g9T0~0-U~L-xhOqP~8OCivVEP3vzECQCv8bOsRvIVu8~puhpsKHGckgjXJhDiOqSiolnSKv99oiodB7S-HDgkn6T1k65viEZWIeqAfaSemnN7IEEmEUqbEC26VyCONYW1WyzF6zhx0h~~ZSYxGO1H9dkbgg__&Key-Pair-Id=K3NV4LZ47N8M46)
+### What if I Don't See a Publish Button?
+If the Final Review panel displays a notice instead of a Publish or Promote button, your organization hasn't configured a release strategy. Contact a **Studio Admin** to complete the setup. Once a release strategy is configured, you can continue publishing.
+# Updating a Published Plugin
+An existing plugin can be edited without starting a new project. Project owner and collaborators with **Full Editing** access can move a project back to Test & Iterate. **Updates must complete testing and Final Review before they can be released.**
+## How to Update a Plugin
+  1. **Start an update.** Open your published project and click **Start an Update**.
+Studio asks how to handle the existing version:
+     - **Direct Release:** Choose whether to keep the current plugin running or disable it on each release target while you make changes.
+     - **Gated Release:** The plugin remains promoted. Studio also offers to close any open promotion pull request (PR), unless you deselect that option.
+Click **Move Back** to return to Test & Iterate.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792859335977-06-start-an-update-dialog.png?Expires=253370764800&Signature=AAptJG7GSHa8NppW~QMozvd5DpQf2gn5KvRca-TvuPIygCsk1zdl4nEBwbSAwHgQSUCZ-b-jcTWylDP12htJCYWl6Ry~k6xynbF971zteN7w~VHII~-DoTb60txUPuMv6RLZTzA-i36gXWHA-L25sO-WSfo0HLQxAwU6j3GHz9eS3eyWudG6UaJ45NFb0IklndAYor8WW94PtcFJ1ZRNQJfI0Ea9C-t0J6R~sJQF~TeijUu8koJ10rdIHNLPf1abRolXuuGrWEI8l9KyCjc0I0oQyWKks5cfhHBy3SokhqSkxVW5Kyegqx2Vx3xxzzheU7Xormj0a6qbt12zr8CFlw__&Key-Pair-Id=K3NV4LZ47N8M46)
+  2. **Describe your changes.** Tell Studio what you'd like to update in the chat. Studio modifies the plugin and deploys the updated version to your test instance.
+  3. **Regenerate your tests.** Once your changes are deployed, click **Regenerate Tests** to update the Testing Checklist. 
+If you're making several changes, complete them before regenerating tests. You can continue asking questions or updating plans and tests without affecting the published version. However, if Studio modifies the plugin's code, the project automatically returns to **Test & Iterate**.
+  4. **Test your changes.** Studio automatically runs its assigned tests. Complete the remaining tests in Canvas and mark each as **Passed** , **Failed** , or **Skipped**.
+  5. **Complete Final Review.** Once all tests are Passed or Skipped, click **Confirm Successful Testing**. Studio performs its final checks and prepares the updated version for release.
+  6. **Release your update.** Depending on your organization's configuration, select:
+     - **Publish [version] Updates to [target name]** for direct releases.
+     - **Promote [version] Updates to [repository]** for gated releases.
+# Making Changes During Final Review
+Plugin code is locked during Final Review to prevent changes after testing is complete. If additional changes are needed, click **Back to Test & Iterate** to return to development and testing.
+# Enabling or Disabling a Published Plugin
+You can disable or re-enable a published plugin independently on each configured release target.
+### Next: Testing and deployment in Studio · Gated release: from Promote to production
+----- END PAGE https://help.canvasmedical.com/articles/6563880190-publishing-and-updating-studio-plugins
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/6649603926-staff-roles
@@ -8934,6 +9123,60 @@ A: Follow these steps to resolve the issue:
 ----- END PAGE https://help.canvasmedical.com/articles/7060961677-point-of-care-poc-tests
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/7114959195-studio-project-stages
+# The Five Stages
+Every Studio project moves through five stages, from defining your idea to releasing your plugin.
+**Discovery → Build → Test & Iterate → Final Review → Published / Promoted**
+## **1\. Discovery**
+Define what you want your plugin to do.
+  - Describe your idea and answer Studio's clarifying questions.
+  - Choose where your plugin will run in Canvas.
+  - Review the **User Plan** (what the plugin will do) and **Technical Plan** (how it will be built).
+**Next step:** Once both plans are ready and you're satisfied with the requirements, click **Approve Plan & Start Building**.
+## **2\. Build**
+Studio builds your plugin based on the approved plans.
+  - Follow the build progress in the chat.
+  - Complete any required settings in the **Configuration Required** panel.
+  - Studio prepares a testing plan for your plugin.
+**Next step:** Once the build and testing plan are complete and any required settings are configured, click **Deploy Now for Testing**.
+## **3\. Test & Iterate**
+Test your plugin in Canvas to confirm it works as expected.
+  1. **Review the Testing Checklist.** Studio completes automated tests and provides additional tests for you to perform with the goal of verifying your plugin works as expected and is safe to promote to Production.
+  2. **Test in Canvas.** Mark each test as **Passed** , **Failed** , or **Skipped**.
+  3. **Request fixes.** If something doesn't work, describe the issue in the chat. Studio can update and redeploy the plugin.
+  4. **Regenerate tests.** After deploying changes, click **Regenerate Tests** to update your checklist. Repeat testing and adjustments until the plugin meets your requirements.
+**Next step:** Once all tests are marked Passed or Skipped, click **Confirm Successful Testing**.
+## **4\. Final Review**
+Studio performs final quality checks and generates a **Final Review** document.
+  - Review the summary to confirm the plugin is ready for release. Pay particular attention to the **Before You Go Live** section, which highlights important considerations or limitations.
+  - **Next step:** Once the review is complete, select **Publish** or **Promote** , depending on your organization's release settings.
+## **5\. Published / Promoted.**
+Your plugin has completed the Studio development process.
+The final status depends on your organization's release process:
+  - **Published:** Your plugin has been released to the selected Canvas environment.
+  - **Promoted:** Your plugin has been sent to your team's code repository for review and release through your organization's process. It is not necessarily live yet.
+**Need to make changes later?** Click **Start an Update** to return to testing and make updates.
+For details, see **Publishing and Updating Studio Plugins**.
+# Plans & Documents
+Studio automatically generates assets throughout your project. You can access them in tabs above the chat or download them for reference.
+### Document
+| 
+### Purpose  
+---|---  
+**User Plan**|  Describes what your plugin will do in plain language  
+**Technical Plan**|  Explains how the plugin will be built. Technical knowledge isn't required to review your project  
+**Tradeoffs**|  Documents important design decisions, limitations, and considerations  
+Documents update as Studio makes changes. If you have a document open when it's updated, you'll see a prompt to reload the latest version.
+## Understanding Tradeoffs
+Some plugin features involve tradeoffs, such as limits on how long data is stored or how well a solution handles larger volumes of activity.
+Studio explains these considerations as decisions are made and records them in the **Tradeoffs** document.
+Important tradeoffs also appear in the **Before You Go Live** section of your Final Review.
+**What if you disagree with a tradeoff?**
+Tell Studio what concerns you or what you'd prefer. Studio can help explore alternative approaches before you proceed.
+### Next: Testing and deployment in Studio · Publishing and updating Studio plugins
+----- END PAGE https://help.canvasmedical.com/articles/7114959195-studio-project-stages
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/7126006931-automations
 Canvas notes provide a flexible, "blank canvas" to document patient encounters by adding individual commands. Automations streamline documentation by serving as templates, which can contain either a single pre-filled command or a series of commands. Establishing automations for various encounter types significantly enhances efficiency.
 # User's Guide
@@ -9890,22 +10133,32 @@ Explanation of how commands influence workflows and documentation
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release
-### Gated release: from Promote to live in production
-This picks up after your repository is connected. For the one-time connection setup (GitHub App or GitLab token), see [Studio Admin Guide](https://help.canvasmedical.com/articles/2234141107-studio-admin-guide).
-When your organization uses **Gated** release, publishing in Studio and going live on your Canvas instance are two separate steps, owned by two different people:  
-  1. **You Promote (in Studio).** At Final Review, click **Promote to (your repo)**. Studio opens a pull request (GitHub) or merge request (GitLab) in your team's repository containing the finished plugin's source. That's where Studio's job ends — it does not install anything on your Canvas instance.
+With **Gated Release** , Studio prepares your plugin for review, while your technical team controls when it's deployed to Canvas.
+Unlike Direct Release, **promoting a plugin does not automatically install it on your Canvas instance**.
+Before getting started, your Studio Admin must connect your organization's code repository. For setup instructions, see the [Studio Admin Guide](https://help.canvasmedical.com/articles/2234141107-studio-admin-guide).
+# How Gated Release Works
+After completing testing and Final Review:
+  1. **You Promote (in Studio).** Studio opens a pull request (GitHub) or merge request (GitLab) in your team's repository containing the finished plugin's source. That's where Studio's job ends, it does not install anything on your Canvas instance.
   2. **Your technical team reviews and merges (in GitHub/GitLab).** A reviewer approves and merges the request on your team's schedule. The plugin's code is now in your repository.
-  3. **Your team installs it on your Canvas instance.** Merging alone does **not** put the plugin on production — a final install step is required, and your team controls it. This usually happens one of two ways:
-     - **Manually** , with the Canvas CLI pointed at your production instance: `canvas install <plugin> --host <your-instance>` (this validates, packages, and uploads the plugin).
-     - **Automatically** , through a pipeline your team sets up — for example, a GitHub Action that runs on merge and installs the plugin for you.
-Because that last step is yours, Gated release gives your technical team the final say over what reaches production — that's the "gate." (If you'd rather Studio install straight to a Canvas instance with no repository step, your Studio Admin can switch you to **Direct** release instead.)  
-**Shipping updates later.** After a plugin is Promoted, the project's final stage reads **Promoted**. To send a change downstream, ask the assistant to bump the plugin's version, then click **Promote updates** — Studio adds the change to the open request, or opens a new one if the previous request was already merged or closed. Your team reviews and installs it just like the first time.  
-**FAQ additions**
+  3. **Your team installs it on your Canvas instance.** Your developers deploy it with the Canvas CLI (`canvas login`, then `canvas deploy`), by hand or from a pipeline that runs on merge. For technical instructions, see [Moving to Canvas Platform](https://docs.canvasmedical.com/guides/moving-to-canvas-platform/).
+Because that last step is yours, Gated release gives your technical team the final say over what reaches production. If you'd rather Studio install straight to a Canvas instance with no repository step, your Studio Admin can switch you to **Direct** release instead.
+# Updating a Promoted Plugin
+To make changes to a previously promoted plugin:
+  1. Open the project and click **Start an Update** , or ask Studio to make a change.
+  2. Complete testing and Final Review.
+  3. Click **Promote Updates to [repository]**.
+  4. Your technical team reviews, merges, and deploys the updated code through its release process
+If your team changes the plugin's code directly in the repository, Studio brings those changes into the project. See **When Code Changes Outside Studio** for details.  
+**FAQ**
 **Q: I merged the request Studio opened, but the plugin isn't on my Canvas instance. Why?**  
-A: Merging only puts the code in your repository. Under Gated release, a separate install step — run by your technical team, manually or through your own pipeline — is what puts the plugin on your Canvas instance. Check with whoever owns your deployment process.
+A: Merging adds the plugin's code to your repository but doesn't necessarily install it.
+Your technical team must deploy the plugin manually or through an automated pipeline. Contact whoever manages your organization's deployments to confirm the next step.
 **Q: Who installs the plugin under Gated release?**  
-A: Your technical team, using their own process. Studio hands off a reviewed pull/merge request and does not install to your instance itself. (Under Direct release, Studio does the install for you.)
-_Keywords to append:_ gated release, promote, pull request, merge request, production install, canvas install, CI/CD  
+A: Under Gated Release, your technical team manages deployment.
+**Q: Can we switch from Gated to Direct Release?**  
+A: Yes. Your Studio Admin can change the organization's release strategy to **Direct Release** if you prefer Studio to install plugins without the repository review step.
+### Next: Publishing and Updating Studio Plugins · When Code Changes Outside Studio
+### 
 ----- END PAGE https://help.canvasmedical.com/articles/7597495196-studio-admin-guide-setting-up-gated-release
 
 
@@ -10551,6 +10804,29 @@ A: Provider signatures only show in letters and not in messages or intervention 
   - **Keywords** : letter templates, letters, attachments, placeholders, preview letters, print letters, fax letters, Sfax integration, message delivery priority, HTML customization
   - **Metadata** : Communication, Configuration, Workflow Optimization, Troubleshooting
 ----- END PAGE https://help.canvasmedical.com/articles/8181146406-letters
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/8185437170-studio-faq-and-troubleshooting
+# Studio FAQ and Troubleshooting
+**Q: Something is confusing or isn't working. What should I try first?**
+A: Ask Studio in the chat. Describe what you see and what you expected. Studio can explain most issues and suggest the next step.
+**Q: What's the difference between the User Plan and the Technical Plan?**
+A: The **User Plan** describes what your plugin will do in plain language. Review it to confirm Studio understood your requirements. The **Technical Plan** contains the technical details of how the plugin will be built. You don't need to review it unless you want those details.
+**Q: Why did a document change while I was reading it?**
+A: Studio updated the document. If you see a reload prompt in its tab, use it to view the latest version.
+**Q: Why isn't the Deploy or Publish button showing?**
+A: Buttons appear when the requirements for each stage are met. For example, **Deploy Now for Testing** requires a completed build, a testing plan, and any required configuration. If Publish is missing during Final Review, see **Publishing and Updating Studio Plugins**.
+**Q: Why does a saved configuration value look blank?**
+A: Studio hides sensitive values after saving them for security. **Value set - leave blank to keep, type to replace** means your value is still saved. Enter a new value only if you want to replace it.
+**Q: Why can't my colleague send messages in a shared project?**
+A: They likely have **View-only** access. The project owner can change their permission to **Full editing**.
+**Q: What does "Another collaborator's request is in flight" mean?**
+A: Another collaborator has a request running. Studio handles one request at a time. Wait for it to finish, then resend your message.
+**Q: What does the orange "Deploy unverified" status mean?**
+A: Studio couldn't confirm whether the plugin deployed successfully. Ask the assistant to try deploying again.
+**Q: Why won't my attachment send?**
+A: Each message supports up to **10 MB** of attachments. If you're uploading multiple files, try sending them separately.
+----- END PAGE https://help.canvasmedical.com/articles/8185437170-studio-faq-and-troubleshooting
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/8191726034-managing-service-area-zip-codes-for-practice-locations
@@ -11482,6 +11758,78 @@ To add an ID card to a patient profile, you will need the **Canvas Remote** app 
 ----- END PAGE https://help.canvasmedical.com/articles/8802451810-patient-demographics
 
 
+----- BEGIN PAGE https://help.canvasmedical.com/articles/8834128147-testing-and-deployment-in-studio
+# Deploying Your Plugin
+When Studio deploys a plugin to your Canvas instance, a **deployment status indicator (deploy chip)** appears in the chat. It shows the deployment progress and whether any action is needed. Studio automatically verifies deployments and reports the results, so you don't need to check the deployment status manually.
+### Status
+| 
+### What it means
+| 
+### What to do  
+---|---|---  
+**Deploying to _(your instance)_**|  Studio is installing your plugin| Wait for deployment to finish  
+**Verifying on _(your instance)_**|  Studio is checking that the plugin loaded successfully.| No action needed.  
+**Deployed to _(your instance)_**|  Your plugin was installed successfully.| Continue testing in Canvas.  
+**Deploy to _(your instance)_ failed**| An error occurred during deployment| Click the status to view details. Studio can help identify and fix the issue.  
+**Deploy unverified** (orange)| Studio couldn't confirm whether deployment succeeded.| Ask Studio to retry deployment.  
+**Waiting for approval on Canvas Platform**|  Deployment requires approval to access another plugin's data.| Follow the link in the chat to view the approval request. See **_When Deployment Is Paused or Waiting_ **below.  
+# What Happens if Deployment Fails?
+Deployment failures can occur during development and don't necessarily mean you've done anything wrong. Studio can review the error, identify the cause, and make corrections before redeploying. If deployment doesn't resume automatically, ask Studio to try again.
+# Monitoring Your Plugin During Testing
+While you test your plugin, Studio monitors activity from your Canvas instance to help identify issues. Look for the **monitoring status indicator** directly below the chat.
+When it's working it shows a green **"Monitoring Canvas logs…"** with a count of activity captured.
+If it turns yellow or red (**"Log monitoring stopped"**), Studio is no longer receiving activity. Click the **Restart** button on that same line to resume it.
+**Troubleshooting tip:** If Studio says it can't see your plugin's recent activity, check the monitoring indicator first. Restarting monitoring may resolve the issue.
+# Managing Your Testing Checklist
+During **Test & Iterate**, Studio provides a Testing Checklist to help verify your plugin works as expected. For each test, select the appropriate status:
+  - **Passed:** The plugin behaved as expected.
+  - **Failed:** The plugin didn't behave as expected and needs attention.
+  - **Skipped:** You chose not to complete the test.
+## Skipping a Test
+If a test isn't applicable or can't be completed:
+  1. Expand the test in the checklist.
+  2. Click **Skip Test**.
+  3. Enter a reason for skipping it.
+  4. Click **Confirm Skip**.
+Skipped tests don't prevent you from completing the testing stage. However, **skipping a test means that functionality hasn't been verified**. To undo a skipped test, change its status back to **Not Started**.
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792856681997-skippedteststudio.gif?Expires=253370764800&Signature=inXJVoOZ44XW6DnuSHZk1UJTMebtnFjPRlUtw3ILLbxUbdwBzcpqNONk6XIYp~owbx9w-6oKwVtJzKR7imxyWI9XJmS2xbX0coMivH1bJr~skck9JsSlnGC-jiNw10eAm8arRbMjRHOGhn3fmFWM7hXjVXLqGjZKrOZGrP3YRMUZiwSKjUcRD3PXnqgelhXEEpx3OXSemR1VbnTIqvafHXOZZTE3tP0Y5Cu6of94qrl-3YMmIRxrwyp7I-KOcVXWYzzcHovQPDXRYWKMrkh64ZpjPpbO1c7Oicb9eeCN24~JRqTU7eDfGsRGb1Zn7N~HpbMrVLS5JHWcvMYBv1sZ6A__&Key-Pair-Id=K3NV4LZ47N8M46)
+## Testing After Changes
+If you are making changes to your plugin you will also test those new changes. Studio only resets tests impacted by the update and provides a reason for each reset. To test code changes after the initial deploy:
+  1. Deploy the updated plugin.
+  2. Click **Regenerate Tests** to update your Testing Checklist.
+  3. Repeat any tests affected by the changes.
+## When Deployment Is Paused or Waiting
+Some deployments require additional action before they can continue.
+Reason| What Happens| Next Steps  
+---|---|---  
+Plugin access approval required| Your plugin needs access to another plugin's data. Studio displays **Waiting for approval on Canvas Platform** with a link to the request.| A user with the **Deploy Manager** role must approve or deny the request on the **Plugin Approvals** page in Canvas Platform. Denying the request cancels deployment.  
+Canvas SDK version| The plugin needs a newer Canvas SDK than your instance runs.| Review the requirement with Studio to determine how to proceed.  
+Another deployment is waiting| A separate plugin deployment to the same instance is awaiting approval.| Resolve the outstanding approval before proceeding.  
+Code changed outside Studio| Studio detects changes made outside the project. The deployment shows **Failed** , and the chat displays **Deploy paused**.| Ask Studio to deploy again. See **When Code Changes Outside Studio** for details.  
+![Plugin access approval required.](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792856139363-04-deploy-waiting-for-approval.png?Expires=253370764800&Signature=DT1mxODfmG1Ip3W4O8GznMMl7-BmnK9tl9vv-XNMTuoBhaPXBr0urVf-CuBRpcBZWlSEeTqEoQr33oJJT2QR8fPkjp7SNO5eymOopRzFDS03KL969anxyrJOfiZI1uy9QS81hzOTgb5-BE8CBN-isTpVBH9vJ794ARxbspCuJ3lrvLWel93hosR7xVTt0cWQXNm-tByxRR2vlkqflwnP8Md2KbC02H3gyZus~4vCcS~hobB-Twp9xzJ9WmFzp0FGOskuaYotWt4XNA-A6LRdOzJK3n1~7QBiKvoW368MvetLSZ1dB8sO8Ns6B5J4Yku3q9IWNyPC9QtIdEOVYvcPNQ__&Key-Pair-Id=K3NV4LZ47N8M46)Plugin access approval required![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792857172828-Screenshot2026-10-24at09.52.42.jpg?Expires=253370764800&Signature=A2TANfPaeW8nYIDN7PNpqYgXZUl-VgO9G-36SKCVYGugpwq4ASKVFm3XJ1M8Gk4XGV9r9CrnKvptnTBZi37YynYQuFXWx8gOreZ2NxR3qFkeHzixeVUxI-pBJ7NC8OKd7FIHvNgqI8WTmMF-6zx4OeMAu1CPa~PrxXo3ZhoLFfBqbTm3J2IhelgGlmz2Y75aka3~Rg0v0ssp16u7EOAlyuzYtMLLmMWhGQxYC60pnqNn5nwPRex8Nva3CjYR-Wckkb-P7sL2vZ-2CMDJdpy3plgOO9X~DkUPC6u-bIsXsP7pXpfxH6lpJqhSFYLRYnWK2O10-Wp~CPznkz0SQeygeQ__&Key-Pair-Id=K3NV4LZ47N8M46)Code changed outside Studio![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792857397197-Screenshot2026-10-24at09.56.26.jpg?Expires=253370764800&Signature=sybC8N7ns0M7KJSUTSITQ8ufQPbz9oD1JoPRh8t9MX5l4wFR~Iu1uOoCIq-yKT7iY5gAvqXHOeLSCIpy9zFL04hL3SjPBbImbtngBupSh24ORcD0OBc6w1Bo~0ej8yQpJo11dnE81MJxIvpRDEGXsxeZXoxhMC~QPUk5hENgpLWCw2xTZmk45kKYbBknMmqQZv63-YOqTviT5J8IoTsxSkJViUKCf0XaMgBRvN9f6PEOTkeAfruDAso5e4xUKczQNeTb324BPGPKsXNXh-rkPtMoMRTr1N0qbVpjXxJz6tRNG2UOOd2dvzxtouqa0~D8tAwSHoFNWOg6Vns0DASnWw__&Key-Pair-Id=K3NV4LZ47N8M46)Another deployment is waiting
+## Configuring Your Plugin
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792857791178-Screenshot2026-10-24at10.03.00.jpg?Expires=253370764800&Signature=G1Yb0GCBGdi537YLDWCB6~vMeQtMTzowZufO0v59NE9u767heR4AnxYp6OlSsDh~-1UN5gR0gX2J1BO4LZNFQEngqZo0aueAuVodm1e41MWVBIgdi2-iFk55v6OW8X2lr73N5vsJDroqc-6eX5EjZ1Yr3cxbG6W~MfJiZXS3Luu0LjMmiqA~ZAbbczNCCGTunP6aKehZEPwdE-SxHJ50I9euRhHMCgh733FyzPYsOuavFK4GfyI2g2UFVxzFTHE33RdxHzNBmQjv1UOaxxfXoTn~aIpfHciXBQC2zclP8y90BKpKO5Bo7ol1MNNKYVJOFq-HCZtYHS7mOdYVf2P3tg__&Key-Pair-Id=K3NV4LZ47N8M46)
+Some plugins require additional settings to function, such as API keys, web addresses, or account identifiers. When configuration is needed, Studio displays a **Configuration Required** panel.
+### Understanding Configuration Values
+Studio handles configuration values differently depending on whether they contain sensitive information.
+Value Type| How Studio Handles it  
+---|---  
+**Sensitive values** (e.g. API keys)| Values are hidden after saving and cannot be viewed again. You can replace an existing value by entering a new one. For saved sensitive values, Studio displays **Value set. Leave blank to keep, type to replace.**  
+**Standard / Plain values** (URLs, IDs, display names)| Values remain visible so you can review or update them.  
+Each configuration field includes a description explaining:
+  - What the value is used for.
+  - Where to find it.
+  - What format to enter.
+If a description is missing or unclear, ask Studio for help. To save configuration values:
+  1. Open the configuration field you want to update.
+  2. Enter the required value.
+  3. Click **Save**.
+Each field can be expanded or collapsed independently and indicates whether a value has been set. If a required value is missing when you click Save, Studio automatically expands that field.
+Studio displays a **Configuration saved** confirmation when the changes are saved. Updating configuration values for an already-deployed plugin automatically triggers a new deployment.
+### Next: Studio project stages · Publishing and updating Studio plugins
+----- END PAGE https://help.canvasmedical.com/articles/8834128147-testing-and-deployment-in-studio
+
+
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/8907360408-epcs-enrollment-faq-for-providers
 Answers to common questions about enrolling in Electronic Prescribing of Controlled Substances (EPCS) with DrFirst. For the full walkthrough, see [Enrolling in EPCS with DrFirst: Step-by-Step Guide for Providers](https://help.canvasmedical.com/articles/8630998726-enrolling-in-epcs-with-drfirst-step-by-step-guide-for-providers).
 ## Timeline and process
@@ -11638,6 +11986,55 @@ The Review of Systems command is a micro-template command in Canvas that allows 
   - Select the command again to expand view
 **NOTE:** _Once the ROS command has been committed you will see a preview of any positives documented in the ROS. You can select the If you print the note you will be able to view the full ROS that was documented._
 ----- END PAGE https://help.canvasmedical.com/articles/9046024531-command-review-of-systems
+
+
+----- BEGIN PAGE https://help.canvasmedical.com/articles/9213618867-navigating-studio-projects-and-chats
+## Getting Around Studio
+The **Overview Screen** is your starting point for managing projects and getting help.
+  - **Project tiles:** Each tile represents a plugin and displays its current stage: Discovery, Build, Test, Review, or Published.
+  - **Shared projects:** Projects shared with you display a **Shared** badge and the project owner's name.
+  - **Overview chat:** Located on the right, this AI assistant answers general questions about Studio.
+  - **Resizable layout:** Drag the divider to adjust the space between your projects and the chat.
+The **Project screen** is the workspace for the plugin and has two main areas:
+![](https://assets.usepylon.com/84c53ca2-da3b-430f-948b-e6d0548f2119%2F1792824298120-Screenshot2026-10-24at00.44.52.jpg?Expires=253370764800&Signature=lVTW951kK6DbvGRIhO0I5vTiPkwVqdVCe9DpuUQyJIEpQEMxXfzgAbSRna4mAOTzY~lqdyAFeIiiqck7W07H4vNwg~dtZShohhfbdyehzUB5v24Mrdt1Mz6izYxbsMoZB-1Whzu~WtxReIY7ox7VdAog6z-s8oEG9xTZTkdGhI19lLxID70yQ2Oudsz~yluX7faIbJYvDHzgTm0HqMVVZBIF~KGRaz2PVqexC0b5iS5v2ClMFN-uK1WrozUDwtgw1mJ7T8ekalHe1rktFgMKRpXuleE4ImybmsruTzG-HDEQ5wB4WGZIltdTwQr7nBDKDSYudI0LTiU3yo1kR3Mhkg__&Key-Pair-Id=K3NV4LZ47N8M46)
+**Left panel:** Progress and Files
+  - **Progress Timeline:** Shows the five project stages and the actions needed to advance.
+  - **Agent Documents:** Contains plans and other documents created by Studio.
+  - **User Attachments:** Contains files you've uploaded to the project.
+**Right panel:** Chat and Documents
+  - **Chat:** Work with the AI assistant to build, test, and refine your plugin.
+  - **Document tabs:** View documents created by Studio, such as the User Plan and Technical Plan. Text appears as formatted pages, images display inline, and PDFs open in a viewer.
+  - **Chat history:** For longer conversations, Studio initially loads the most recent messages. Use the button at the top of the chat to load earlier messages without losing your place.
+## Finding and Organizing Projects
+Use the Overview screen to find projects quickly.
+  - **Search** by project name, owner, or tag.
+  - **Filter by stage** to view projects by stage, including archived projects
+  - **Filter by "shared with"** to find projects shared with specific users, shared with you (Me), or available publicly (Public).
+  - **Filter by tag** to narrow results using project tags.
+  - **Use View Toggle** to switch between tile and table views using the toggle beside New Project.
+You can combine filters to narrow your results. Your selections are saved in the page URL, so refreshing or sharing the link preserves the filtered view.
+## Overview Chat: Your Studio Guide
+The Overview chat is available whenever you need help understanding Studio.
+For example, you can ask:
+  - "How do I create a project?"
+  - "What can I build with Studio?"
+  - "How does publishing work?"
+The assistant can also reference organization-wide guidance configured by your Studio Admin.
+**Note:** The Overview chat provides guidance but does not build plugins. To create or modify a plugin, open a project and use its chat.
+## Working with the AI Assistant
+### Communicating with Studio
+Describe what you want to accomplish in plain language. You don't need technical terminology.
+For best results:
+  - **Explain your goal:** Describe what you want the plugin to do.
+  - **Provide examples:** Share screenshots, existing workflows, or examples of the behavior you want.
+  - **Describe issues clearly:** If something isn't working, explain what happened and what you expected instead.
+Studio uses this information to guide development and troubleshooting.
+## Answering Questions
+When Studio needs more information, it displays a **question card**.
+## Uploading Attachments
+Use the attachment option in the project chat to upload screenshots, PDFs, or other supporting files. Studio can reference these files to better understand your requirements or troubleshoot issues. Uploaded files are available in the **User Attachments** section of your project.
+### **Next:** Studio project stages · Collaborating on Studio projects
+----- END PAGE https://help.canvasmedical.com/articles/9213618867-navigating-studio-projects-and-chats
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/9221634314-new-diagnoses
