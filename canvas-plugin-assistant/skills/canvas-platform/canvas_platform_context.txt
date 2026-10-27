@@ -946,7 +946,7 @@ This process begins in an open note of the patient chart.
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/2234141107-studio-admin-guide
 Studio Admins manage organization-wide Studio settings, including how plugins are released and what background information Studio uses when creating projects. Studio Admins can also view all Studio projects within their organization.
-**Access requirements:** Your Organization Admin must assign you the **Studio Admin** role in Canvas Platform. For instructions on managing user access, see **Adding Studio Users**.
+**Access requirements:** Your Organization Admin must assign yFou the **Studio Admin** role in Canvas Platform. For instructions on managing user access, see **Adding Studio Users**.
 # Accessing Studio Settings
   1. Sign in to [Canvas Platform](https://platform.canvasmedical.com/).
   2. Select **Studio → Studio Settings**.
@@ -1013,7 +1013,7 @@ Common issues include:
 After resolving the issue, click **Re-verify**.
 **GitLab token expiration:** Studio emails Studio Admins reminders 30, 14, 7, and 1 day before a connected GitLab token expires.
 # Importing an Existing Plugin
-To change a Plugin Catalog plugin rather than install it as is, import it into a Studio project.
+Bring plugin code from GitHub into a Studio project so you can keep building on it, for example a plugin that was started outside Studio.
   1. On the Studio All Projects screen, click the arrow beside **New Project**.
   2. Select **Import Plugin**.
   3. Paste a GitHub URL pointing to:
@@ -1023,7 +1023,7 @@ To change a Plugin Catalog plugin rather than install it as is, import it into a
   5. Select the plugin you want to import.
   6. Enter a project name.
   7. Click **Import Plugin**.
-To install a Catalog plugin as is, use Start installation in Studio (see Installing a Plugin Catalog plugin with Studio). Your developers deploy your organization's own plugins with the Canvas CLI.
+Import only brings code into a new build project. To install a Plugin Catalog plugin as is, use **Start Installation in Studio** (see Installing a Plugin Catalog plugin with Studio). Your developers deploy your organization's own plugins with the Canvas CLI.
 # FAQ
 Q: **How do I make someone else a Studio admin?**
 A: Your Organization Admin manages roles in Canvas Platform. Ask them to assign the **Studio Admin** role from the **Users** page.
@@ -5179,6 +5179,8 @@ Section| What it controls| Learn more
  _3 settings_|  Credentials for the PDF annotation engine, whether annotation is enabled, and the per-use cost warning shown to staff.| [PDF Annotations](https://help.canvasmedical.com/articles/2451966298-pdf-annotations-user-guide)  
 **Audit & SIEM Export**  
  _9 settings_|  Audit-event capture and how long the audit ledger stays queryable, plus the endpoint, authentication header, PHI mode, and batching for streaming those events to your own SIEM.| [Security audit trail and SIEM export](https://help.canvasmedical.com/articles/3718661267-security-audit-trail-and-siem-export)  
+**Custom Template**  
+ _5 settings_|  Custom note and rooming sheet print templates, the appointment's scheduled times on the printed note header, and how the Review of Systems prints. `PRINT_ROS_AS_RECORDED` is off by default. When turned on, a printed Review of Systems shows each question with only its selected answers, without the **Reports:** label or the **Denies:** line, and the Review of Systems in chart search results matches the printout.| [Command | Review of Systems](https://help.canvasmedical.com/articles/9046024531-command-review-of-systems)  
 **Data integration**  
  _1 setting_|  Whether the signature field is available in data integration.| [Data Integration and Document Management](https://help.canvasmedical.com/articles/7371085164-data-integration)  
 **DrFirst**  
@@ -11961,16 +11963,18 @@ A: Common troubleshooting steps include:
 
 
 ----- BEGIN PAGE https://help.canvasmedical.com/articles/9046024531-command-review-of-systems
-The Review of Systems command is a micro-template command in Canvas that allows a Canvas Provider to take inventory of patient's body systems to identify signs/symptoms that the patient may be experiencing. Each micro-template can be custom built to document specific findings for a patient. 
+The Review of Systems command is a micro-template command in Canvas that allows a Canvas Provider to take inventory of patient's body systems to identify signs/symptoms that the patient may be experiencing. Each micro-template can be custom built to document specific findings for a patient.
 ## FAQ:
 **Q:** I made a mistake, how do I remove this command?
-**A:** Commands can be entered in error, but not deleted. Please review the Entering a Command in Error document for directions. 
+**A:** Commands can be entered in error, but not deleted. Please review the Entering a Command in Error document for directions.
 **Q:** How do I print this command?
-**A:** A command can be printed by using the triple dot menu to the right of the command and selecting the print option. 
+**A:** A command can be printed by using the triple dot menu to the right of the command and selecting the print option.
+**Q:** Can the printout show only the symptoms that were recorded?
+**A:** Yes. By default, a printed Review of Systems lists the selected symptoms after a **Reports:** label, followed by a **Denies:** line with the symptoms that weren't selected. Canvas Support can turn on the `PRINT_ROS_AS_RECORDED` setting so each question prints with only its selected answers. The Review of Systems in chart search results matches the printout. To enable it for your instance, [submit a support ticket](https://portal.usepylon.com/canvas-medical/forms/standard). See [Config | Constance Settings](https://help.canvasmedical.com/articles/4646004700-config-constance-settings) for more on instance settings.
 ## Step by Step
   - Begin in an open note
   - Type "ros" or "review of systems" into a blank line within the note
-  - Select the command by hitting **Enter** on keyboard 
+  - Select the command by hitting **Enter** on keyboard
   - Use the up and down arrow keys to select the desired ROS template from the list that populates
   - Press **Enter** to make a selection
 **NOTE:** By default all sections are enabled and symptoms are unselected which marks all symptoms as denied. Selecting a symptom will record it as positive.
@@ -11979,10 +11983,10 @@ The Review of Systems command is a micro-template command in Canvas that allows 
     - Second click opens modal to enter a comment. To remove comment click on the symptom again to open the comment modal and delete the comment.
     - Third click unselects symptom and records it as negative. You cannot unselect symptoms until all comments, if any, have been removed.
   - Select toggle to inactivate section
-    - Inactivating section indicates that system was not reviewed 
-    - Any selections previously made within the section will be cleared 
+    - Inactivating section indicates that system was not reviewed
+    - Any selections previously made within the section will be cleared
     - Selecting the toggle again will activate section again
-  - Select **Record** to commit the command 
+  - Select **Record** to commit the command
   - Select the command again to expand view
 **NOTE:** _Once the ROS command has been committed you will see a preview of any positives documented in the ROS. You can select the If you print the note you will be able to view the full ROS that was documented._
 ----- END PAGE https://help.canvasmedical.com/articles/9046024531-command-review-of-systems
